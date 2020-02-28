@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, 'Berthold-Akzidenz-Grotesk';
+    sans-serif, 'Berthold-Akzidenz-Grotesk', 'Berthold-Akzidenz-Grotesk-Tall';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,4 +17,11 @@ code {
   font-style: normal;
   font-weight: normal;
   src: local('Berthold-Akzidenz-Grotesk'), url(./fonts/Berthold-Akzidenz-Grotesk-BE-Li.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz-Grotesk-Tall';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berthold-Akzidenz-Grotesk'), url(./fonts/Berthold-Akzidenz-Grotesk-BE-Li-Tall.ttf) format('truetype');
 }
