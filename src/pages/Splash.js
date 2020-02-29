@@ -1,9 +1,21 @@
 import React, { Component } from "react";
+import '../App.css';
 
 export class Splash extends Component {
   render() {
     return <div className="splash">
-      <h1>i am splashy splash man</h1>
+      <div className="splash-link">
+        <a href="/about" className="link">ABHI VELAGA</a>
+      </div>
+      <div className="splash-link">
+      <a href="/photo" className="link">PHOTO</a>
+      </div>
+      <div className="splash-link">
+      <a href="/music" className="link">MUSIC</a>
+      </div>
+      <div className="splash-link">
+      <a href="/code" className="link">CODE</a>
+      </div>
     </div>;
   }
 }

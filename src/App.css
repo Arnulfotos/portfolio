@@ -3,3 +3,35 @@
   /* font-family: Berthold-Akzidenz-Grotesk-Tall; */
   font-family: Berthold-Akzidenz-Grotesk;
 }
+
+.splash {
+  background-color: black;
+  height: 100vh;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.splash-link {
+  /* display: inline-block; */
+  font-size: 200px;
+  font-style: italic;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 0;
+  /*
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray; */
+  height: 200px;
+  line-height: 200px;
+  /* height: 35px; */
+}
+
+.link {
+  color: rgb(0, 255, 255);
+}
+
+.link:hover {
+  color: rgb(255, 0, 212);
+  text-decoration: none;
+}
