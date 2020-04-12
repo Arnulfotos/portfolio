@@ -9,7 +9,6 @@ import Navbar from './layout/Navbar';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Navbar />
     <App />
   </BrowserRouter>,
   document.getElementById('app'));

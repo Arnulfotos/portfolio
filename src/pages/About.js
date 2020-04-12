@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import '../App.css';
+import Navbar from '../layout/Navbar'
+import './pages.css';
 
 export class About extends Component {
   render() {
-    return <div className="about flex">
+    return <div>
+      <Navbar />
+      <div className="about flex">
       <div className="an"></div>
       <div className="an"></div>
       <div className="an"></div>
@@ -24,6 +27,7 @@ export class About extends Component {
       <div className="an"></div>
       <div className="an"></div>
       <div className="an"></div>
+      </div>
     </div>; 
   }
 }

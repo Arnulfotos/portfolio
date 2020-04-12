@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import '../App.css';
+import Navbar from '../layout/Navbar'
+import './pages.css';
 
 export class Code extends Component {
   render() {
-    return <div className="code">
-      code
+    return<div>
+      <Navbar />
+      <div className="code">
+        code
+      </div>
     </div>;
   }
 }

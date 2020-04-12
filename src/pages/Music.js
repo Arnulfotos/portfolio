@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-import '../App.css';
+import Navbar from '../layout/Navbar'
+import './pages.css';
 
 export class Music extends Component {
   render() {
-    return <div className="about">
-      Music
-    </div>; 
+    return <div>
+      <Navbar />
+      <div className="about">
+        Music
+      </div>
+    </div>;
   }
 }
 

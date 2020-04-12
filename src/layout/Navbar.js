@@ -6,59 +6,62 @@ export class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
+
+        <a href="/">
           <div className="logo-container">
-            <a href="/"><img src={logo} className="logo"></img></a>
+            <img src={logo} className="logo"></img>
             <div className="subtitle"><h6><i>austin, tx.</i></h6></div>
           </div>
-          
+        </a>
+
         <div className="flex link-container">
-        <a href="/photo">
-          <div className="link">
-            <div className="link-color"></div>
-            <div className="link-block">
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece">PHOTO</div>
+          <a href="/photo">
+            <div className="link">
+              <div className="link-color"></div>
+              <div className="link-block">
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"><h4>PHOTO</h4></div>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="/music">
-          <div className="link">
-            <div className="link-color"></div>
-            <div className="link-block">
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece">MUSIC</div>
+          <a href="/music">
+            <div className="link">
+              <div className="link-color"></div>
+              <div className="link-block">
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"><h4>MUSIC</h4></div>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="/code">
-          <div className="link">
-            <div className="link-color"></div>
-            <div className="link-block">
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece">CODE</div>
+          <a href="/code">
+            <div className="link">
+              <div className="link-color"></div>
+              <div className="link-block">
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"><h4>CODE</h4></div>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="/about">
-          <div className="link">
-            <div className="link-color"></div>
-            <div className="link-block">
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece"></div>
-              <div className="link-piece">ABOUT</div>
+          <a href="/about">
+            <div className="link">
+              <div className="link-color"></div>
+              <div className="link-block">
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"></div>
+                <div className="link-piece"><h4>ABOUT</h4></div>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
         </div>
 
       </div>

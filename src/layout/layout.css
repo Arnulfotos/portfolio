@@ -1,14 +1,18 @@
 .navbar {
   width: calc(100vw-50px);
-  height: 8vh;
+  height: 120px;
   background-color: black;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   padding-bottom: 40px;
+  align-items: flex-start;
+  padding-top: 0px;
 }
 
 .link-container {
   justify-content: flex-end;
   width: 20vw;
+  margin-top: 0;
+  margin-right: 50px;
 }
 
 .link {
@@ -24,11 +28,15 @@
 
 .logo {
   width: 12vw;
-  margin-left: 20px;
 }
 
 .logo-container {
-  margin-top: 60px;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+.subtitle {
+  color: grey;
 }
 
 .link-piece{
@@ -50,7 +58,7 @@
 .link-color {
   background-color: rgb(204, 5, 204);
   width: 5vw;
-  height: 2vh;
+  height: .8vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -59,7 +67,7 @@
 }
 
 .link:hover .link-color {
-  height: 10vh;
+  height: 9vh;
 }
 
 .link:hover{
@@ -76,9 +84,4 @@
 @keyframes offText {
   from {color: white}
   to {color:rgb(0, 255, 255)}
-}
-
-.subtitle {
-  margin-left: 28px;
-  color: grey;
 }
