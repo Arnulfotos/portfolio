@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
+import logo from "../../dist/images/logo.gif";
 import './layout.css'
 
 export class Navbar extends Component {
   render() {
     return (
-      <div className="flex navbar">
+      <div className="navbar">
+          <div className="logo-container">
+            <a href="/"><img src={logo} className="logo"></img></a>
+            <div className="subtitle"><h6><i>austin, tx.</i></h6></div>
+          </div>
+          
+        <div className="flex link-container">
         <a href="/photo">
           <div className="link">
             <div className="link-color"></div>
@@ -52,6 +59,8 @@ export class Navbar extends Component {
             </div>
           </div>
         </a>
+        </div>
+
       </div>
     )
   }

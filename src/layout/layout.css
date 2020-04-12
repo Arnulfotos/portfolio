@@ -1,10 +1,14 @@
 .navbar {
-  width: calc(100vw-100px);
+  width: calc(100vw-50px);
   height: 8vh;
   background-color: black;
-  justify-content: flex-end;
-  padding-right: 100px;
+  padding-right: 50px;
   padding-bottom: 40px;
+}
+
+.link-container {
+  justify-content: flex-end;
+  width: 20vw;
 }
 
 .link {
@@ -16,6 +20,15 @@
   animation-name: offText;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
+}
+
+.logo {
+  width: 12vw;
+  margin-left: 20px;
+}
+
+.logo-container {
+  margin-top: 60px;
 }
 
 .link-piece{
@@ -63,4 +76,9 @@
 @keyframes offText {
   from {color: white}
   to {color:rgb(0, 255, 255)}
+}
+
+.subtitle {
+  margin-left: 28px;
+  color: grey;
 }
