@@ -6,7 +6,11 @@ export class About extends Component {
   render() {
     return <div>
       <Navbar activeLink={"ABOUT"} />
-        about
+      <div className="page">
+      <div className="appear">
+          <center><h1>THIS WILL BE THE ABOUT PAGE</h1></center>
+        </div>
+      </div>
     </div>;
   }
 }

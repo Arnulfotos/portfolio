@@ -20,8 +20,12 @@
 }
 
 .page {
-  height: calc(100vh-120px);
   background-color: black;
+  background-size: 100%;
+  min-height: calc(100vh - 120px);
+  width: 100vw;
+  padding-right: 57px;
+  padding-left: 57px;
 }
 
 
@@ -96,8 +100,15 @@
   border-style: solid; */
 }
 
-.center {
-  margin: auto;
+.appear {
+  /* margin: auto; */
+  animation-name: appear;
+  animation-duration: 1s;
+  /* animation-fill-mode: forwards; */
+}
+
+.splash-appear {
+  /* margin: auto; */
   animation-name: appear;
   animation-duration: 2.5s;
   /* animation-fill-mode: forwards; */
@@ -110,4 +121,19 @@
 
 a:hover {
   text-decoration: none;
+}
+
+.img {
+  display: 'block';
+  width: 100%;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.gallery {
+  width: 60vw;
+  /* align-self: center;
+  mar */
+  margin: auto;
 }

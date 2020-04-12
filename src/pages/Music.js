@@ -6,8 +6,10 @@ export class Music extends Component {
   render() {
     return <div>
       <Navbar activeLink={"MUSIC"}/>
-      <div className="about">
-        Music
+      <div className="page">
+      <div className="appear">
+          <center><h1>THIS WILL BE THE MUSIC PAGE</h1></center>
+        </div>
       </div>
     </div>;
   }

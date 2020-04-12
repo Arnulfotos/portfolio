@@ -4,7 +4,7 @@ import './pages.css';
 export class Splash extends Component {
   render() {
     return <div className="flex splash">
-      <div className="center">
+      <div className="splash-appear">
         <div className="title">
           ABHI VELAGA
         </div>
