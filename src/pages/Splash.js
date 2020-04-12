@@ -4,7 +4,7 @@ import '../App.css';
 export class Splash extends Component {
   render() {
     return <div className="splash">
-      <div className="splash-link">
+      {/* <div className="splash-link an">
         <a href="/about" className="link">ABHI VELAGA</a>
       </div>
       <div className="splash-link">
@@ -15,7 +15,7 @@ export class Splash extends Component {
       </div>
       <div className="splash-link">
       <a href="/code" className="link">CODE</a>
-      </div>
+      </div> */}
     </div>;
   }
 }

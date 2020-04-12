@@ -1,0 +1,48 @@
+.navbar {
+  width: calc(100vw-100px);
+  height: 8vh;
+  background-color: black;
+  justify-content: flex-end;
+  padding-right: 100px;
+  padding-bottom: 40px;
+}
+
+
+.link {
+  color: rgb(0, 255, 255);
+  background-color: blue;
+  height: 8vh;
+  width: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-piece{
+  width: 5vw;
+  height: 2vh;
+  text-align: center;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+@keyframes link-animation {
+  from {background-color: white;}
+  to {background-color: purple;}
+}
+
+.animation {
+  background-color: black;
+  transition: height 1s;
+}
+
+.animation:hover {
+  height: 100vh;
+  animation-name: link-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  color: white;
+  /* animation-iteration-count: infinite; */
+  text-decoration: none;
+}

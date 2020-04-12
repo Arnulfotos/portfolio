@@ -5,11 +5,11 @@ import './fonts/Berthold-Akzidenz-Grotesk-BE-Li.otf';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-// import Navbar from './components/layout/Navbar';
+import Navbar from './layout/Navbar';
 
 ReactDOM.render(
   <BrowserRouter>
-    {/* <Navbar /> */}
+    <Navbar />
     <App />
   </BrowserRouter>,
   document.getElementById('app'));

@@ -3,8 +3,27 @@ import '../App.css';
 
 export class About extends Component {
   render() {
-    return <div className="about">
-      about
+    return <div className="about flex">
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
+      <div className="an"></div>
     </div>; 
   }
 }
