@@ -2,7 +2,6 @@
   width: calc(100vw-50px);
   height: 120px;
   background-color: black;
-  /* padding-right: 50px; */
   padding-bottom: 40px;
   align-items: flex-start;
   padding-top: 0px;
@@ -13,6 +12,10 @@
   width: 20vw;
   margin-top: 0;
   margin-right: 50px;
+
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .link {
@@ -33,6 +36,10 @@
 .logo-container {
   padding-top: 50px;
   padding-left: 40px;
+
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
 }
 
 .subtitle {
@@ -40,16 +47,29 @@
 }
 
 .link-piece{
+  font-size: 1vw;
   width: 5vw;
   height: 2vh;
   text-align: center;
+  letter-spacing: 4px;
 }
+
+.link-piece-text{
+  font-size: 1vw;
+  width: 5vw;
+  height: 2vh;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 1vh;
+}
+
+
 
 .link-block {
   display: flex;
   flex-wrap: wrap;
   width: 5vw;
-  height: 8vh;
+  height: 9vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +83,6 @@
   top: 0;
   left: 0;
   transition: height .7s;
-
 }
 
 .link:hover .link-color {
@@ -84,4 +103,9 @@
 @keyframes offText {
   from {color: white}
   to {color:rgb(0, 255, 255)}
+}
+
+@keyframes appear {
+  from {opacity: 0}
+  to {opacity: 1}
 }

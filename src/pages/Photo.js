@@ -5,8 +5,8 @@ import './pages.css';
 export class Photo extends Component {
   render() {
     return <div>
-      <Navbar />
-      <div className="photo">
+      <Navbar activeLink={"PHOTO"}/>
+      <div className="page">
         photo
       </div>
     </div>;

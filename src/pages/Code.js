@@ -5,7 +5,7 @@ import './pages.css';
 export class Code extends Component {
   render() {
     return<div>
-      <Navbar />
+      <Navbar activeLink={"CODE"}/>
       <div className="code">
         code
       </div>

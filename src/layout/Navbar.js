@@ -4,6 +4,10 @@ import './layout.css'
 
 export class Navbar extends Component {
   render() {
+    const activeStyle = {
+      backgroundColor: 'rgb(204, 5, 204)',
+      color: 'white'
+  }
     return (
       <div className="navbar">
 
@@ -18,11 +22,12 @@ export class Navbar extends Component {
           <a href="/photo">
             <div className="link">
               <div className="link-color"></div>
-              <div className="link-block">
+              <div className="link-block"
+              style={this.props.activeLink === "PHOTO" ? activeStyle : {}}>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
-                <div className="link-piece"><h4>PHOTO</h4></div>
+                <div className="link-piece-text">PHOTO</div>
               </div>
             </div>
           </a>
@@ -30,11 +35,12 @@ export class Navbar extends Component {
           <a href="/music">
             <div className="link">
               <div className="link-color"></div>
-              <div className="link-block">
+              <div className="link-block"
+              style={this.props.activeLink === "MUSIC" ? activeStyle : {}}>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
-                <div className="link-piece"><h4>MUSIC</h4></div>
+                <div className="link-piece-text">MUSIC</div>
               </div>
             </div>
           </a>
@@ -42,11 +48,12 @@ export class Navbar extends Component {
           <a href="/code">
             <div className="link">
               <div className="link-color"></div>
-              <div className="link-block">
+              <div className="link-block"
+              style={this.props.activeLink === "CODE" ? activeStyle : {}}>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
-                <div className="link-piece"><h4>CODE</h4></div>
+                <div className="link-piece-text">CODE</div>
               </div>
             </div>
           </a>
@@ -54,16 +61,16 @@ export class Navbar extends Component {
           <a href="/about">
             <div className="link">
               <div className="link-color"></div>
-              <div className="link-block">
+              <div className="link-block"
+              style={this.props.activeLink === "ABOUT" ? activeStyle : {}}>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
                 <div className="link-piece"></div>
-                <div className="link-piece"><h4>ABOUT</h4></div>
+                <div className="link-piece-text">ABOUT</div>
               </div>
             </div>
           </a>
         </div>
-
       </div>
     )
   }

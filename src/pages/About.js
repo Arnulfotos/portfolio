@@ -5,30 +5,9 @@ import './pages.css';
 export class About extends Component {
   render() {
     return <div>
-      <Navbar />
-      <div className="about flex">
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      <div className="an"></div>
-      </div>
-    </div>; 
+      <Navbar activeLink={"ABOUT"} />
+        about
+    </div>;
   }
 }
 
