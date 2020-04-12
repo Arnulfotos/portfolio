@@ -10,11 +10,9 @@
 
 .link {
   color: rgb(0, 255, 255);
-  background-color: blue;
   height: 8vh;
   width: 5vw;
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 .link-piece{
@@ -23,9 +21,41 @@
   text-align: center;
 }
 
-.link:hover {
+/* .link:hover {
   text-decoration: none;
+} */
+
+.link-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 5vw;
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+.link-color {
+  background-color: red;
+  width: 5vw;
+  height: 2vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: height 1s;
+}
+
+/* .link-color:hover {
+  height: 10vh;
+} */
+
+.link:hover .link-color {
+  height: 10vh;
+}
+
+
+
+
 
 @keyframes link-animation {
   from {background-color: white;}

@@ -7,27 +7,34 @@ export class Navbar extends Component {
       <div className="flex navbar">
 
         <a href="/photo">
-        <div className="link animation">
-          <div className="link-piece"></div>
-          <div className="link-piece"></div>
-          <div className="link-piece"></div>
-          <div className="link-piece">PHOTO</div>
-        </div>
+          <div className="link">
+
+            <div className="link-color"></div>
+
+            <div className="link-block">
+              <div className="link-piece"></div>
+              <div className="link-piece"></div>
+              <div className="link-piece"></div>
+              <div className="link-piece">PHOTO</div>
+            </div>
+
+          </div>
         </a>
+
         <div className="link animation">
-        <div className="link-piece"></div>
+          <div className="link-piece"></div>
           <div className="link-piece"></div>
           <div className="link-piece"></div>
           <div className="link-piece">MUSIC</div>
         </div>
         <div className="link animation">
-        <div className="link-piece"></div>
+          <div className="link-piece"></div>
           <div className="link-piece"></div>
           <div className="link-piece"></div>
           <div className="link-piece">CODE</div>
         </div>
         <div className="link animation">
-        <div className="link-piece"></div>
+          <div className="link-piece"></div>
           <div className="link-piece"></div>
           <div className="link-piece"></div>
           <div className="link-piece">ABOUT</div>
