@@ -7,12 +7,15 @@
   padding-bottom: 40px;
 }
 
-
 .link {
   color: rgb(0, 255, 255);
   height: 8vh;
   width: 5vw;
   position: relative;
+
+  animation-name: offText;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 .link-piece{
@@ -20,10 +23,6 @@
   height: 2vh;
   text-align: center;
 }
-
-/* .link:hover {
-  text-decoration: none;
-} */
 
 .link-block {
   display: flex;
@@ -36,43 +35,32 @@
 }
 
 .link-color {
-  background-color: red;
+  background-color: rgb(204, 5, 204);
   width: 5vw;
   height: 2vh;
   position: absolute;
   top: 0;
   left: 0;
-  transition: height 1s;
-}
+  transition: height .7s;
 
-/* .link-color:hover {
-  height: 10vh;
-} */
+}
 
 .link:hover .link-color {
   height: 10vh;
 }
 
-
-
-
-
-@keyframes link-animation {
-  from {background-color: white;}
-  to {background-color: purple;}
-}
-
-.animation {
-  background-color: black;
-  transition: height 1s;
-}
-
-.animation:hover {
-  height: 100vh;
-  animation-name: link-animation;
-  animation-duration: 0.5s;
+.link:hover{
+  animation-name: overText;
+  animation-duration: 0.7s;
   animation-fill-mode: forwards;
-  color: white;
-  /* animation-iteration-count: infinite; */
-  text-decoration: none;
+}
+
+@keyframes overText {
+  from {color:rgb(0, 255, 255)}
+  to {color: white}
+}
+
+@keyframes offText {
+  from {color: white}
+  to {color:rgb(0, 255, 255)}
 }
