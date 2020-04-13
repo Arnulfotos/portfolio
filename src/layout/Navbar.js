@@ -93,10 +93,10 @@ export class Navbar extends Component {
           <div className="mobile-navbar flex">
 
             <div className="flex" >
-              {this.state.collapsedMenu && <div className="mobile-link" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: false })}>MENU +</div>}
+              {this.state.collapsedMenu && <div className="mobile-link-menu" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: false })}>MENU +</div>}
               {!this.state.collapsedMenu &&
                 <div>
-                  <div className="mobile-link" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: true })}>MENU -</div>
+                  <div className="mobile-link-menu" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: true })}>MENU -</div>
                   <a href="/photo"><div className="mobile-link">PHOTO</div></a>
                   <a href="/music"><div className="mobile-link">MUSIC</div></a>
                   <a href="/code"><div className="mobile-link">CODE</div></a>
