@@ -12,7 +12,6 @@
   width: 20vw;
   margin-top: 0;
   margin-right: 40px;
-
   animation-name: appear;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -23,7 +22,6 @@
   height: 8vh;
   width: 5vw;
   position: relative;
-
   animation-name: offText;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
@@ -36,7 +34,6 @@
 .logo-container {
   padding-top: 50px;
   padding-left: 40px;
-
   animation-name: appear;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
@@ -46,7 +43,7 @@
   color: grey;
 }
 
-.link-piece{
+.link-piece {
   font-size: 1vw;
   width: 5vw;
   height: 2vh;
@@ -54,7 +51,7 @@
   letter-spacing: 4px;
 }
 
-.link-piece-text{
+.link-piece-text {
   font-size: 1vw;
   width: 5vw;
   height: 2vh;
@@ -87,25 +84,37 @@
   height: 9vh;
 }
 
-.link:hover{
+.link:hover {
   animation-name: overText;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
 }
 
 @keyframes overText {
-  from {color:rgb(0, 255, 255)}
-  to {color: white}
+  from {
+    color: rgb(0, 255, 255)
+  }
+  to {
+    color: white
+  }
 }
 
 @keyframes offText {
-  from {color: white}
-  to {color:rgb(0, 255, 255)}
+  from {
+    color: white
+  }
+  to {
+    color: rgb(0, 255, 255)
+  }
 }
 
 @keyframes appear {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
 
 .mobile-link {
@@ -117,10 +126,6 @@
   text-align: center;
   font-style: italic;
   padding-top: 20px;
-
-  animation-name: appear;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .mobile-link-menu {
@@ -155,5 +160,29 @@
   padding-top: 50px;
   animation-name: appear;
   animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.appear-first {
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.appear-second {
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.appear-third {
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.appear-fourth {
+  animation-name: appear;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }

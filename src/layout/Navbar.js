@@ -97,10 +97,10 @@ export class Navbar extends Component {
               {!this.state.collapsedMenu &&
                 <div>
                   <div className="mobile-link-menu" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: true })}>MENU -</div>
-                  <a href="/photo"><div className="mobile-link">PHOTO</div></a>
-                  <a href="/music"><div className="mobile-link">MUSIC</div></a>
-                  <a href="/code"><div className="mobile-link">CODE</div></a>
-                  <a href="/about"><div className="mobile-link">ABOUT</div></a>
+                  <a href="/photo"><div className="mobile-link appear-first">[ PHOTO ]</div></a>
+                  <a href="/music"><div className="mobile-link appear-second">[ MUSIC ]</div></a>
+                  <a href="/code"><div className="mobile-link appear-third">[ CODE ]</div></a>
+                  <a href="/about"><div className="mobile-link appear-fourth">[ ABOUT ]</div></a>
                 </div>
               }
             </div>

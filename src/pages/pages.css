@@ -121,6 +121,7 @@ a:hover {
 .gallery {
   width: 60vw;
   margin: auto;
+  padding-top: 40px;
 }
 
 .mobile-img {
