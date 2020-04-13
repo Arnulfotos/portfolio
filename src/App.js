@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Splash from './pages/Splash.js';
 import About from './pages/About.js';
 import Photo from './pages/Photo.js';
-import software from './pages/software.js';
+import Software from './pages/Software.js';
 import Music from './pages/Music.js';
 import './App.css';
 
@@ -24,7 +24,7 @@ function App() {
       <Route exact path='/' exact component={Splash} />
       <Route exact path='/about' exact component={About} />
       <Route exact path='/photo' exact component={Photo} />
-      <Route exact path='/software' exact component={software} />
+      <Route exact path='/software' exact component={Software} />
       <Route exact path='/music' exact component={Music} />
       <Route component={ErrorPage} />
     </Switch>
