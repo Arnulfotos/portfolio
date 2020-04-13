@@ -1,6 +1,10 @@
 .splash {
   background-color: black;
+  background-image: url("../../dist/images/drumming.gif");
   height: 100vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .splash-link {
@@ -97,7 +101,7 @@
 
 .splash-appear {
   animation-name: appear;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
 }
 
 @keyframes appear {
@@ -128,4 +132,34 @@ a:hover {
   display: 'block';
   width: 100%;
   padding-bottom: 20px;
+}
+
+.appear-first {
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.appear-second {
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.appear-third {
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.appear-fourth {
+  animation-name: appear;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+.appear-fifth {
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }

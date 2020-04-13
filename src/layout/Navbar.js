@@ -14,7 +14,7 @@ export class Navbar extends Component {
 
   render() {
     const activeStyle = {
-      backgroundColor: 'rgb(204, 5, 204)',
+      backgroundColor: 'red',
       color: 'white'
     }
 
@@ -59,15 +59,15 @@ export class Navbar extends Component {
                 </div>
               </a>
 
-              <a href="/code">
-                <div className="link">
-                  <div className="link-color"></div>
-                  <div className="link-block"
-                    style={this.props.activeLink === "CODE" ? activeStyle : {}}>
+              <a href="/software">
+                <div className="link software">
+                  <div className="link-color software"></div>
+                  <div className="link-block software"
+                    style={this.props.activeLink === "SOFTWARE" ? activeStyle : {}}>
                     <div className="link-piece"></div>
                     <div className="link-piece"></div>
                     <div className="link-piece"></div>
-                    <div className="link-piece-text">CODE</div>
+                    <div className="link-piece-text software">SOFTWARE</div>
                   </div>
                 </div>
               </a>
@@ -99,7 +99,7 @@ export class Navbar extends Component {
                   <div className="mobile-link-menu" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: true })}>MENU -</div>
                   <a href="/photo"><div className="mobile-link appear-first">[ PHOTO ]</div></a>
                   <a href="/music"><div className="mobile-link appear-second">[ MUSIC ]</div></a>
-                  <a href="/code"><div className="mobile-link appear-third">[ CODE ]</div></a>
+                  <a href="/software"><div className="mobile-link appear-third">[ SOFTWARE ]</div></a>
                   <a href="/about"><div className="mobile-link appear-fourth">[ ABOUT ]</div></a>
                 </div>
               }

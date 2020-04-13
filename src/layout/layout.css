@@ -7,9 +7,25 @@
   padding-top: 0px;
 }
 
+.logo {
+  width: 12vw;
+}
+
+.logo-container {
+  padding-top: 50px;
+  padding-left: 40px;
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.subtitle {
+  color: grey;
+}
+
 .link-container {
   justify-content: flex-end;
-  width: 20vw;
+  width: 25vw;
   margin-top: 0;
   margin-right: 40px;
   animation-name: appear;
@@ -25,22 +41,6 @@
   animation-name: offText;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
-}
-
-.logo {
-  width: 12vw;
-}
-
-.logo-container {
-  padding-top: 50px;
-  padding-left: 40px;
-  animation-name: appear;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.subtitle {
-  color: grey;
 }
 
 .link-piece {
@@ -78,6 +78,10 @@
   top: 0;
   left: 0;
   transition: height .7s;
+}
+
+.software {
+  width: 8vw !important;
 }
 
 .link:hover .link-color {
