@@ -106,7 +106,7 @@ export class Navbar extends Component {
             </div>
 
             <a href="/">
-              <div className="logo-container flex">
+              <div className="mobile-logo-container flex">
                 <img src={logo} className="mobile-logo"></img>
                 <div className="mobile-subtitle"><i>austin, tx.</i></div>
               </div>

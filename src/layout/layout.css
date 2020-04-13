@@ -63,8 +63,6 @@
   margin-bottom: 1vh;
 }
 
-
-
 .link-block {
   display: flex;
   flex-wrap: wrap;
@@ -135,4 +133,12 @@
 
 .mobile-subtitle {
   font-size: 40px;
+  color: grey;
+}
+
+.mobile-logo-container {
+  padding-top: 50px;
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
 }
