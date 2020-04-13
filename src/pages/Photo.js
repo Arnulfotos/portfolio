@@ -11,14 +11,6 @@ import miami3 from '../../dist/images/photos/miami/miami3.jpg';
 import miami4 from '../../dist/images/photos/miami/miami4.jpg';
 import miami5 from '../../dist/images/photos/miami/miami5.jpg';
 
-// const images = [
-//   '../../dist/images/photos/miami/miami1.jpg',
-//   '../../dist/images/photos/miami/miami2.jpg',
-//   '../../dist/images/photos/miami/miami3.jpg',
-//   '../../dist/images/photos/miami/miami4.jpg',
-//   '../../dist/images/photos/miami/miami5.jpg',
-// ];
-
 const images = [
   miami1,
   miami2,
@@ -43,16 +35,6 @@ export class Photo extends Component {
       <Navbar activeLink={"PHOTO"} />
       <div className="page">
         <div className="appear">
-          {/* <button type="button" onClick={() => this.setState({ isOpen: true })}>
-          Open Lightbox
-        </button> */}
-          {/* <div className="gallery">
-        <img className="img" src={miami1} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}/>
-        <img className="img" src={miami2} onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}/>
-        <img className="img" src={miami3} onClick={() => this.setState({ isOpen: true, photoIndex: 2 })}/>
-        <img className="img" src={miami4} onClick={() => this.setState({ isOpen: true, photoIndex: 3 })}/>
-        <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })}/>
-        </div> */}
 
           <Columned columns={2} className="gallery">
             <img className="img" src={miami1} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}/>
