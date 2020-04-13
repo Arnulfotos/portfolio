@@ -32,6 +32,7 @@ export class Photo extends Component {
   render() {
     const { photoIndex, isOpen } = this.state;
     return <div>
+
       <Navbar activeLink={"PHOTO"} />
       <div className="page">
         <div className="appear">

@@ -4,11 +4,20 @@ import logo from "../../dist/images/logo.gif";
 import './layout.css'
 
 export class Navbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      collapsedMenu: true
+    };
+  }
+
   render() {
     const activeStyle = {
       backgroundColor: 'rgb(204, 5, 204)',
       color: 'white'
     }
+
     return (
       <div>
         {/* desktop */}
@@ -81,7 +90,29 @@ export class Navbar extends Component {
 
         {/* mobile */}
         <MediaQuery maxDeviceWidth={500} >
-          hi
+          <div className="mobile-navbar flex">
+
+            <div className="flex" >
+              {this.state.collapsedMenu && <div className="mobile-link" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: false })}>MENU +</div>}
+              {!this.state.collapsedMenu &&
+                <div>
+                  <div className="mobile-link" style={{ color: 'white' }} onClick={() => this.setState({ collapsedMenu: true })}>MENU -</div>
+                  <a href="/photo"><div className="mobile-link">PHOTO</div></a>
+                  <a href="/music"><div className="mobile-link">MUSIC</div></a>
+                  <a href="/code"><div className="mobile-link">CODE</div></a>
+                  <a href="/about"><div className="mobile-link">ABOUT</div></a>
+                </div>
+              }
+            </div>
+
+            <a href="/">
+              <div className="logo-container flex">
+                <img src={logo} className="mobile-logo"></img>
+                <div className="mobile-subtitle"><i>austin, tx.</i></div>
+              </div>
+            </a>
+
+          </div>
         </MediaQuery>
       </div>
     )
