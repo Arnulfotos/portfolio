@@ -5,9 +5,11 @@ import me1 from "../../dist/images/room.jpg";
 export class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="appear">
         <Navbar activeLink={"HOME"} />
         <div className="home">
+          <image/>
+          <image/>
         </div>
       </div>
     )

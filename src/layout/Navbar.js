@@ -79,7 +79,11 @@ export class Navbar extends Component {
               <div className="external-link">SPOTIFY</div>
             </a>
             <a href="https://www.instagram.com/abhi.velaga/" target="_blank">
-            <div className="external-link">INSTAGRAM</div>
+              <div className="external-link">INSTAGRAM</div>
+            </a>
+
+            <a href="https://www.instagram.com/abhi.film/" target="_blank">
+              <div className="external-link">FILM INSTAGRAM</div>
             </a>
 
           </div>

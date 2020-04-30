@@ -2,18 +2,63 @@
   background-color: black;
   background-image: url("../../dist/images/drumming.gif");
   height: 100vh;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
 
-.home {
-  background-color: black;
+
+@keyframes imageAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1 12
+  }
+  25% {
+    opacity: 0 15
+  }
+  100% {
+    opacity: 0 18
+  }
+}
+
+.home > image{
+  /* background-color: black;
   background-image: url("../../dist/images/room.jpg");
   height: 100vh;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; */
+  animation: imageAnimation 12s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100vh;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.home>image:nth-child(1) {
+  background-image: url('../../dist/images/room.jpg');
+}
+
+.home>image:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('../../dist/images/mirror.jpg');
 }
 
 .splash-link {
@@ -30,14 +75,15 @@
   background-color: black;
   background-size: 100%;
   min-height: 100vh;
-  /* padding-right: 57px;
-  padding-left: 57px; */
 }
 
-
 @keyframes example {
-  from {background-color: white;}
-  to {background-color: purple;}
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: purple;
+  }
 }
 
 .an {
@@ -95,7 +141,7 @@
   margin-top: 40px;
   text-align: center;
   font-style: italic;
-  }
+}
 
 .loc {
   text-align: right;
@@ -114,8 +160,12 @@
 }
 
 @keyframes appear {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 a:hover {
@@ -174,7 +224,7 @@ a:hover {
 }
 
 .ril__caption, .ril__toolbar {
-  background-color: rgb(0,0,0,0) !important;
+  background-color: rgb(0, 0, 0, 0) !important;
 }
 
 .ril__zoomInButton {
@@ -185,10 +235,8 @@ a:hover {
   background: none !important;
 }
 
-
-
 .about-top {
-  width: 100vw;
+  width: 98vw;
   display: flex;
   align-items: flex-end;
   align-content: flex-start;
@@ -203,32 +251,82 @@ a:hover {
 .about-top-text {
   width: 20vw;
   color: rgb(221, 221, 221);
+  font-size: 12px;
 }
 
-
-
 .about-bottom {
-  width: 100vw;
+  width: 98vw;
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  margin-bottom: 30px;
 }
 
 .about-bottom-img {
   width: 30vw;
   margin-right: 30px;
   margin-left: 2vw;
+  margin-bottom: 50px;
 }
 
 .about-bottom-text {
   width: 28vw;
   color: rgb(221, 221, 221);
+  font-size: 12px;
 }
 
 .about-bottom-left-text {
   width: 28vw;
   text-align: right;
   color: rgb(221, 221, 221);
+  font-size: 12px;
 }
 
+/* flipped */
+/* 
+.about-top {
+  width: 98vw;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.about-top-img {
+  width: 60vw;
+  margin-left: 2vw;
+}
+
+.about-top-text {
+  width: 30vw;
+  color: rgb(221, 221, 221);
+  font-size: 12px;
+  margin-left: 8vw;
+  text-align: right;
+}
+
+.about-bottom {
+  width: 98vw;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.about-bottom-img {
+  width: 30vw;
+  margin-right: 30px;
+  margin-left: 2vw;
+  margin-bottom: 50px;
+}
+
+.about-bottom-text {
+  width: 28vw;
+  color: rgb(221, 221, 221);
+  font-size: 12px;
+}
+
+.about-bottom-left-text {
+  width: 37vw;
+  text-align: right;
+  color: rgb(221, 221, 221);
+  font-size: 12px;
+} */
