@@ -8,7 +8,7 @@ export class Music extends Component {
       <Navbar activeLink={"MUSIC"}/>
       <div className="page">
       <div className="appear">
-          <center><h1>THIS WILL BE THE MUSIC PAGE</h1></center>
+          <center><h1>THIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGETHIS WILL BE THE MUSIC PAGE</h1></center>
         </div>
       </div>
     </div>;

@@ -23,65 +23,19 @@ export class Navbar extends Component {
         {/* desktop */}
         <MediaQuery minDeviceWidth={500} >
           <div className="navbar">
-
-
-            <a href="/">
-              <div className="logo-container">
+            <div className="logo-container">
+              <a href="/">
                 <img src={logo} className="logo"></img>
-                <div className="subtitle"><h6><i>austin, tx.</i></h6></div>
-              </div>
-            </a>
+              </a>
+            </div>
 
-            <div className="flex link-container">
+            <div className="subtitle"><h6><i>austin, tx.</i></h6></div>
+
+            <div className="link">
               <a href="/photo">
-                <div className="link">
-                  <div className="link-color"></div>
-                  <div className="link-block"
-                    style={this.props.activeLink === "PHOTO" ? activeStyle : {}}>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece-text">PHOTO</div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="/music">
-                <div className="link">
-                  <div className="link-color"></div>
-                  <div className="link-block"
-                    style={this.props.activeLink === "MUSIC" ? activeStyle : {}}>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece-text">MUSIC</div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="/software">
-                <div className="link software">
-                  <div className="link-color software"></div>
-                  <div className="link-block software"
-                    style={this.props.activeLink === "SOFTWARE" ? activeStyle : {}}>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece-text software">SOFTWARE</div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="/about">
-                <div className="link">
-                  <div className="link-color"></div>
-                  <div className="link-block"
-                    style={this.props.activeLink === "ABOUT" ? activeStyle : {}}>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece"></div>
-                    <div className="link-piece-text">ABOUT</div>
-                  </div>
+                <div className="link-color"></div>
+                <div className="link-block" style={this.props.activeLink === "PHOTO" ? activeStyle : {}}>
+                  <div>PHOTO</div>
                 </div>
               </a>
             </div>

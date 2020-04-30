@@ -21,8 +21,8 @@
   background-color: black;
   background-size: 100%;
   min-height: calc(100vh - 120px);
-  padding-right: 57px;
-  padding-left: 57px;
+  /* padding-right: 57px;
+  padding-left: 57px; */
 }
 
 
@@ -123,9 +123,9 @@ a:hover {
 }
 
 .gallery {
-  width: 60vw;
+  /* width: 60vw; */
   margin: auto;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .mobile-img {

@@ -1,91 +1,83 @@
-.navbar {
-  width: calc(100vw-50px);
-  height: 120px;
-  background-color: black;
-  padding-bottom: 40px;
-  align-items: flex-start;
-  padding-top: 0px;
-}
-
 .logo {
   width: 12vw;
 }
 
 .logo-container {
-  padding-top: 50px;
-  padding-left: 40px;
+  /* position: absolute; */
   animation-name: appear;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
 }
 
 .subtitle {
+  /* position: sticky; */
+  /* position: absolute; */
+  /* display: block; */
+  width: 15vw;
+  height: 2vh;
   color: grey;
 }
 
-.link-container {
-  justify-content: flex-end;
-  width: 25vw;
-  margin-top: 0;
-  margin-right: 40px;
-  animation-name: appear;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+.navbar {
+  width: 15vw;
+  height: 50vh;
+  padding: 0px;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  z-index: 1;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-content: flex-start;
+  /* align-items: center; */
 }
 
 .link {
+  /* display: block; */
   color: rgb(0, 255, 255);
-  height: 8vh;
-  width: 5vw;
-  position: relative;
+  height: 2vh;
+  width: 15vw;
+  /* position: absolute; */
+  /* top: 0px;
+  left: 0; */
   animation-name: offText;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
-}
-
-.link-piece {
-  font-size: 1vw;
-  width: 5vw;
-  height: 2vh;
-  text-align: center;
   letter-spacing: 4px;
+  font-size: 1vw;
 }
 
 .link-piece-text {
   font-size: 1vw;
   width: 5vw;
   height: 2vh;
-  text-align: center;
+  text-align: left;
   letter-spacing: 4px;
-  margin-bottom: 1vh;
 }
 
 .link-block {
-  display: flex;
-  flex-wrap: wrap;
-  width: 5vw;
-  height: 9vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 9vw;
+  height: 2vh;
+  /* position: fixed;  */
+  /* top:100px;
+  left: 0; */
 }
 
 .link-color {
   background-color: rgb(204, 5, 204);
-  width: 5vw;
-  height: .8vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: height .7s;
-}
-
-.software {
-  width: 8vw !important;
+  width: 0;
+  height: 2vh;
+  /* position: fixed; 
+  top:100px;
+  left: 0; */
+  transition: width .7s;
+  border-radius: 0px 100px 100px 0px;
 }
 
 .link:hover .link-color {
-  height: 9vh;
+  width: 9vw;
 }
 
 .link:hover {
