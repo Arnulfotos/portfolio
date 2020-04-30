@@ -16,7 +16,7 @@ export class Navbar extends Component {
     const activeStyle = {
       backgroundColor: 'red',
       color: 'white',
-      width: '10vw'
+      width: '120px'
     }
 
     const activeTextStyle = {
@@ -34,7 +34,7 @@ export class Navbar extends Component {
               </a>
             </div>
 
-            <div className="subtitle"><h6><i>austin, tx.</i></h6></div>
+            <div className="subtitle">austin, tx.</div>
 
             <a href="/photo">
               <div className="link">
