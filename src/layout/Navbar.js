@@ -16,7 +16,7 @@ export class Navbar extends Component {
     const activeStyle = {
       backgroundColor: 'red',
       color: 'white',
-      width: '120px'
+      width: '140px'
     }
 
     const activeTextStyle = {

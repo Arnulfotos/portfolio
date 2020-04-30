@@ -61,7 +61,7 @@
 }
 
 .link-text {
-  width: 10vw;
+  width: 140px;
   height: 20px;
   position: absolute;
   top: 0;
@@ -70,7 +70,7 @@
 
 
 .link:hover .link-color {
-  width: 120px;
+  width: 140px;
 }
 
 .link:hover {

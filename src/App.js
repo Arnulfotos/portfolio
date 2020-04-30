@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
-import Splash from './pages/Splash.js';
+import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Photo from './pages/Photo.js';
 import Software from './pages/Software.js';
@@ -21,7 +21,7 @@ const ErrorPage = () => {
 function App() {
   return (
     <Switch>
-      <Route exact path='/' exact component={Splash} />
+      <Route exact path='/' exact component={Home} />
       <Route exact path='/about' exact component={About} />
       <Route exact path='/photo' exact component={Photo} />
       <Route exact path='/software' exact component={Software} />

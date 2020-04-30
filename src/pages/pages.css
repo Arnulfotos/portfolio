@@ -7,6 +7,15 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+.home {
+  background-color: black;
+  background-image: url("../../dist/images/room.jpg");
+  height: 100vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 .splash-link {
   font-size: 200px;
   font-style: italic;
@@ -175,3 +184,51 @@ a:hover {
 .ril__zoomOutButton {
   background: none !important;
 }
+
+
+
+.about-top {
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.about-top-img {
+  width: 60vw;
+  margin-right: 30px;
+}
+
+.about-top-text {
+  width: 20vw;
+  color: rgb(221, 221, 221);
+}
+
+
+
+.about-bottom {
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.about-bottom-img {
+  width: 30vw;
+  margin-right: 30px;
+  margin-left: 2vw;
+}
+
+.about-bottom-text {
+  width: 28vw;
+  color: rgb(221, 221, 221);
+}
+
+.about-bottom-left-text {
+  width: 28vw;
+  text-align: right;
+  color: rgb(221, 221, 221);
+}
+
