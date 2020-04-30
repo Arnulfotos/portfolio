@@ -30,7 +30,8 @@ export class Navbar extends Component {
           <div className="navbar">
             <div className="logo-container">
               <a href="/">
-                <img src={logo} className="logo"></img>
+                {/* <img src={logo} className="logo"></img> */}
+                <div className="nav-title">ABHI VELAGA</div>
               </a>
             </div>
 
