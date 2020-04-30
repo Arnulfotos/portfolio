@@ -15,7 +15,12 @@ export class Navbar extends Component {
   render() {
     const activeStyle = {
       backgroundColor: 'red',
-      color: 'white'
+      color: 'white',
+      width: '10vw'
+    }
+
+    const activeTextStyle = {
+      color: 'white',
     }
 
     return (
@@ -31,14 +36,42 @@ export class Navbar extends Component {
 
             <div className="subtitle"><h6><i>austin, tx.</i></h6></div>
 
-            <div className="link">
-              <a href="/photo">
-                <div className="link-color"></div>
-                <div className="link-block" style={this.props.activeLink === "PHOTO" ? activeStyle : {}}>
+            <a href="/photo">
+              <div className="link">
+                <div className="link-color" style={this.props.activeLink === "PHOTO" ? activeStyle : {}}></div>
+                <div className="link-text" style={this.props.activeLink === "PHOTO" ? activeTextStyle : {}}>
                   <div>PHOTO</div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+
+            <a href="/music">
+              <div className="link">
+                <div className="link-color" style={this.props.activeLink === "MUSIC" ? activeStyle : {}}></div>
+                <div className="link-text" style={this.props.activeLink === "MUSIC" ? activeTextStyle : {}}>
+                  <div>MUSIC</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="/software">
+              <div className="link">
+                <div className="link-color" style={this.props.activeLink === "SOFTWARE" ? activeStyle : {}}></div>
+                <div className="link-text" style={this.props.activeLink === "SOFTWARE" ? activeTextStyle : {}}>
+                  <div>SOFTWARE</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="/about">
+              <div className="link">
+                <div className="link-color" style={this.props.activeLink === "ABOUT" ? activeStyle : {}}></div>
+                <div className="link-text" style={this.props.activeLink === "ABOUT" ? activeTextStyle : {}}>
+                  <div>ABOUT</div>
+                </div>
+              </div>
+            </a>
+
           </div>
         </MediaQuery>
 

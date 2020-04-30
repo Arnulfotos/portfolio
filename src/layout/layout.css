@@ -3,19 +3,17 @@
 }
 
 .logo-container {
-  /* position: absolute; */
   animation-name: appear;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
 }
 
 .subtitle {
-  /* position: sticky; */
-  /* position: absolute; */
-  /* display: block; */
   width: 15vw;
   height: 2vh;
   color: grey;
+  margin-bottom: 2vh;
+  ;
 }
 
 .navbar {
@@ -26,22 +24,16 @@
   top: 50px;
   left: 20px;
   z-index: 1;
-
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: flex-start;
   align-content: flex-start;
-  /* align-items: center; */
 }
 
 .link {
-  /* display: block; */
   color: rgb(0, 255, 255);
   height: 2vh;
   width: 15vw;
-  /* position: absolute; */
-  /* top: 0px;
-  left: 0; */
+  position: relative;
   animation-name: offText;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
@@ -49,35 +41,28 @@
   font-size: 1vw;
 }
 
-.link-piece-text {
-  font-size: 1vw;
-  width: 5vw;
-  height: 2vh;
-  text-align: left;
-  letter-spacing: 4px;
-}
-
-.link-block {
-  width: 9vw;
-  height: 2vh;
-  /* position: fixed;  */
-  /* top:100px;
-  left: 0; */
-}
-
 .link-color {
   background-color: rgb(204, 5, 204);
   width: 0;
   height: 2vh;
-  /* position: fixed; 
-  top:100px;
-  left: 0; */
+  position: absolute; 
+  top: 0;
+  left: -20px;
   transition: width .7s;
   border-radius: 0px 100px 100px 0px;
 }
 
+.link-text {
+  width: 10vw;
+  height: 2vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 .link:hover .link-color {
-  width: 9vw;
+  width: 10vw;
 }
 
 .link:hover {
