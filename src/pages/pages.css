@@ -20,7 +20,7 @@
 .page {
   background-color: black;
   background-size: 100%;
-  min-height: calc(100vh - 120px);
+  min-height: 100vh;
   /* padding-right: 57px;
   padding-left: 57px; */
 }

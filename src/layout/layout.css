@@ -1,5 +1,5 @@
 .logo {
-  width: 12vw;
+  width: 15vw;
 }
 
 .logo-container {
@@ -70,6 +70,46 @@
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
 }
+
+.external-link {
+  color: rgb(180, 180, 180);
+  height: 2vh;
+  width: 15vw;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: 1vw;
+
+
+  animation-name: offExternalText;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.external-link:hover {
+  animation-name: overExternalText;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overExternalText {
+  from {
+    color: rgb(180, 180, 180)
+  }
+  to {
+    color: white
+  }
+}
+
+@keyframes offExternalText {
+  from {
+    color: white
+  }
+  to {
+    color: rgb(180, 180, 180)
+  }
+}
+
+
 
 @keyframes overText {
   from {

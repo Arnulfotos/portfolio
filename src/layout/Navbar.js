@@ -26,7 +26,7 @@ export class Navbar extends Component {
     return (
       <div>
         {/* desktop */}
-        <MediaQuery minDeviceWidth={500} >
+        < MediaQuery minDeviceWidth={500} >
           <div className="navbar">
             <div className="logo-container">
               <a href="/">
@@ -72,11 +72,20 @@ export class Navbar extends Component {
               </div>
             </a>
 
+            <div className="external-link"></div>
+
+            <a href="https://open.spotify.com/artist/7JCVu8JTFAFrHqnYnGVPhi?si=wAs1clwUTiqOqS8e8RUJqg" target="_blank">
+              <div className="external-link">SPOTIFY</div>
+            </a>
+            <a href="https://www.instagram.com/abhi.velaga/" target="_blank">
+            <div className="external-link">INSTAGRAM</div>
+            </a>
+
           </div>
-        </MediaQuery>
+        </MediaQuery >
 
         {/* mobile */}
-        <MediaQuery maxDeviceWidth={500} >
+        < MediaQuery maxDeviceWidth={500} >
           <div className="mobile-navbar flex">
 
             <div className="flex" >
@@ -100,8 +109,8 @@ export class Navbar extends Component {
             </a>
 
           </div>
-        </MediaQuery>
-      </div>
+        </MediaQuery >
+      </div >
     )
   }
 }
