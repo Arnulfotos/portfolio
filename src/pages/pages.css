@@ -18,14 +18,15 @@
   }
 }
 
-.home > image{
-  /* background-color: black;
+.home{
+  background-color: black;
   background-image: url("../../dist/images/room.jpg");
   height: 100vh;
   background-position: center; 
   background-repeat: no-repeat; 
-  background-size: cover; */
-  animation: imageAnimation 12s linear infinite 0s;
+  background-size: cover;
+
+  /* animation: imageAnimation 12s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
@@ -36,7 +37,7 @@
   position: absolute;
   top: 0px;
   width: 100%;
-  z-index: 0;
+  z-index: 0; */
 }
 
 .home>image:nth-child(1) {

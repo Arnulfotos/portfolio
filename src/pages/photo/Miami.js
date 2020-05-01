@@ -55,7 +55,7 @@ export class Miami extends Component {
                 <img className="img" src={miami2} onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
                 <img className="img" src={miami3} onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                 <img className="img" src={miami4} onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                {/* <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} /> */}
                 <img className="img" src={miami6} onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
                 <img className="img" src={miami7} onClick={() => this.setState({ isOpen: true, photoIndex: 6 })} />
                 <img className="img" src={miami8} onClick={() => this.setState({ isOpen: true, photoIndex: 7 })} />
