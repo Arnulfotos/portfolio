@@ -22,7 +22,6 @@ const images = [
   miami2,
   miami3,
   miami4,
-  miami5,
   miami6,
   miami7,
   miami8,
@@ -55,11 +54,10 @@ export class Miami extends Component {
                 <img className="img" src={miami2} onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
                 <img className="img" src={miami3} onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                 <img className="img" src={miami4} onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami6} onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
-                <img className="img" src={miami7} onClick={() => this.setState({ isOpen: true, photoIndex: 6 })} />
-                <img className="img" src={miami8} onClick={() => this.setState({ isOpen: true, photoIndex: 7 })} />
-                <img className="img" src={miami9} onClick={() => this.setState({ isOpen: true, photoIndex: 8 })} />
+                <img className="img" src={miami6} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                <img className="img" src={miami7} onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
+                <img className="img" src={miami8} onClick={() => this.setState({ isOpen: true, photoIndex: 6 })} />
+                <img className="img" src={miami9} onClick={() => this.setState({ isOpen: true, photoIndex: 7 })} />
 
               </Columned>
 
