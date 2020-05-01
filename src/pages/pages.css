@@ -206,56 +206,6 @@ a:hover {
   font-size: 12px;
 }
 
-/* flipped */
-/* 
-.about-top {
-  width: 98vw;
-  display: flex;
-  align-items: flex-end;
-  align-content: flex-start;
-  margin-bottom: 30px;
-}
-
-.about-top-img {
-  width: 60vw;
-  margin-left: 2vw;
-}
-
-.about-top-text {
-  width: 30vw;
-  color: rgb(221, 221, 221);
-  font-size: 12px;
-  margin-left: 8vw;
-  text-align: right;
-}
-
-.about-bottom {
-  width: 98vw;
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-
-.about-bottom-img {
-  width: 30vw;
-  margin-right: 30px;
-  margin-left: 2vw;
-  margin-bottom: 50px;
-}
-
-.about-bottom-text {
-  width: 28vw;
-  color: rgb(221, 221, 221);
-  font-size: 12px;
-}
-
-.about-bottom-left-text {
-  width: 37vw;
-  text-align: right;
-  color: rgb(221, 221, 221);
-  font-size: 12px;
-} */
-
 .photo-flex {
   display: flex;
   justify-content: left;

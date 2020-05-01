@@ -53,7 +53,7 @@
   background-color: rgb(204, 5, 204);
   width: 0;
   height: 20px;
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: -20px;
   transition: width .7s;
@@ -67,7 +67,6 @@
   top: 0;
   left: 0;
 }
-
 
 .link:hover .link-color {
   width: 140px;
@@ -86,8 +85,6 @@
   position: relative;
   letter-spacing: 4px;
   font-size: 10px;
-
-
   animation-name: offExternalText;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
@@ -116,8 +113,6 @@
     color: rgb(180, 180, 180)
   }
 }
-
-
 
 @keyframes overText {
   from {

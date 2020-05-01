@@ -30,7 +30,7 @@ export class About extends Component {
               @ABHI.VELAGA
               <br />
               @ABHI.FILM
-              <bw/>
+              <bw />
               [ RESUME ]
             </div>
           </div>
