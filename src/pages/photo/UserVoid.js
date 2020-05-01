@@ -3,7 +3,6 @@ import Lightbox from 'react-image-lightbox';
 import MediaQuery from 'react-responsive'
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
-// import './pages.css';
 import Columned from "react-columned";
 
 import p1 from '../../../dist/images/photos/uservoid/uservoid1.jpg';

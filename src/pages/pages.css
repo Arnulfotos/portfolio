@@ -1,16 +1,3 @@
-.splash {
-  background-color: black;
-  background-image: url("../../dist/images/drumming.gif");
-  height: 100vh;
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-}
-
-
 @keyframes imageAnimation {
   0% {
     animation-timing-function: ease-in;
@@ -59,16 +46,6 @@
 .home>image:nth-child(2) {
   animation-delay: 6s;
   background-image: url('../../dist/images/mirror.jpg');
-}
-
-.splash-link {
-  font-size: 200px;
-  font-style: italic;
-  color: white;
-  margin-left: 20px;
-  margin-bottom: 0;
-  height: 200px;
-  line-height: 200px;
 }
 
 .page {
@@ -120,29 +97,6 @@
   text-align: center;
 }
 
-.splash-link-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.splash-links {
-  color: rgb(218, 218, 218);
-  letter-spacing: 4px;
-  margin-right: 20px;
-}
-
-.mobile-splash-links {
-  color: rgb(218, 218, 218);
-  font-size: 70px;
-  width: 100vw;
-  letter-spacing: 13px;
-  /* margin-right: 20px; */
-  margin-top: 40px;
-  text-align: center;
-  font-style: italic;
-}
-
 .loc {
   text-align: right;
   color: rgb(100, 100, 100);
@@ -152,11 +106,6 @@
 .appear {
   animation-name: appear;
   animation-duration: 1s;
-}
-
-.splash-appear {
-  animation-name: appear;
-  animation-duration: 1.5s;
 }
 
 @keyframes appear {

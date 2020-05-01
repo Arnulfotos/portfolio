@@ -22,6 +22,9 @@ export class Navbar extends Component {
     const activeTextStyle = {
       color: 'white',
     }
+    const black = {
+      color: 'black'
+    }
 
     return (
       <div>
@@ -31,11 +34,20 @@ export class Navbar extends Component {
             <div className="logo-container">
               <a href="/">
                 {/* <img src={logo} className="logo"></img> */}
-                <div className="nav-title">ABHI VELAGA</div>
+                <div className="nav-title" style={this.props.activeLink === "PHOTO" ? black : {}}>ABHI VELAGA</div>
               </a>
             </div>
 
             <div className="subtitle">austin, tx.</div>
+
+            <a href="/about">
+              <div className="link">
+                <div className="link-color" style={this.props.activeLink === "ABOUT" ? activeStyle : {}}></div>
+                <div className="link-text" style={this.props.activeLink === "ABOUT" ? activeTextStyle : {}}>
+                  <div>ABOUT</div>
+                </div>
+              </div>
+            </a>
 
             <a href="/photo">
               <div className="link">
@@ -60,15 +72,6 @@ export class Navbar extends Component {
                 <div className="link-color" style={this.props.activeLink === "SOFTWARE" ? activeStyle : {}}></div>
                 <div className="link-text" style={this.props.activeLink === "SOFTWARE" ? activeTextStyle : {}}>
                   <div>SOFTWARE</div>
-                </div>
-              </div>
-            </a>
-
-            <a href="/about">
-              <div className="link">
-                <div className="link-color" style={this.props.activeLink === "ABOUT" ? activeStyle : {}}></div>
-                <div className="link-text" style={this.props.activeLink === "ABOUT" ? activeTextStyle : {}}>
-                  <div>ABOUT</div>
                 </div>
               </div>
             </a>
