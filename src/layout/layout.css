@@ -96,6 +96,52 @@
   animation-fill-mode: forwards;
 }
 
+@media (max-width: 500px) {
+  .nav-title {
+    font-size: 45px;
+    line-height: 40px;
+    width: 50vw;
+  }
+  .navbar {
+    /* width: 100vw; */
+    top: 10px;
+    left: 10px;
+  }
+  .link {
+    height: 25px;
+    font-size: 20px;
+  }
+  .link-color {
+    height: 25px;
+  }
+  .link-text {
+    height: 25px;
+  }
+  .external-link {
+    height: 20px;
+    font-size: 15px;
+  }
+  .subtitle {
+    height: 18px;
+    font-size: 13px;
+  }
+}
+
+.nav-header {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  /* align-items: center; */
+}
+
+.menu-button {
+  font-size: 30px;
+  color: rgb(0, 255, 255);
+  line-height: 24px;
+}
+
 @keyframes overExternalText {
   from {
     color: rgb(180, 180, 180)
