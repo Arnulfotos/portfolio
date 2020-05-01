@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from '../layout/Navbar'
-import me1 from "../../dist/images/room.JPG";
-import me2 from "../../dist/images/mirror.JPG";
+import me1 from "../../dist/images/room.jpg";
+import me2 from "../../dist/images/mirror.jpg";
 import './pages.css';
 
 export class About extends Component {
