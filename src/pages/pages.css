@@ -330,3 +330,9 @@ a:hover {
   color: rgb(221, 221, 221);
   font-size: 12px;
 } */
+
+.photo-flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: left;
+}
