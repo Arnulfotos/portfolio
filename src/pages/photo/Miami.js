@@ -12,12 +12,21 @@ import miami3 from '../../../dist/images/photos/miami/miami3.jpg';
 import miami4 from '../../../dist/images/photos/miami/miami4.jpg';
 import miami5 from '../../../dist/images/photos/miami/miami5.jpg';
 
+import miami6 from '../../../dist/images/photos/miami/miami6.jpg';
+import miami7 from '../../../dist/images/photos/miami/miami7.jpg';
+import miami8 from '../../../dist/images/photos/miami/miami8.jpg';
+import miami9 from '../../../dist/images/photos/miami/miami9.jpg';
+
 const images = [
   miami1,
   miami2,
   miami3,
   miami4,
-  miami5
+  miami5,
+  miami6,
+  miami7,
+  miami8,
+  miami9
 ];
 
 export class Miami extends Component {
@@ -41,22 +50,17 @@ export class Miami extends Component {
           <div className="page">
             <div className="appear">
 
-              <Columned columns={2} className="gallery">
+              <Columned columns={3} className="gallery">
                 <img className="img" src={miami1} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
                 <img className="img" src={miami2} onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
                 <img className="img" src={miami3} onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
                 <img className="img" src={miami4} onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
                 <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={miami5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                <img className="img" src={miami6} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                <img className="img" src={miami7} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                <img className="img" src={miami8} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+                <img className="img" src={miami9} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
+
               </Columned>
 
               {isOpen && (
@@ -124,3 +128,4 @@ export class Miami extends Component {
 }
 
 export default Miami
+
