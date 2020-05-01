@@ -2,7 +2,8 @@ const webpack = require('webpack');
 module.exports = {
   entry: './src/index.js',
   module: {
-    rules: [{
+    rules: [
+    {
       test: /.jsx?$/,
       loader: 'babel-loader',
       exclude: /node_modules/
@@ -10,7 +11,7 @@ module.exports = {
       test: /\.css$/,
       loader: "style-loader!css-loader"
     }, {
-      test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|otf|svg)(\?[a-z0-9=.]+)?$/,
+      test: /\.(jpe?g|png|pdf|gif|woff|woff2|eot|ttf|otf|svg)(\?[a-z0-9=.]+)?$/,
       loader: 'url-loader?limit=100000' }]
   },
   resolve: {

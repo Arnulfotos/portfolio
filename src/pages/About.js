@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from '../layout/Navbar'
 import me1 from "../../dist/images/room.jpg";
 import me2 from "../../dist/images/mirror.jpg";
+import resume from "../../dist/images/Resume.pdf";
 import './pages.css';
 
 export class About extends Component {
@@ -13,10 +14,10 @@ export class About extends Component {
           <div className="about-top">
             <img src={me1} className="about-top-img" />
             <div className="about-top-text">
-              ABHI VELAGA IS A SOFTWARE DEVELOPER, MUSICIAN, AND FILM PHOTOGRAPHER BASED IN AUSTIN, TX. HE RELEASED HIS FIRST SOLO MUSIC ALBUM AT THE AGE OF 16 AND THE SECOND AT 18, HIS FIRST PHOTO COLLECTION AT THE AGE OF 19, PLAYED HIS FIRST OFFICIAL SXSW SHOWCASE AT THE AGE OF 20, BUILT HIS FIRST ART INSTALLATION FOR FORTRESS FESTIVAL A MONTH LATER, AND HAD HIS PHOTOGRAPHY FEATURED ON THE COVER OF SPARK MAGAZINE.
+              ABHI VELAGA IS A <c>SOFTWARE DEVELOPER</c>, <c>MUSICIAN</c>, AND <c>FILM PHOTOGRAPHER</c> BASED IN AUSTIN, TX. HE RELEASED HIS FIRST <c>SOLO MUSIC ALBUM</c> AT THE AGE OF 16 AND THE SECOND AT 18, HIS FIRST <c>PHOTO COLLECTION</c> AT THE AGE OF 19, PLAYED HIS FIRST <c>OFFICIAL SXSW SHOWCASE</c> AT THE AGE OF 20, BUILT HIS FIRST <c>ART INSTALLATION FOR FORTRESS FESTIVAL</c> A MONTH LATER, AND HAD HIS PHOTOGRAPHY FEATURED ON THE <c>COVER OF SPARK MAGAZINE</c>. HE ALSO SERVES AS AN ADVISOR ON ALLEN ISD'S <c>CAREER AND TECHNICAL EDUCATION ADVISORY BOARD</c>.
               <br />
               <br />
-              HE CURRENTLY STUDIES COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT AUSTIN AND IS INTERNING AS A SOFTWARE ENGINEER AT VISA.
+              HE CURRENTLY STUDIES <c>COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT AUSTIN</c> AND IS INTERNING AS A <c>SOFTWARE ENGINEER AT VISA</c>.
             </div>
           </div>
           <div className="about-bottom">
@@ -30,8 +31,8 @@ export class About extends Component {
               @ABHI.VELAGA
               <br />
               @ABHI.FILM
-              <bw />
-              [ RESUME ]
+              <br />
+              <a href={resume} target='_blank'>[ RESUME ]</a>
             </div>
           </div>
         </div>
