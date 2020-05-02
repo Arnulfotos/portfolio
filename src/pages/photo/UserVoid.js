@@ -16,8 +16,41 @@ import p8 from '../../../dist/images/photos/uservoid/uservoid8.jpg';
 import p9 from '../../../dist/images/photos/uservoid/uservoid9.jpg';
 import p10 from '../../../dist/images/photos/uservoid/uservoid10.jpg';
 
+import p11 from '../../../dist/images/photos/uservoid/uservoid11.jpg';
+import p12 from '../../../dist/images/photos/uservoid/uservoid12.jpg';
+import p13 from '../../../dist/images/photos/uservoid/uservoid13.jpg';
+import p14 from '../../../dist/images/photos/uservoid/uservoid14.jpg';
+import p15 from '../../../dist/images/photos/uservoid/uservoid15.jpg';
+import p16 from '../../../dist/images/photos/uservoid/uservoid16.jpg';
+import p17 from '../../../dist/images/photos/uservoid/uservoid17.jpg';
+import p18 from '../../../dist/images/photos/uservoid/uservoid18.jpg';
+import p19 from '../../../dist/images/photos/uservoid/uservoid19.jpg';
+import p20 from '../../../dist/images/photos/uservoid/uservoid20.jpg';
+
+import p21 from '../../../dist/images/photos/uservoid/uservoid21.jpg';
+
 const images = [
-  p1, p2, p3, p4, p5, p6, p7, p8, p9, p10
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p8,
+  p9,
+  p10,
+  p11,
+  p12,
+  p13,
+  p14,
+  p15,
+  p16,
+  p17,
+  p18,
+  p19,
+  p20,
+  p21
 ];
 
 export class UserVoid extends Component {
@@ -29,92 +62,51 @@ export class UserVoid extends Component {
       isOpen: false,
     };
   }
+
   render() {
     const { photoIndex, isOpen } = this.state;
     return (
       <div>
-        <MediaQuery minDeviceWidth={500}>
-          <Navbar activeLink={"PORTFOLIO"} />
-          <div className="page">
-            <div className="appear">
+        <Navbar activeLink={"USERVOID"} />
+        <div className="page">
+          <div className="appear">
 
+            <MediaQuery minDeviceWidth={500}>
               <Columned columns={3} className="gallery">
-                <img className="img" src={p1} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                <img className="img" src={p2} onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                <img className="img" src={p3} onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                <img className="img" src={p4} onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                <img className="img" src={p5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={p6} onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
-                <img className="img" src={p7} onClick={() => this.setState({ isOpen: true, photoIndex: 6 })} />
-                <img className="img" src={p8} onClick={() => this.setState({ isOpen: true, photoIndex: 7 })} />
-                <img className="img" src={p9} onClick={() => this.setState({ isOpen: true, photoIndex: 8 })} />
-                <img className="img" src={p10} onClick={() => this.setState({ isOpen: true, photoIndex: 9 })} />
+                {images.map((value, index) => {
+                  return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+                })}
               </Columned>
+            </MediaQuery>
 
-              {isOpen && (
-                <Lightbox
-                  mainSrc={images[photoIndex]}
-                  nextSrc={images[(photoIndex + 1) % images.length]}
-                  prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                  onCloseRequest={() => this.setState({ isOpen: false })}
-                  onMovePrevRequest={() =>
-                    this.setState({
-                      photoIndex: (photoIndex + images.length - 1) % images.length,
-                    })
-                  }
-                  onMoveNextRequest={() =>
-                    this.setState({
-                      photoIndex: (photoIndex + 1) % images.length,
-                    })
-                  }
-                />
-              )}
-            </div>
-          </div>
-        </MediaQuery>
-
-        {/* mobile */}
-        <MediaQuery maxDeviceWidth={500}>
-          <Navbar />
-
-          <div className="page">
-            <div className="appear">
-
+            <MediaQuery maxDeviceWidth={500}>
               <Columned columns={1}>
-              <img className="img" src={p1} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
-                <img className="img" src={p2} onClick={() => this.setState({ isOpen: true, photoIndex: 1 })} />
-                <img className="img" src={p3} onClick={() => this.setState({ isOpen: true, photoIndex: 2 })} />
-                <img className="img" src={p4} onClick={() => this.setState({ isOpen: true, photoIndex: 3 })} />
-                <img className="img" src={p5} onClick={() => this.setState({ isOpen: true, photoIndex: 4 })} />
-                <img className="img" src={p6} onClick={() => this.setState({ isOpen: true, photoIndex: 5 })} />
-                <img className="img" src={p7} onClick={() => this.setState({ isOpen: true, photoIndex: 6 })} />
-                <img className="img" src={p8} onClick={() => this.setState({ isOpen: true, photoIndex: 7 })} />
-                <img className="img" src={p9} onClick={() => this.setState({ isOpen: true, photoIndex: 8 })} />
-                <img className="img" src={p10} onClick={() => this.setState({ isOpen: true, photoIndex: 9 })} />
+                {images.map((value, index) => {
+                  return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+                })}
               </Columned>
+            </MediaQuery>
 
-              {isOpen && (
-                <Lightbox
-                  mainSrc={images[photoIndex]}
-                  nextSrc={images[(photoIndex + 1) % images.length]}
-                  prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                  onCloseRequest={() => this.setState({ isOpen: false })}
-                  onMovePrevRequest={() =>
-                    this.setState({
-                      photoIndex: (photoIndex + images.length - 1) % images.length,
-                    })
-                  }
-                  onMoveNextRequest={() =>
-                    this.setState({
-                      photoIndex: (photoIndex + 1) % images.length,
-                    })
-                  }
-                />
-              )}
-            </div>
+            {isOpen && (
+              <Lightbox
+                mainSrc={images[photoIndex]}
+                nextSrc={images[(photoIndex + 1) % images.length]}
+                prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                onCloseRequest={() => this.setState({ isOpen: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + images.length - 1) % images.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % images.length,
+                  })
+                }
+              />
+            )}
           </div>
-
-        </MediaQuery>
+        </div>
       </div>
     )
   }
