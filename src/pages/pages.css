@@ -22,8 +22,8 @@
   background-color: black;
   background-image: url("../../dist/images/room.jpg");
   height: 100vh;
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -209,6 +209,43 @@ a:hover {
 .photo-flex {
   display: flex;
   justify-content: left;
+}
+
+@media (max-width: 500px) {
+  .about-top-img {
+    width: 100vw;
+    margin-right: 0;
+  }
+
+  .about-top-text {
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  .about-bottom-img {
+    width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .about-bottom-text {
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  
+  .about-bottom-left-text {
+    text-align: left;
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  
 }
 
 c {
