@@ -245,6 +245,10 @@ a:hover {
     font-size: 10px;
     padding: 2px;
   }
+
+  .home {
+    background-image: url("../../dist/images/mobile-room.jpg");
+  }
   
 }
 
