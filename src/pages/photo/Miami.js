@@ -3,7 +3,6 @@ import Lightbox from 'react-image-lightbox';
 import MediaQuery from 'react-responsive'
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
-// import './pages.css';
 import Columned from "react-columned";
 
 import miami1 from '../../../dist/images/photos/miami/miami1.jpg';
