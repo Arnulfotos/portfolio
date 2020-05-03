@@ -8,7 +8,6 @@ import Portfolio from './pages/photo/Portfolio.js';
 import UserVoid from './pages/photo/UserVoid.js';
 import Software from './pages/Software.js';
 import Music from './pages/Music.js';
-import ReactGA from 'react-ga';
 import './App.css';
 
 const ErrorPage = () => {
@@ -23,8 +22,6 @@ const ErrorPage = () => {
 };
 
 function App() {
-  ReactGA.initialize('UA-165347174-1');
-  ReactGA.pageview('/');
   return (
     <Switch>
       <Route exact path='/' exact component={Home} />
