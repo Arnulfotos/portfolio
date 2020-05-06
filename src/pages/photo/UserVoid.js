@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
-import MediaQuery from 'react-responsive'
+import MediaQuery from 'react-responsive';
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
 import Columned from "react-columned";
