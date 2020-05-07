@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import Button from 'react-bootstrap/Button';
+
 import Navbar from '../layout/Navbar'
+
 import './pages.css';
 
 import guitar1 from '../../dist/images/music/indulgent/guitar1.jpg';
@@ -25,6 +28,11 @@ const cgTitle = {
   lineHeight: '130px'
 }
 
+const mjfFlex = {
+  justifyContent: 'center',
+  contentAlign: 'center'
+}
+
 
 
 export class Music extends Component {
@@ -37,16 +45,22 @@ export class Music extends Component {
             <div className="indulgent">
               <div style={title}>INDULGENT</div>
             </div>
-            <div className="indulgent-cover"></div>
+            <div className="indulgent-cover">
+              <div className="cover-overlay cover-flex">
+              <Button variant="outline-dark"><a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=wxw93aEFTfGDUXMgTjEzsg">SPOTIFY</a></Button>
+              <Button variant="outline-dark">APPLE MUSIC</Button>
+              <Button variant="outline-dark">GOOGLE PLAY</Button>
+              </div>
+            </div>
             <div className="indulgent-guitar1" />
             <div className="indulgent-guitar2" />
 
             <div className="mjf">
-            <div style={mjfTitle}>MERRY JANE & THE FONDAS</div>
+              <div style={mjfTitle}>MERRY JANE & THE FONDAS</div>
             </div>
             <div className="mjf-studio"></div>
             <div className="mjf-cover"></div>
-
+ 
             <div className="cg">
               <div style={cgTitle}>CREAM GENIE</div>
             </div>

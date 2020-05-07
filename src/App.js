@@ -8,6 +8,7 @@ import Portfolio from './pages/photo/Portfolio.js';
 import UserVoid from './pages/photo/UserVoid.js';
 import Software from './pages/Software.js';
 import Music from './pages/Music.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const ErrorPage = () => {
