@@ -216,28 +216,24 @@ a:hover {
     width: 100vw;
     margin-right: 0;
   }
-
   .about-top-text {
     width: 98vw;
     color: rgb(221, 221, 221);
     font-size: 10px;
     padding: 2px;
   }
-
   .about-bottom-img {
     width: 100vw;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
   }
-
   .about-bottom-text {
     width: 98vw;
     color: rgb(221, 221, 221);
     font-size: 10px;
     padding: 2px;
   }
-  
   .about-bottom-left-text {
     text-align: left;
     width: 98vw;
@@ -245,11 +241,9 @@ a:hover {
     font-size: 10px;
     padding: 2px;
   }
-
   .home {
     background-image: url("../../dist/images/mobile-room.jpg");
   }
-  
 }
 
 c {
@@ -258,9 +252,9 @@ c {
 
 .grid {
   display: grid;
-  /* grid-template-columns: 33.33vw 33.33vw 33.33vw; */
-  grid-template-columns: 25vw 25vw 25vw 25vw; 
-  grid-template-rows: 100vh auto 100vh auto 100vh auto;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+  /* grid-template-columns: 25vw 25vw 25vw 25vw; */
+  grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;
 }
 
 .indulgent {
@@ -269,9 +263,8 @@ c {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 11;
   grid-row-start: 1;
   grid-row-end: 2;
   overflow: hidden;
@@ -283,36 +276,68 @@ c {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vw;
-
+  /* height: 33.33vw; */
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.mjf {  
+.indulgent-guitar1 {
+  background-image: url("../../dist/images/music/indulgent/guitar1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.indulgent-guitar2 {
+  background-image: url("../../dist/images/music/indulgent/guitar2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.mjf {
   background-image: url("../../dist/images/music/mjf/mjf.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 11;
   grid-row-start: 3;
   grid-row-end: 4;
   overflow: hidden;
 }
 
-.mjf-cover {  
+.mjf-cover {
   background-image: url("../../dist/images/music/mjf/cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vw;
+  /* height: 50vw; */
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
 
-  grid-column-start: 3;
-  grid-column-end: 5;
+.mjf-studio {
+  background-image: url("../../dist/images/music/mjf/studio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 7;
   grid-row-start: 4;
   grid-row-end: 5;
 }
@@ -322,9 +347,8 @@ c {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 11;
   grid-row-start: 5;
   grid-row-end: 6;
   overflow: hidden;
@@ -335,9 +359,19 @@ c {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vw;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.cg-guitar {
+  background-image: url("../../dist/images/music/cg/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 5;
+  grid-column-end: 11;
   grid-row-start: 6;
   grid-row-end: 7;
 }
