@@ -261,9 +261,8 @@ c {
 
 .grid {
   display: grid;
-  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
-  /* grid-template-columns: 25vw 25vw 25vw 25vw; */
-  grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;
+  grid-template-columns: 10vw 10vw 10vw 10vw auto 10vw 10vw 10vw 10vw 10vw;
+  grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;  
 }
 
 .indulgent {

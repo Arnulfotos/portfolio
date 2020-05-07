@@ -55,7 +55,6 @@ export class Music extends Component {
               </div>
             </div>
 
-
             <div className="mjf">
               <div style={mjfTitle}>MERRY JANE & THE FONDAS</div>
             </div>
