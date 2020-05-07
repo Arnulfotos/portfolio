@@ -44,7 +44,7 @@ export class Music extends Component {
               <div style={title}>INDULGENT</div>
               <div className="music-text">
                 this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician
-            </div>
+              </div>
             </div>
 
             <div className="indulgent-guitar1 back-img" />
@@ -59,6 +59,9 @@ export class Music extends Component {
 
             <div className="music-banner mjf back-img">
               <div style={mjfTitle}>MERRY JANE & THE FONDAS</div>
+              <div className="mjf-text">
+                this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician
+              </div>
             </div>
             <div className="mjf-studio back-img"></div>
             <div className="mjf-cover back-img">
@@ -71,6 +74,9 @@ export class Music extends Component {
 
             <div className="music-banner cg back-img">
               <div style={cgTitle}>CREAM GENIE</div>
+              <div className="music-text">
+                this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician
+              </div>
             </div>
             <div className="cg-guitar back-img"></div>
             <div className="cg-cover back-img">

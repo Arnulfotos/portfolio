@@ -287,11 +287,20 @@ c {
 
 .music-text {
   width: 500px;
-  color: rgb(194, 194, 194);
+  color: white;
   text-align: right;
   position: absolute;
   bottom: 100px;
   right: 100px;
+}
+
+.mjf-text {
+  width: 500px;
+  color: white;
+  text-align: left;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
 }
 
 .indulgent-cover {
