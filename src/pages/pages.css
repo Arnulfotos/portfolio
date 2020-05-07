@@ -96,6 +96,15 @@
   }
 }
 
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -377,6 +386,8 @@ c {
 }
 
 .cover-overlay {
+  animation-name: disappear;
+  animation-duration: .7s;
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255, .3);
@@ -387,6 +398,8 @@ c {
 
 .cover-overlay:hover {
   opacity:1.0;
+  animation-name: appear;
+  animation-duration: .7s;
 }
 
 .cover-flex {

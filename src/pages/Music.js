@@ -47,9 +47,9 @@ export class Music extends Component {
             </div>
             <div className="indulgent-cover">
               <div className="cover-overlay cover-flex">
-              <Button variant="outline-dark"><a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=wxw93aEFTfGDUXMgTjEzsg">SPOTIFY</a></Button>
-              <Button variant="outline-dark">APPLE MUSIC</Button>
-              <Button variant="outline-dark">GOOGLE PLAY</Button>
+                <Button variant="outline-dark"><a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=wxw93aEFTfGDUXMgTjEzsg" target="_blank">SPOTIFY</a></Button>
+                <Button variant="outline-dark"><a href="https://music.apple.com/us/album/no-drive-will-take-me-home/1429049796" target="_blank">APPLE MUSIC</a></Button>
+                <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Indulgent_No_Drive_Will_Take_Me_Home?id=Bcwfm3gxejnt5fvkv2hlhxgxdei" target="_blank">GOOGLE PLAY</a></Button>
               </div>
             </div>
             <div className="indulgent-guitar1" />
@@ -59,12 +59,22 @@ export class Music extends Component {
               <div style={mjfTitle}>MERRY JANE & THE FONDAS</div>
             </div>
             <div className="mjf-studio"></div>
-            <div className="mjf-cover"></div>
- 
+            <div className="mjf-cover">
+              <div className="cover-overlay cover-flex">
+                <Button variant="secondary"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
+                <Button variant="secondary"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
+                <Button variant="secondary"><a href="https://play.google.com/store/music/album/Merry_Jane_the_Fondas_Pulls_You_Under?id=Bbp7z4p3isxbxsqv4oymqx7ndt4" target="_blank">GOOGLE PLAY</a></Button>
+              </div>
+            </div>
+
             <div className="cg">
               <div style={cgTitle}>CREAM GENIE</div>
             </div>
-            <div className="cg-cover"></div>
+            <div className="cg-cover">
+            <div className="cover-overlay cover-flex">
+                <Button variant="secondary"><a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos" target="_blank">SOUNDCLOUD</a></Button>
+              </div>
+            </div>
             <div className="cg-guitar"></div>
           </div>
         </div>
