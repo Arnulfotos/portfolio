@@ -255,3 +255,89 @@ a:hover {
 c {
   color: rgb(0, 255, 255) !important;
 }
+
+.grid {
+  display: grid;
+  /* grid-template-columns: 33.33vw 33.33vw 33.33vw; */
+  grid-template-columns: 25vw 25vw 25vw 25vw; 
+  grid-template-rows: 100vh auto 100vh auto 100vh auto;
+}
+
+.indulgent {
+  background-color: black;
+  background-image: url("../../dist/images/music/indulgent/drums.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  overflow: hidden;
+}
+
+.indulgent-cover {
+  background-color: black;
+  background-image: url("../../dist/images/music/indulgent/cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.mjf {  
+  background-image: url("../../dist/images/music/mjf/mjf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  overflow: hidden;
+}
+
+.mjf-cover {  
+  background-image: url("../../dist/images/music/mjf/cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.cg {
+  background-image: url("../../dist/images/music/cg/cg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  overflow: hidden;
+}
+
+.cg-cover {
+  background-image: url("../../dist/images/music/cg/cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
