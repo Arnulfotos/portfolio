@@ -261,29 +261,41 @@ c {
 
 .grid {
   display: grid;
+  /* auto is here as bandaid solution for horizontal scroll */
   grid-template-columns: 10vw 10vw 10vw 10vw auto 10vw 10vw 10vw 10vw 10vw;
-  grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;  
+  grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;
+}
+
+.music-banner {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  overflow: hidden;
+  position: relative;
+}
+
+.back-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .indulgent {
-  background-color: black;
   background-image: url("../../dist/images/music/indulgent/drums.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column-start: 1;
-  grid-column-end: 11;
   grid-row-start: 1;
   grid-row-end: 2;
-  overflow: hidden;
+}
+
+.music-text {
+  width: 500px;
+  color: rgb(194, 194, 194);
+  text-align: right;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
 }
 
 .indulgent-cover {
-  background-color: black;
   background-image: url("../../dist/images/music/indulgent/cover.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -292,9 +304,6 @@ c {
 
 .indulgent-guitar1 {
   background-image: url("../../dist/images/music/indulgent/guitar1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-column-start: 5;
   grid-column-end: 8;
   grid-row-start: 2;
@@ -303,9 +312,6 @@ c {
 
 .indulgent-guitar2 {
   background-image: url("../../dist/images/music/indulgent/guitar2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-column-start: 8;
   grid-column-end: 11;
   grid-row-start: 2;
@@ -324,40 +330,31 @@ c {
 }
 
 .indulgent-cover-overlay:hover {
-  opacity:1.0;
+  opacity: 1.0;
   animation-name: appear;
   animation-duration: .7s;
 }
 
-.indulgent-guitar1:hover ~ .indulgent-cover > .indulgent-cover-overlay {
-  opacity:1.0;
+.indulgent-guitar1:hover~.indulgent-cover>.indulgent-cover-overlay {
+  opacity: 1.0;
   animation-name: appear;
   animation-duration: .7s;
 }
 
-.indulgent-guitar2:hover ~ .indulgent-cover > .indulgent-cover-overlay {
-  opacity:1.0;
+.indulgent-guitar2:hover~.indulgent-cover>.indulgent-cover-overlay {
+  opacity: 1.0;
   animation-name: appear;
   animation-duration: .7s;
 }
 
 .mjf {
   background-image: url("../../dist/images/music/mjf/mjf.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column-start: 1;
-  grid-column-end: 11;
   grid-row-start: 3;
   grid-row-end: 4;
-  overflow: hidden;
 }
 
 .mjf-cover {
   background-image: url("../../dist/images/music/mjf/cover.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-column-start: 7;
   grid-column-end: 11;
   grid-row-start: 4;
@@ -366,17 +363,14 @@ c {
 
 .mjf-studio {
   background-image: url("../../dist/images/music/mjf/studio.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 4;
   grid-row-end: 5;
 }
 
-.mjf-studio:hover + .mjf-cover > .mjf-cover-overlay {
-  opacity:1.0;
+.mjf-studio:hover+.mjf-cover>.mjf-cover-overlay {
+  opacity: 1.0;
   animation-name: appear;
   animation-duration: .7s;
 }
@@ -393,28 +387,19 @@ c {
 }
 
 .mjf-cover-overlay:hover {
-  opacity:1.0;
+  opacity: 1.0;
   animation-name: appear;
   animation-duration: .7s;
 }
 
 .cg {
   background-image: url("../../dist/images/music/cg/cg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column-start: 1;
-  grid-column-end: 11;
   grid-row-start: 5;
   grid-row-end: 6;
-  overflow: hidden;
 }
 
 .cg-cover {
   background-image: url("../../dist/images/music/cg/cover.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 6;
@@ -423,9 +408,6 @@ c {
 
 .cg-guitar {
   background-image: url("../../dist/images/music/cg/1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   grid-column-start: 5;
   grid-column-end: 11;
   grid-row-start: 6;
@@ -444,13 +426,13 @@ c {
 }
 
 .cg-cover-overlay:hover {
-  opacity:1.0;
+  opacity: 1.0;
   animation-name: appear;
   animation-duration: .7s;
 }
 
-.cg-guitar:hover + .cg-cover > .cg-cover-overlay {
-  opacity:1.0;
+.cg-guitar:hover+.cg-cover>.cg-cover-overlay {
+  opacity: 1.0;
   animation-name: appear;
   animation-duration: .7s;
 }

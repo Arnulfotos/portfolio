@@ -33,8 +33,6 @@ const mjfFlex = {
   contentAlign: 'center'
 }
 
-
-
 export class Music extends Component {
   render() {
     return <div>
@@ -42,12 +40,16 @@ export class Music extends Component {
       <div className="page">
         <div className="appear">
           <div className="grid">
-            <div className="indulgent">
+            <div className="music-banner indulgent back-img">
               <div style={title}>INDULGENT</div>
+              <div className="music-text">
+                this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician
             </div>
-            <div className="indulgent-guitar1" />
-            <div className="indulgent-guitar2" />
-            <div className="indulgent-cover">
+            </div>
+
+            <div className="indulgent-guitar1 back-img" />
+            <div className="indulgent-guitar2 back-img" />
+            <div className="indulgent-cover back-img">
               <div className="indulgent-cover-overlay cover-flex">
                 <Button variant="outline-dark"><a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=wxw93aEFTfGDUXMgTjEzsg" target="_blank">SPOTIFY</a></Button>
                 <Button variant="outline-dark"><a href="https://music.apple.com/us/album/no-drive-will-take-me-home/1429049796" target="_blank">APPLE MUSIC</a></Button>
@@ -55,11 +57,11 @@ export class Music extends Component {
               </div>
             </div>
 
-            <div className="mjf">
+            <div className="music-banner mjf back-img">
               <div style={mjfTitle}>MERRY JANE & THE FONDAS</div>
             </div>
-            <div className="mjf-studio"></div>
-            <div className="mjf-cover">
+            <div className="mjf-studio back-img"></div>
+            <div className="mjf-cover back-img">
               <div className="mjf-cover-overlay cover-flex">
                 <Button variant="secondary"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
                 <Button variant="secondary"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
@@ -67,12 +69,12 @@ export class Music extends Component {
               </div>
             </div>
 
-            <div className="cg">
+            <div className="music-banner cg back-img">
               <div style={cgTitle}>CREAM GENIE</div>
             </div>
-            <div className="cg-guitar"></div>
-            <div className="cg-cover">
-            <div className="cg-cover-overlay cover-flex">
+            <div className="cg-guitar back-img"></div>
+            <div className="cg-cover back-img">
+              <div className="cg-cover-overlay cover-flex">
                 <Button variant="secondary"><a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos" target="_blank">SOUNDCLOUD</a></Button>
               </div>
             </div>
