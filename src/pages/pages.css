@@ -261,8 +261,7 @@ c {
 
 .grid {
   display: grid;
-  /* auto is here as bandaid solution for horizontal scroll */
-  grid-template-columns: 10vw 10vw 10vw 10vw auto 10vw 10vw 10vw 10vw 10vw;
+  grid-template-columns: repeat(10, 10%);
   grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;
 }
 
