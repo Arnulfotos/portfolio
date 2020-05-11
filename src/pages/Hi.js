@@ -11,7 +11,7 @@ export class Hi extends Component {
   }
 
   onClick = () => {
-    let url = "http://192.168.1.170:8000/led";
+    let url = "http://72.182.112.17:8000/led";
     axios
       .get(
         url
