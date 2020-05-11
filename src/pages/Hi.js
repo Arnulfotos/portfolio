@@ -11,7 +11,7 @@ export class Hi extends Component {
   }
 
   onClick = () => {
-    let url = "http://72.182.112.17:8000/led";
+    let url = "http://72.182.112.17:8000/led/";
     axios
       .get(
         url
@@ -35,7 +35,7 @@ export class Hi extends Component {
         <div className="title">say hi to me in realtime</div>
         hi, welcome to my site. clicking this button runs an animation on a led strip that's physically at my desk.
         <div className="hi-button" onClick={this.onClick}>hello</div>
-        { this.state.sent && <div>i have recieved your message</div>}
+        { this.state.sent && <div>message received</div>}
       </div>
     </div>
     )
