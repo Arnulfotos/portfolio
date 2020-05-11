@@ -6,19 +6,24 @@ export class Hi extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sent: false
+      sent: false,
+      on: false
     };
   }
 
   onClick = () => {
-    let url = "http://72.182.112.17:8000/led/";
+    this.setState({
+      on: true
+    })
+    let url = "http://192.168.1.170:8000/led/";
     axios
       .get(
         url
       )
       .then(res => {
         this.setState({
-          sent: true
+          sent: true,
+          on: false
         });
         console.log(res.data);
       })
@@ -34,8 +39,8 @@ export class Hi extends Component {
       <div className="hi">
         <div className="title">say hi to me in realtime</div>
         hi, welcome to my site. clicking this button runs an animation on a led strip that's physically at my desk.
-        <div className="hi-button" onClick={this.onClick}>hello</div>
-        { this.state.sent && <div>message received</div>}
+        <div className="hi-button" onClick={this.onClick} style={this.state.on ? on : off}>hello</div>
+        { this.state.sent && <div className="appear">message received</div>}
       </div>
     </div>
     )
@@ -43,3 +48,11 @@ export class Hi extends Component {
 }
 
 export default Hi
+
+const on = {
+  backgroundColor: 'rgb(0, 212, 0)'
+}
+
+const off = {
+  backgroundColor: 'purple'
+}
