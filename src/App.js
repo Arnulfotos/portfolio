@@ -8,6 +8,7 @@ import Portfolio from './pages/photo/Portfolio.js';
 import UserVoid from './pages/photo/UserVoid.js';
 import Software from './pages/Software.js';
 import Music from './pages/Music.js';
+import Hi from './pages/Hi.js';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -33,6 +34,7 @@ function App() {
       <Route exact path='/uservoid' exact component={UserVoid} />
       <Route exact path='/software' exact component={Software} />
       <Route exact path='/music' exact component={Music} />
+      <Route exact path='/hi' exact component={Hi} />
       <Route component={ErrorPage} />
     </Switch>
   );

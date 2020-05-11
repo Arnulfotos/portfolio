@@ -107,6 +107,15 @@ export class Navbar extends Component {
                 </div>
               </a>
 
+              <a href="/hi">
+                <div className="link">
+                  <div className="link-color" style={this.props.activeLink === "HI" ? activeStyle : {}}></div>
+                  <div className="link-text" style={this.props.activeLink === "HI" ? activeTextStyle : {}}>
+                    <div>SAY HI</div>
+                  </div>
+                </div>
+              </a>
+
               <div className="external-link"></div>
 
               <a href="https://open.spotify.com/artist/7JCVu8JTFAFrHqnYnGVPhi?si=wAs1clwUTiqOqS8e8RUJqg" target="_blank">

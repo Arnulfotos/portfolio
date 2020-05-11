@@ -285,7 +285,7 @@ c {
 }
 
 .music-text {
-  width: 500px;
+  width: 700px;
   color: white;
   text-align: right;
   position: absolute;
@@ -453,4 +453,28 @@ c {
 
 .cover-flex a {
   color: inherit;
+}
+
+.hi {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.hi-button {
+  width: 150px;
+  height: 50px;
+  background-color: purple;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 30px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hi-button:active {
+  background-color: rgb(63, 0, 63);
+  color: rgb(173, 173, 173);
 }

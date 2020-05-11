@@ -43,7 +43,7 @@ export class Music extends Component {
             <div className="music-banner indulgent back-img">
               <div style={title}>INDULGENT</div>
               <div className="music-text">
-                this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician
+                ABHI RELEASES HIS SOLO MUSIC UNDER THE MONIKER, INDULGENT. HE PERFORMS ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. HE RECORDED HIS FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, HIMSELF IN HIS BEDROOM AND RELEASED IT AT THE AGE OF 16. HIS FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. HE'S CURRENTLY WRITING HIS THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
               </div>
             </div>
 
@@ -60,7 +60,7 @@ export class Music extends Component {
             <div className="music-banner mjf back-img">
               <div style={mjfTitle}>MERRY JANE & THE FONDAS</div>
               <div className="mjf-text">
-                this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician
+                ABHI DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, THEY RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson">JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
               </div>
             </div>
             <div className="mjf-studio back-img"></div>
@@ -75,7 +75,7 @@ export class Music extends Component {
             <div className="music-banner cg back-img">
               <div style={cgTitle}>CREAM GENIE</div>
               <div className="music-text">
-                this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician this is all my info about how awesome and capaable i am as a multi insturmental musician
+                ABHI DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME THEY RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
               </div>
             </div>
             <div className="cg-guitar back-img"></div>
