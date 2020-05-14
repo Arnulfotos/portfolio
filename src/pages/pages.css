@@ -284,6 +284,12 @@ c {
   grid-row-end: 2;
 }
 
+.indulgent-title {
+  color: white;
+  font-size: 200px;
+  text-align: center;
+}
+
 .music-text {
   width: 700px;
   color: white;
@@ -361,6 +367,12 @@ c {
   grid-row-end: 4;
 }
 
+.mjf-title {
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  line-height: 90px;
+}
 .mjf-cover {
   background-image: url("../../dist/images/music/mjf/cover.jpg");
   grid-column-start: 7;
@@ -404,6 +416,13 @@ c {
   background-image: url("../../dist/images/music/cg/cg.jpg");
   grid-row-start: 5;
   grid-row-end: 6;
+}
+
+.cg-title {
+  color: white;
+  font-size: 150px;
+  text-align: right;
+  line-height: 130px;
 }
 
 .cg-cover {
@@ -477,3 +496,7 @@ c {
   background-color: rgb(63, 0, 63);
   color: rgb(173, 173, 173);
 }
+/* 
+@media (max-width: 500px) {
+
+} */
