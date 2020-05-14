@@ -4,6 +4,7 @@ import MediaQuery from 'react-responsive'
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
 import Columned from "react-columned";
+import LazyLoad from 'react-lazy-load';
 
 import p1 from '../../../dist/images/photos/portfolio/p1.jpg';
 import p2 from '../../../dist/images/photos/portfolio/p2.jpg';
@@ -91,7 +92,7 @@ export class Portfolio extends Component {
             <MediaQuery minDeviceWidth={500}>
               <Columned columns={3} className="gallery">
                 {images.map((value, index) => {
-                  return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+                  return <LazyLoad><img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
                 })}
               </Columned>
             </MediaQuery>
