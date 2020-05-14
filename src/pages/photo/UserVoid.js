@@ -74,7 +74,7 @@ export class UserVoid extends Component {
             <MediaQuery minDeviceWidth={500}>
               <Columned columns={3} className="gallery">
                 {images.map((value, index) => {
-                  return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+                  return <LazyLoad><img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
                 })}
               </Columned>
             </MediaQuery>
@@ -82,7 +82,7 @@ export class UserVoid extends Component {
             <MediaQuery maxDeviceWidth={500}>
               <Columned columns={1}>
                 {images.map((value, index) => {
-                  return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+                  return <LazyLoad><img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
                 })}
               </Columned>
             </MediaQuery>
