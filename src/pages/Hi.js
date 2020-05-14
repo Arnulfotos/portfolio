@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../layout/Navbar';
 const axios = require("axios").default;
+import gif from '../../dist/images/hi.gif';
 
 export class Hi extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ export class Hi extends Component {
         <div className="hi-button" onClick={this.onClick} style={this.state.on ? on : off}>hello</div>
         { this.state.sent && <div className="appear">message received</div>}
       </div>
+      <img src={gif} className="center"/>
     </div>
     )
   }

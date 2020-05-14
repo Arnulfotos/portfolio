@@ -67,22 +67,22 @@ export class Software extends Component {
             <div className="software">
               <div className="title software-title">SOFTWARE DEVELOPMENT</div>
               <div className="software-text">some of my projects</div>
-              <img src={slb} style={tempWidth} />
-              <img src={bandTogether} style={tempWidth} />
-              <img src={bandTogether1} style={tempWidth} />
+              <img src={slb} style={setHeight} />
+              <img src={bandTogether} style={setHeight} />
+              <img src={bandTogether1} style={setHeight} />
 
               <div className="title software-title">COMPUTER GRAPHICS</div>
-              <img src={dot_terrain} style={tempWidth} />
-              <img src={sin} style={tempWidth} />
-              <img src={color1} style={tempWidth} />
-              <img src={evolution} style={tempWidth} />
-              <img src={ball} style={tempWidth} />
-              <img src={color_animated} style={tempWidth} />
-              <img src={color2} style={tempWidth} />
-              {/* <img src={miami} style={tempWidth}/> */}
+              <img src={dot_terrain} style={setHeight} />
+              <img src={sin} style={setHeight} />
+              <img src={color1} style={setHeight} />
+              <img src={evolution} style={setHeight} />
+              <img src={ball} style={setHeight} />
+              <img src={color_animated} style={setHeight} />
+              <img src={color2} style={setHeight} />
+              {/* <img src={miami} style={setHeight}/> */}
 
               <div className="title software-title">LEDs/ARDUINO/RASPBERRY PI</div>
-              <img src={led_zoo} style={tempWidth} />
+              <img src={led_zoo} style={setHeight} />
 
               {/* <Columned columns={3} className="gallery">
               {images.map((value, index) => {
@@ -127,7 +127,7 @@ export class Software extends Component {
 
 export default Software;
 
-const tempWidth = {
+const setHeight = {
   height: '300px',
   margin: '5px'
 }

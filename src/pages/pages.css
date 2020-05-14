@@ -477,7 +477,7 @@ c {
 .hi {
   color: white;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .hi-button {
@@ -515,4 +515,13 @@ c {
 .software-title {
   width: 100%;
   text-align: right;
+}
+
+.center {
+  display: block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90vw;
+  /* width: 20%; */
 }
