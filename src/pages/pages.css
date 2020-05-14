@@ -496,7 +496,23 @@ c {
   background-color: rgb(63, 0, 63);
   color: rgb(173, 173, 173);
 }
-/* 
-@media (max-width: 500px) {
 
-} */
+.software-text {
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: right;;
+}
+
+.software {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.software-title {
+  width: 100%;
+  text-align: right;
+}

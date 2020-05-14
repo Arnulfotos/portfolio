@@ -22,6 +22,8 @@ import led_zoo from '../../dist/images/software/led_zoo.gif';
 import miami from '../../dist/images/software/miami.gif';
 import sin from '../../dist/images/software/sin.gif';
 import slb from '../../dist/images/software/slb.jpg';
+import bandTogether from '../../dist/images/software/bandtogether.png';
+import bandTogether1 from '../../dist/images/software/bandtogether1.png';
 
 const images = [
   slb,
@@ -34,6 +36,8 @@ const images = [
   ball,
   color_animated,
   color2,
+  bandTogether,
+  bandTogether1
   // color3,
   // color4,
   // color5,
@@ -59,42 +63,62 @@ export class Software extends Component {
       <div className="page">
         <div className="appear">
 
-        <MediaQuery minDeviceWidth={500}>
-              <Columned columns={3} className="gallery">
-                {images.map((value, index) => {
-                  return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
-                })}
-              </Columned>
-            </MediaQuery>
+          <MediaQuery minDeviceWidth={500}>
+            <div className="software">
+              <div className="title software-title">SOFTWARE DEVELOPMENT</div>
+              <div className="software-text">some of my projects</div>
+              <img src={slb} style={tempWidth} />
+              <img src={bandTogether} style={tempWidth} />
+              <img src={bandTogether1} style={tempWidth} />
 
-            <MediaQuery maxDeviceWidth={500}>
-              <Columned columns={1}>
-                {images.map((value, index) => {
-                  return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
-                })}
-              </Columned>
-            </MediaQuery>
+              <div className="title software-title">COMPUTER GRAPHICS</div>
+              <img src={dot_terrain} style={tempWidth} />
+              <img src={sin} style={tempWidth} />
+              <img src={color1} style={tempWidth} />
+              <img src={evolution} style={tempWidth} />
+              <img src={ball} style={tempWidth} />
+              <img src={color_animated} style={tempWidth} />
+              <img src={color2} style={tempWidth} />
+              {/* <img src={miami} style={tempWidth}/> */}
 
-            {isOpen && (
-              <Lightbox
-                mainSrc={images[photoIndex]}
-                nextSrc={images[(photoIndex + 1) % images.length]}
-                prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                onCloseRequest={() => this.setState({ isOpen: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + images.length - 1) % images.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % images.length,
-                  })
-                }
-              />
-            )}
+              <div className="title software-title">LEDs/ARDUINO/RASPBERRY PI</div>
+              <img src={led_zoo} style={tempWidth} />
 
-          {/* <h1>THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE THIS IS THE SOFTWARE PAGE </h1> */}
+              {/* <Columned columns={3} className="gallery">
+              {images.map((value, index) => {
+                return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+              })}
+            </Columned> */}
+            </div>
+
+          </MediaQuery>
+
+          <MediaQuery maxDeviceWidth={500}>
+            <Columned columns={1}>
+              {images.map((value, index) => {
+                return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+              })}
+            </Columned>
+          </MediaQuery>
+
+          {isOpen && (
+            <Lightbox
+              mainSrc={images[photoIndex]}
+              nextSrc={images[(photoIndex + 1) % images.length]}
+              prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+              onCloseRequest={() => this.setState({ isOpen: false })}
+              onMovePrevRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + images.length - 1) % images.length,
+                })
+              }
+              onMoveNextRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + 1) % images.length,
+                })
+              }
+            />
+          )}
         </div>
       </div>
     </div>;
@@ -102,3 +126,8 @@ export class Software extends Component {
 }
 
 export default Software;
+
+const tempWidth = {
+  height: '300px',
+  margin: '5px'
+}
