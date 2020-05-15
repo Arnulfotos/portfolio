@@ -38,27 +38,29 @@ export class Photo extends Component {
       </MediaQuery>
 
       <MediaQuery maxDeviceWidth={500}>
-        <div className="page appear photo-flex" style={mobilePage}>
-          <a href={"/portfolio"}>
-            <div style={mobileImageDiv}>
-              <img src={Portfolio} style={mobileImage} />
-              <div style={mobileText}>PORTFOLIO</div>
-            </div>
-          </a>
+        <div style={mobilePage}>
+          <div className="appear photo-flex">
+            <a href={"/portfolio"}>
+              <div style={mobileImageDiv}>
+                <img src={Portfolio} style={mobileImage} />
+                <div style={mobileText}>PORTFOLIO</div>
+              </div>
+            </a>
 
-          <a href={"/miamivice"}>
-            <div style={mobileImageDiv}>
-              <img src={Miami} style={mobileImage} />
-              <div style={mobileText}>MIAMI VICE COCAINE DREAM</div>
-            </div>
-          </a>
+            <a href={"/miamivice"}>
+              <div style={mobileImageDiv}>
+                <img src={Miami} style={mobileImage} />
+                <div style={mobileText}>MIAMI VICE COCAINE DREAM</div>
+              </div>
+            </a>
 
-          <a href={"/uservoid"}>
-            <div style={mobileImageDiv}>
-              <img src={User} style={mobileImage} />
-              <div style={mobileText}>USER VOID</div>
-            </div>
-          </a>
+            <a href={"/uservoid"}>
+              <div style={mobileImageDiv}>
+                <img src={User} style={mobileImage} />
+                <div style={mobileText}>USER VOID</div>
+              </div>
+            </a>
+          </div>
         </div>
       </MediaQuery>
     </div>;
@@ -68,6 +70,7 @@ export class Photo extends Component {
 const mobilePage = {
   width: '290vw',
   backgroundColor: 'black',
+  minHeight: '100vh'
 }
 
 const image = {
