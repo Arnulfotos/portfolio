@@ -9,7 +9,8 @@ import './pages.css';
 export class About extends Component {
   render() {
     return <div>
-      <Navbar activeLink={"ABOUT"} />
+      <MediaQuery minDeviceWidth={500}><Navbar activeLink={"ABOUT"} mobile={false} /></MediaQuery>
+      <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"ABOUT"} mobile={true} /></MediaQuery>
 
       {/* desktop  */}
       <MediaQuery minDeviceWidth={500}>

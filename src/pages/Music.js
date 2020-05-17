@@ -26,7 +26,8 @@ const mjfFlex = {
 export class Music extends Component {
   render() {
     return <div>
-      <Navbar activeLink={"MUSIC"} />
+      <MediaQuery minDeviceWidth={500}><Navbar activeLink={"MUSIC"} mobile={false} /></MediaQuery>
+      <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"MUSIC"} mobile={true} /></MediaQuery>
       <div className="page">
         <div className="appear">
           {/* desktop  */}

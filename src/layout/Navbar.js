@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
 import MediaQuery from 'react-responsive'
-import logo from "../../dist/images/logo.gif";
 import './layout.css'
 
 export class Navbar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      collapsed: false
-    };
+    if (this.props.activeLink === "HOME" || !this.props.mobile) {
+      this.state = {
+        collapsed: false
+      };
+    } else {
+      this.state = {
+        collapsed: true
+      };
+    }
   }
 
   onClick = (event) => {

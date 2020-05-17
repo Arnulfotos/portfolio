@@ -94,7 +94,8 @@ export class Miami extends Component {
     const { photoIndex, isOpen } = this.state;
     return (
       <div>
-        <Navbar activeLink={"MIAMI"} />
+        <MediaQuery minDeviceWidth={500}><Navbar activeLink={"MIAMI"} mobile={false} /></MediaQuery>
+        <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"MIAMI"} mobile={true} /></MediaQuery>
         <div className="page">
           <div className="appear">
 

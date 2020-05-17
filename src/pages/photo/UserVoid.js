@@ -68,7 +68,8 @@ export class UserVoid extends Component {
     const { photoIndex, isOpen } = this.state;
     return (
       <div>
-        <Navbar activeLink={"USERVOID"} />
+        <MediaQuery minDeviceWidth={500}><Navbar activeLink={"USERVOID"} mobile={false} /></MediaQuery>
+        <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"USERVOID"} mobile={true} /></MediaQuery>
         <div className="page">
           <div className="appear">
 

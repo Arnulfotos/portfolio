@@ -57,7 +57,8 @@ export class Software extends Component {
   render() {
     const { photoIndex, isOpen } = this.state;
     return <div>
-      <Navbar activeLink={"SOFTWARE"} />
+      <MediaQuery minDeviceWidth={500}><Navbar activeLink={"SOFTWARE"} mobile={false} /></MediaQuery>
+      <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"SOFTWARE"} mobile={true} /></MediaQuery>
       <div className="page">
         <div className="appear">
 

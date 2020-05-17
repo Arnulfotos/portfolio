@@ -40,35 +40,35 @@ import p29 from '../../../dist/images/photos/portfolio/p29.jpg';
 import p30 from '../../../dist/images/photos/portfolio/p30.jpg';
 
 const images = [
-  p1, 
-  p2, 
-  p3, 
-  p4, 
-  p5, 
-  p6, 
-  p7, 
-  p8, 
-  p9, 
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p8,
+  p9,
   p10,
-  p11, 
-  p12, 
-  p13, 
-  p14, 
-  p15, 
-  p16, 
-  p17, 
-  p18, 
-  p19, 
+  p11,
+  p12,
+  p13,
+  p14,
+  p15,
+  p16,
+  p17,
+  p18,
+  p19,
   p20,
-  p21, 
-  p22, 
-  p23, 
-  p24, 
-  p25, 
-  p26, 
-  p27, 
-  p28, 
-  p29, 
+  p21,
+  p22,
+  p23,
+  p24,
+  p25,
+  p26,
+  p27,
+  p28,
+  p29,
   p30,
 ];
 
@@ -85,7 +85,8 @@ export class Portfolio extends Component {
     const { photoIndex, isOpen } = this.state;
     return (
       <div>
-        <Navbar activeLink={"PORTFOLIO"} />
+        <MediaQuery minDeviceWidth={500}><Navbar activeLink={"PORTFOLIO"} mobile={false} /></MediaQuery>
+        <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"PORTFOLIO"} mobile={true} /></MediaQuery>
         <div className="page">
           <div className="appear">
 
@@ -100,7 +101,7 @@ export class Portfolio extends Component {
             <MediaQuery maxDeviceWidth={500}>
               <Columned columns={1}>
                 {images.map((value, index) => {
-                  return  <LazyLoad key={index}><img className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
+                  return <LazyLoad key={index}><img className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
                 })}
               </Columned>
             </MediaQuery>

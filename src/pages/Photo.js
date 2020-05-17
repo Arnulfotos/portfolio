@@ -11,7 +11,8 @@ export class Photo extends Component {
 
   render() {
     return <div>
-      <Navbar activeLink={"PHOTO"} />
+      <MediaQuery minDeviceWidth={500}><Navbar activeLink={"PHOTO"} mobile={false} /></MediaQuery>
+      <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"PHOTO"} mobile={true} /></MediaQuery>
       <MediaQuery minDeviceWidth={500}>
         <div className="page appear photo-flex">
           <a href={"/portfolio"}>
