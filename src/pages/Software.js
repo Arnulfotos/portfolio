@@ -92,7 +92,7 @@ export class Software extends Component {
                 <div className="software-ft-info">this is the description this is the description this is the description this is the description this is the description this is the description this is the description this is the description </div>
               </div>
 
-              < img src={led_zoo} style={fullWidth} />
+              < img src={led_zoo} style={fullWidth} className="led" />
               <div className="software-grid">
                 <div className="software-grid-text">
                   <div className="grid-text-title">LED STRIP PROGRAMMING</div>

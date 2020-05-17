@@ -697,3 +697,6 @@ c {
   align-content: center;
 }
 
+.led {
+  height: 91vh;
+}
