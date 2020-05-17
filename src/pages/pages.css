@@ -116,9 +116,9 @@ a:hover {
 }
 
 .gallery {
-  width: 71vw;
-  margin-right: 5vw;
-  margin-left: auto;
+  width: 71%;
+  margin-right: 5%;
+  margin-left: 24%;
 }
 
 .mobile-img {
@@ -376,6 +376,7 @@ c {
   text-align: center;
   line-height: 100px;
 }
+
 .mjf-cover {
   background-image: url("../../dist/images/music/mjf/cover.jpg");
   grid-column-start: 7;
@@ -545,7 +546,6 @@ c {
   background-image: url("../../dist/images/software/color1.png");
   width: 100%;
   min-height: 100vh;
-  /* opacity: .6; */
 }
 
 .software-ft {
@@ -628,14 +628,8 @@ c {
   grid-row-start: 1;
   grid-row-end: 2;
   overflow: hidden;
-  /* position: relative; */
-  /* border-color: red;
-  border-style: solid;
-  border-width: 2px; */
   color: white;
   text-align: right;
-  /* font-size: 50px; */
-
   padding: 40px;
   padding-left: 300px;
 }
@@ -653,10 +647,6 @@ c {
   overflow: hidden;
   margin: 40px;
   margin-left: 0;
-}
-
-.fit {
-  object-fit: cover;
 }
 
 .grid-bag {

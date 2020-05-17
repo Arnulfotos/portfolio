@@ -42,6 +42,8 @@ import miami28 from '../../../dist/images/photos/miami/miami28.jpg';
 import miami29 from '../../../dist/images/photos/miami/miami29.jpg';
 import miami30 from '../../../dist/images/photos/miami/miami30.jpg';
 
+import gif from '../../../dist/images/software/miami.gif';
+
 const images = [
   miami1,
   miami2,
@@ -97,7 +99,9 @@ export class Miami extends Component {
           <div className="appear">
 
             <MediaQuery minDeviceWidth={500}>
+              {/* <img src={gif} className="gallery" /> */}
               <Columned columns={3} className="gallery">
+
                 {images.map((value, index) => {
                   return <LazyLoad key={index}><img className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
                 })}
