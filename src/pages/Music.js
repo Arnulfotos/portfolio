@@ -115,8 +115,8 @@ export default Music;
 
 const mobileTitle = {
   color: 'white',
-  fontSize: '50px',
-  lineHeight: '50px'
+  fontSize: '45px',
+  lineHeight: '45px'
 }
 
 const mobileImg = {

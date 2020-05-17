@@ -23,13 +23,13 @@ export class Navbar extends Component {
     const activeStyle = {
       backgroundColor: 'red',
       color: 'white',
-      width: '140px'
+      width: '160px'
     }
 
     const activeMobileStyle = {
       backgroundColor: 'red',
       color: 'white',
-      width: '170px'
+      width: '203px'
     }
 
     const activeTextStyle = {
