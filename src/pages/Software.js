@@ -25,7 +25,6 @@ import bandTogether1 from '../../dist/images/software/bandtogether1.png';
 import leaseEasy from '../../dist/images/software/leaseasy.png';
 import stairs from '../../dist/images/software/stairs.gif';
 import bag from '../../dist/images/software/bag.gif';
-import desk from '../../dist/images/software/desk.png';
 
 const images = [
   slb,
@@ -73,7 +72,7 @@ export class Software extends Component {
                 <img src={bandTogether} className="software-ft" />
                 <div className="software-ft-title">BAND TOGETHER</div>
                 <div className="software-ft-subtitle">ui design + front end development</div>
-                <div className="software-ft-info">this is the description this is the description this is the description this is the description this is the description this is the description this is the description this is the description </div>
+                <div className="software-ft-info">this is the description where i talk about how badass this is and maybe even the tech involved this is the description where i talk about how badass this is and maybe even the tech involved</div>
                 <a href="https://bandtogether.events" target='_blank'><div className="software-ft-button">VIEW</div></a>
               </div>
 
@@ -84,7 +83,7 @@ export class Software extends Component {
                   <img src={evolution} className="software2-img" />
                 </div>
                 <div className="software-ft-title">COMPUTER GRAPHICS</div>
-                <div className="software-ft-info">i enjoy exploring more creative uses for computer science in my free time. this is some of my graphics work created with processing</div>
+                <div className="software-ft-info">this is where i talk about all the badass animations and software ive made with processing this is where i talk about all the badass animations and software ive made with processing</div>
                 <div className="software-ft-button">SEE MORE</div>
               </div>
 
@@ -92,14 +91,14 @@ export class Software extends Component {
                 <img src={leaseEasy} className="software-ft" />
                 <div className="software-ft-title">LEASE EASY</div>
                 <div className="software-ft-subtitle">ui design</div>
-                <div className="software-ft-info">this is the description this is the description this is the description this is the description this is the description this is the description this is the description this is the description </div>
+                <div className="software-ft-info">talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig</div>
               </div>
 
               < img src={led_zoo} style={fullWidth} className="led" />
               <div className="software-grid">
                 <div className="software-grid-text">
                   <div className="grid-text-title">LED STRIP PROGRAMMING</div>
-                this is the descirp tion this is the descirp tion this is the descirp tion this is the descirp tion this is the descirp tion this is the descirp tion
+                first of all, yes i will record much higher quality gifs, these are placeholders. anyway, oh boy do i love led strips and so this is where i dish about my passion for them and have i mentioned i own 100s of feet and make the coolest things and i love led strips
                 </div>
                 <div className="grid-stairs">
                   <img src={stairs} style={fullWidth} />
@@ -114,7 +113,7 @@ export class Software extends Component {
                 </div>
 
                 <div className="grid-slb-text">
-                  talking about how i used it on my presentation talking about how i used it on my presentation talking about how i used it on my presentation talking about how i used it on my presentation talking about how i used it on my presentation
+                  talk about how in fact i love leds so much i used them in my internship presentation! at a corporate company! because why not! also mention how they clicked through to highlight current slide
                 </div>
               </div>
 
@@ -122,29 +121,6 @@ export class Software extends Component {
                 <div className="freelance">I'm available for freelance web design + development!</div>
                 <div className="software-ft-button">Get in touch!</div>
               </div>
-
-              {/* <div className="software4 back-img"></div> */}
-
-              {/* <div className="title software-title">SOFTWARE DEVELOPMENT</div>
-              <div className="software-text">i'm a computer science major at ut austin with a passion for front end/ux/ui. i have experience with react and angular and love to make websites in my free time. this is some of the work ive developed.</div>
-              <img src={slb} style={setHeight} />
-              <img src={bandTogether} style={setHeight} />
-              <img src={bandTogether1} style={setHeight} />
-
-              <div className="title software-title">COMPUTER GRAPHICS</div>
-              <div className="software-text">i enjoy exploring more creative uses for computer science in my free time. this is some of my graphics work created with processing</div>
-              <img src={dot_terrain} style={setHeight} />
-              <img src={sin} style={setHeight} />
-              <img src={color1} style={setHeight} />
-              <img src={evolution} style={setHeight} />
-              <img src={ball} style={setHeight} />
-              <img src={color_animated} style={setHeight} />
-              <img src={color2} style={setHeight} />
-
-              <div className="title software-title">LEDs/ARDUINO/RASPBERRY PI</div>
-              <div className="software-text">i also love using software alongside electronics, especially individually adressable LED strips, to interact with the physical world.</div>
-              <img src={led_zoo} style={setHeight} /> */}
-
             </div>
 
           </MediaQuery>
