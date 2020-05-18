@@ -31,3 +31,7 @@ code {
   font-weight: normal;
   src: local('Berthold-Akzidenz-Grotesk'), url(./fonts/Berthold-Akzidenz-Grotesk-BE-Li-Tall.ttf) format('truetype');
 } */
+
+a {
+  color: rgb(0, 255, 255);
+}

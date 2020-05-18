@@ -537,9 +537,10 @@ c {
   padding-bottom: 150px;
   padding-left: 250px;
   padding-right: 250px;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 30px;
   text-align: center;
+  /* font-weight: normal; */
 }
 
 .software1 {
@@ -589,6 +590,11 @@ c {
   padding-right: 100px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.software-ft-button:hover {
+  background-color: white;
+  color: rgb(0, 255, 0);
 }
 
 .software2 {
@@ -689,4 +695,20 @@ c {
 
 .led {
   height: 91vh;
+}
+
+ut {
+  color: rgb(191, 87, 0);
+}
+
+pi {
+  color: rgb(195, 33, 74);
+}
+
+arduino {
+  color: rgb(1, 152, 158);
+}
+
+processing {
+  color: rgb(35, 117, 189)
 }

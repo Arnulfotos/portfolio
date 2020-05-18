@@ -4,6 +4,7 @@ import MediaQuery from 'react-responsive';
 import 'react-image-lightbox/style.css';
 import Navbar from '../layout/Navbar'
 import Columned from "react-columned";
+import resume from "../../dist/images/Resume.pdf";
 import './pages.css';
 
 import color1 from '../../dist/images/software/color1.png';
@@ -65,14 +66,14 @@ export class Software extends Component {
           <MediaQuery minDeviceWidth={500}>
             <div className="software">
               <div className="software-intro">
-                intro description talking about how i major in cs but also enjoying finding ways to intersect it with art. this is a colleciton of a range of some of my programming and web related projects. find my cs skills list at linkedin (link it)
+                Hi! I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development and UI/UX design and am working towards becoming a full time front-end developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with creative tools such as <pi>Raspberry PI</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. If you're looking for more details about my technical skills, you can find it on my <a href={resume} target='_blank'>resume</a> and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
               </div>
               <div className="software1 back-img">
                 <img src={bandTogether} className="software-ft" />
                 <div className="software-ft-title">BAND TOGETHER</div>
                 <div className="software-ft-subtitle">ui design + front end development</div>
                 <div className="software-ft-info">this is the description this is the description this is the description this is the description this is the description this is the description this is the description this is the description </div>
-                <div className="software-ft-button">VIEW</div>
+                <a href="https://bandtogether.events" target='_blank'><div className="software-ft-button">VIEW</div></a>
               </div>
 
               <div className="software2">
