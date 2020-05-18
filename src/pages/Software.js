@@ -68,7 +68,8 @@ export class Software extends Component {
               <div className="software-intro">
                 Hi! I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development and UI/UX design and am working towards becoming a full time front-end developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with creative tools such as <pi>Raspberry PI</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. If you're looking for more details about my technical skills, you can find it on my <a href={resume} target='_blank'>resume</a> and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
               </div>
-              <div className="software1 back-img">
+
+              <div className="software1 back-img software-flex">
                 <img src={bandTogether} className="software-ft" />
                 <div className="software-ft-title">BAND TOGETHER</div>
                 <div className="software-ft-subtitle">ui design + front end development</div>
@@ -76,8 +77,8 @@ export class Software extends Component {
                 <a href="https://bandtogether.events" target='_blank'><div className="software-ft-button">VIEW</div></a>
               </div>
 
-              <div className="software2">
-                <div className="flex">
+              <div className="software2 software-flex">
+                <div className="software2-flex">
                   <img src={dot_terrain} className="software2-img" />
                   <img src={sin} className="software2-img" />
                   <img src={evolution} className="software2-img" />
@@ -87,7 +88,7 @@ export class Software extends Component {
                 <div className="software-ft-button">SEE MORE</div>
               </div>
 
-              <div className="software3 back-img">
+              <div className="software3 back-img software-flex">
                 <img src={leaseEasy} className="software-ft" />
                 <div className="software-ft-title">LEASE EASY</div>
                 <div className="software-ft-subtitle">ui design</div>
@@ -118,7 +119,7 @@ export class Software extends Component {
               </div>
 
               <div className="desk back-img flex">
-                <div>I'm available for freelance web design + development!</div>
+                <div className="freelance">I'm available for freelance web design + development!</div>
                 <div className="software-ft-button">Get in touch!</div>
               </div>
 

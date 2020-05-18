@@ -501,6 +501,14 @@ c {
   color: rgb(173, 173, 173);
 }
 
+.software-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .software-text {
   color: white;
   font-size: 20px;
@@ -551,12 +559,16 @@ c {
 
 .software-ft {
   display: block;
-  width: 65vw;
-  padding-top: 100px;
-  margin: auto;
+  /* min-width: 600px; */
+  width: 100%;
+  padding-right: 17.5%;
+  padding-left: 17.5%;
+  /* padding-top: 100px; */
+  margin-bottom: 10px;
 }
 
 .software-ft-title {
+  width: 100%;
   color: white;
   text-align: center;
   font-size: 40px;
@@ -565,15 +577,19 @@ c {
 .software-ft-subtitle {
   color: white;
   text-align: center;
+  width: 100%;
+  
 }
 
 .software-ft-info {
   color: white;
   text-align: center;
   width: 100%;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   padding-left: 30vw;
   padding-right: 30vw;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .software-ft-button {
@@ -582,14 +598,13 @@ c {
   border-style: solid;
   color: white;
   text-align: center;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   font-size: 20px;
   width: fit-content;
   line-height: 40px;
   padding-left: 100px;
   padding-right: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .software-ft-button:hover {
@@ -601,6 +616,12 @@ c {
   padding-top: 50px;
   padding-bottom: 50px;
   min-height: 100vh;
+}
+
+.software2-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .software2-img {
@@ -689,6 +710,7 @@ c {
   height: 100vh;
   color: white;
   font-size: 50px;
+  line-height: 50px;
   text-align: center;
   align-content: center;
 }
@@ -711,4 +733,11 @@ arduino {
 
 processing {
   color: rgb(35, 117, 189)
+}
+
+.freelance {
+  width: 100%;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-bottom: 40px;
 }
