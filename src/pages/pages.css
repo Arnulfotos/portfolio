@@ -1,59 +1,47 @@
-@keyframes imageAnimation {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  8% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  17% {
-    opacity: 1 12
-  }
-  25% {
-    opacity: 0 15
-  }
-  100% {
-    opacity: 0 18
-  }
-}
-
-.home {
-  background-color: black;
+.home1 {
   background-image: url("../../dist/images/room.jpg");
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.home2 {
+  background-image: url("../../dist/images/deyoung-desktop.jpg");
+  height: 100vh;
+}
+
+.home3 {
+  background-image: url("../../dist/images/photos/portfolio/p1.jpg");
+  height: 100vh;
+}
+
+.home4 {
+  background-image: url("../../dist/images/photos/portfolio/p5.jpg");
+  height: 100vh;
+}
+
+.home5 {
+  background-image: url("../../dist/images/photos/portfolio/p12.jpg");
+  height: 100vh;
+}
+
+.home6 {
+  background-image: url("../../dist/images/ania.jpg");
+  height: 100vh;
+}
+
+.home7 {
+  background-image: url("../../dist/images/yellow.jpg");
+  height: 100vh;
+}
+
+.home8 {
+  background-image: url("../../dist/images/photos/miami/miami25.jpg");
+  height: 100vh;
 }
 
 .page {
   background-color: black;
   background-size: 100%;
   min-height: 100vh;
-}
-
-@keyframes example {
-  from {
-    background-color: white;
-  }
-  to {
-    background-color: purple;
-  }
-}
-
-.an {
-  width: 5vw;
-  height: 10vh;
-  background-color: black;
-  transition: height 1s;
-}
-
-.an:hover {
-  height: 92vh;
-  animation-name: example;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 
 .flex {
@@ -69,19 +57,6 @@
   line-height: 50px;
 }
 
-.mobile-title {
-  font-size: 250px;
-  color: white;
-  line-height: 250px;
-  text-align: center;
-}
-
-.loc {
-  text-align: right;
-  color: rgb(100, 100, 100);
-  margin-left: auto;
-}
-
 .appear {
   animation-name: appear;
   animation-duration: 1s;
@@ -95,6 +70,8 @@
     opacity: 1;
   }
 }
+
+/* in use */
 
 @keyframes disappear {
   from {
@@ -156,6 +133,8 @@ a:hover {
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
+
+/* all of these in use to modify lightbox library */
 
 .ril__caption, .ril__toolbar {
   background-color: rgb(0, 0, 0, 0) !important;
@@ -548,7 +527,6 @@ c {
   font-size: 25px;
   line-height: 30px;
   text-align: center;
-  /* font-weight: normal; */
 }
 
 .software1 {
@@ -559,11 +537,9 @@ c {
 
 .software-ft {
   display: block;
-  /* min-width: 600px; */
   width: 100%;
   padding-right: 17.5%;
   padding-left: 17.5%;
-  /* padding-top: 100px; */
   margin-bottom: 10px;
 }
 
@@ -578,14 +554,12 @@ c {
   color: white;
   text-align: center;
   width: 100%;
-  
 }
 
 .software-ft-info {
   color: white;
   text-align: center;
   width: 100%;
-  /* margin-top: 80px; */
   padding-left: 30vw;
   padding-right: 30vw;
   margin-top: 30px;
@@ -598,7 +572,6 @@ c {
   border-style: solid;
   color: white;
   text-align: center;
-  /* margin-top: 80px; */
   font-size: 20px;
   width: fit-content;
   line-height: 40px;
@@ -741,3 +714,30 @@ processing {
   padding-left: 20%;
   margin-bottom: 40px;
 }
+
+/* styling for home page crossfading */
+.component-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.before-enter {
+  opacity: 0;
+}
+
+.entering {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.before-leave {
+  opacity: 1;
+}
+
+.leaving {
+  opacity: 0;
+  transition: opacity 2s;
+}
+/* crossfading styles end here */
