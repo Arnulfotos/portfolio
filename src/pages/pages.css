@@ -1,81 +1,47 @@
-@keyframes imageAnimation {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  8% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  17% {
-    opacity: 1 12
-  }
-  25% {
-    opacity: 0 15
-  }
-  100% {
-    opacity: 0 18
-  }
-}
-
-.home{
-  background-color: black;
+.home1 {
   background-image: url("../../dist/images/room.jpg");
   height: 100vh;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
+}
 
-  /* animation: imageAnimation 12s linear infinite 0s;
-  backface-visibility: hidden;
-  background-size: cover;
-  background-position: center center;
-  color: transparent;
+.home2 {
+  background-image: url("../../dist/images/deyoung-desktop.jpg");
   height: 100vh;
-  left: 0px;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: 0; */
 }
 
-.home>image:nth-child(1) {
-  background-image: url('../../dist/images/room.jpg');
+.home3 {
+  background-image: url("../../dist/images/photos/portfolio/p1.jpg");
+  height: 100vh;
 }
 
-.home>image:nth-child(2) {
-  animation-delay: 6s;
-  background-image: url('../../dist/images/mirror.jpg');
+.home4 {
+  background-image: url("../../dist/images/photos/portfolio/p5.jpg");
+  height: 100vh;
+}
+
+.home5 {
+  background-image: url("../../dist/images/photos/portfolio/p12.jpg");
+  height: 100vh;
+}
+
+.home6 {
+  background-image: url("../../dist/images/ania.jpg");
+  height: 100vh;
+}
+
+.home7 {
+  background-image: url("../../dist/images/yellow.jpg");
+  height: 100vh;
+}
+
+.home8 {
+  background-image: url("../../dist/images/photos/miami/miami25.jpg");
+  height: 100vh;
 }
 
 .page {
   background-color: black;
   background-size: 100%;
   min-height: 100vh;
-}
-
-@keyframes example {
-  from {
-    background-color: white;
-  }
-  to {
-    background-color: purple;
-  }
-}
-
-.an {
-  width: 5vw;
-  height: 10vh;
-  background-color: black;
-  transition: height 1s;
-}
-
-.an:hover {
-  height: 92vh;
-  animation-name: example;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 
 .flex {
@@ -86,22 +52,9 @@
 }
 
 .title {
-  font-size: 100px;
+  font-size: 50px;
   color: white;
-  line-height: 100px;
-}
-
-.mobile-title {
-  font-size: 250px;
-  color: white;
-  line-height: 250px;
-  text-align: center;
-}
-
-.loc {
-  text-align: right;
-  color: rgb(100, 100, 100);
-  margin-left: auto;
+  line-height: 50px;
 }
 
 .appear {
@@ -118,6 +71,17 @@
   }
 }
 
+/* in use */
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -129,9 +93,9 @@ a:hover {
 }
 
 .gallery {
-  width: 71vw;
-  margin-right: 5vw;
-  margin-left: auto;
+  width: 71%;
+  margin-right: 5%;
+  margin-left: 24%;
 }
 
 .mobile-img {
@@ -170,6 +134,8 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
+/* all of these in use to modify lightbox library */
+
 .ril__caption, .ril__toolbar {
   background-color: rgb(0, 0, 0, 0) !important;
 }
@@ -199,6 +165,7 @@ a:hover {
   width: 20vw;
   color: rgb(221, 221, 221);
   font-size: 12px;
+  font-family: 'Berthold-Akzidenz-Grotesk-Light';
 }
 
 .about-bottom {
@@ -219,6 +186,7 @@ a:hover {
   width: 28vw;
   color: rgb(221, 221, 221);
   font-size: 12px;
+  font-family: 'Berthold-Akzidenz-Grotesk-Light';
 }
 
 .about-bottom-left-text {
@@ -226,59 +194,550 @@ a:hover {
   text-align: right;
   color: rgb(221, 221, 221);
   font-size: 12px;
+  font-family: 'Berthold-Akzidenz-Grotesk-Light';
 }
-
-/* flipped */
-/* 
-.about-top {
-  width: 98vw;
-  display: flex;
-  align-items: flex-end;
-  align-content: flex-start;
-  margin-bottom: 30px;
-}
-
-.about-top-img {
-  width: 60vw;
-  margin-left: 2vw;
-}
-
-.about-top-text {
-  width: 30vw;
-  color: rgb(221, 221, 221);
-  font-size: 12px;
-  margin-left: 8vw;
-  text-align: right;
-}
-
-.about-bottom {
-  width: 98vw;
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-
-.about-bottom-img {
-  width: 30vw;
-  margin-right: 30px;
-  margin-left: 2vw;
-  margin-bottom: 50px;
-}
-
-.about-bottom-text {
-  width: 28vw;
-  color: rgb(221, 221, 221);
-  font-size: 12px;
-}
-
-.about-bottom-left-text {
-  width: 37vw;
-  text-align: right;
-  color: rgb(221, 221, 221);
-  font-size: 12px;
-} */
 
 .photo-flex {
   display: flex;
   justify-content: left;
 }
+
+@media (max-width: 500px) {
+  .about-top-img {
+    width: 100vw;
+    margin-right: 0;
+  }
+  .about-top-text {
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  .about-bottom-img {
+    width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .about-bottom-text {
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  .about-bottom-left-text {
+    text-align: left;
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  .home {
+    background-image: url("../../dist/images/mobile-room.jpg");
+  }
+}
+
+c {
+  color: rgb(0, 255, 255) !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;
+}
+
+.music-banner {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  overflow: hidden;
+  position: relative;
+}
+
+.back-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.indulgent {
+  background-image: url("../../dist/images/music/indulgent/drums.jpg");
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.indulgent-title {
+  color: white;
+  font-size: 135px;
+  text-align: center;
+}
+
+.music-text {
+  width: 700px;
+  color: white;
+  text-align: right;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.mjf-text {
+  width: 500px;
+  color: white;
+  text-align: left;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+
+.indulgent-cover {
+  background-image: url("../../dist/images/music/indulgent/cover.jpg");
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.indulgent-guitar1 {
+  background-image: url("../../dist/images/music/indulgent/guitar1.jpg");
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.indulgent-guitar2 {
+  background-image: url("../../dist/images/music/indulgent/guitar2.jpg");
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.indulgent-cover-overlay {
+  animation-name: disappear;
+  animation-duration: .7s;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, .3);
+  opacity: 0;
+  font-size: 100px;
+  color: white;
+}
+
+.indulgent-cover-overlay:hover {
+  opacity: 1.0;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+.indulgent-guitar1:hover~.indulgent-cover>.indulgent-cover-overlay {
+  opacity: 1.0;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+.indulgent-guitar2:hover~.indulgent-cover>.indulgent-cover-overlay {
+  opacity: 1.0;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+.mjf {
+  background-image: url("../../dist/images/music/mjf/mjf.jpg");
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.mjf-title {
+  color: black;
+  font-size: 70px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.mjf-cover {
+  background-image: url("../../dist/images/music/mjf/cover.jpg");
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.mjf-studio {
+  background-image: url("../../dist/images/music/mjf/studio.jpg");
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.mjf-studio:hover+.mjf-cover>.mjf-cover-overlay {
+  opacity: 1.0;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+.mjf-cover-overlay {
+  animation-name: disappear;
+  animation-duration: .7s;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, .3);
+  opacity: 0;
+  font-size: 100px;
+  color: white;
+}
+
+.mjf-cover-overlay:hover {
+  opacity: 1.0;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+.cg {
+  background-image: url("../../dist/images/music/cg/cg.jpg");
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.cg-title {
+  color: white;
+  font-size: 130px;
+  text-align: right;
+  line-height: 130px;
+}
+
+.cg-cover {
+  background-image: url("../../dist/images/music/cg/cover.jpg");
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.cg-guitar {
+  background-image: url("../../dist/images/music/cg/1.jpg");
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.cg-cover-overlay {
+  animation-name: disappear;
+  animation-duration: .7s;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, .3);
+  opacity: 0;
+  font-size: 100px;
+  color: white;
+}
+
+.cg-cover-overlay:hover {
+  opacity: 1.0;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+.cg-guitar:hover+.cg-cover>.cg-cover-overlay {
+  opacity: 1.0;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+.cover-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-flex a {
+  color: inherit;
+}
+
+.hi {
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hi-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 30px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hi-button:active {
+  background-color: rgb(63, 0, 63);
+  color: rgb(173, 173, 173);
+}
+
+.software-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.software-text {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  width: 100%;
+  text-align: right;
+  padding-left: 20%;
+}
+
+.software {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.software-title {
+  width: 100%;
+  text-align: right;
+}
+
+.center {
+  display: block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90vw;
+}
+
+.software-intro {
+  color: white;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 250px;
+  padding-right: 250px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.software1 {
+  background-image: url("../../dist/images/software/color1.png");
+  width: 100%;
+  min-height: 100vh;
+}
+
+.software-ft {
+  display: block;
+  width: 100%;
+  padding-right: 17.5%;
+  padding-left: 17.5%;
+  margin-bottom: 10px;
+}
+
+.software-ft-title {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.software-ft-subtitle {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.software-ft-info {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.software-ft-button {
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: fit-content;
+  line-height: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: auto;
+}
+
+.software-ft-button:hover {
+  background-color: white;
+  color: rgb(0, 255, 0);
+}
+
+.software2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+.software2-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.software2-img {
+  width: 25vw;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.software3 {
+  background-image: url("../../dist/images/software/color5.png");
+  width: 100%;
+  min-height: 100vh;
+}
+
+.software4 {
+  background-image: url("../../dist/images/software/color3.png");
+  width: 100%;
+  min-height: 100vh;
+}
+
+.software-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: 50vh 50vh auto;
+}
+
+.software-grid-text {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  overflow: hidden;
+  color: white;
+  text-align: right;
+  padding: 40px;
+  padding-left: 300px;
+}
+
+.grid-text-title {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+.grid-stairs {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  overflow: hidden;
+  margin: 40px;
+  margin-left: 0;
+}
+
+.grid-bag {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: hidden;
+  margin: 40px;
+}
+
+.grid-slb {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 40px;
+  margin-top: 0;
+}
+
+.grid-slb-text {
+  color: white;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto;
+  padding-right: 300px;
+}
+
+.desk {
+  background-image: url("../../dist/images/software/desk.png");
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+.led {
+  height: 91vh;
+}
+
+ut {
+  color: rgb(191, 87, 0);
+}
+
+pi {
+  color: rgb(195, 33, 74);
+}
+
+arduino {
+  color: rgb(1, 152, 158);
+}
+
+processing {
+  color: rgb(35, 117, 189)
+}
+
+.freelance {
+  width: 100%;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-bottom: 40px;
+}
+
+/* styling for home page crossfading */
+.component-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.before-enter {
+  opacity: 0;
+}
+
+.entering {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.before-leave {
+  opacity: 1;
+}
+
+.leaving {
+  opacity: 0;
+  transition: opacity 2s;
+}
+/* crossfading styles end here */
