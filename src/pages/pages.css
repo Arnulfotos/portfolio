@@ -1,43 +1,3 @@
-.home1 {
-  background-image: url("../../dist/images/room.jpg");
-  height: 100vh;
-}
-
-.home2 {
-  background-image: url("../../dist/images/deyoung-desktop.jpg");
-  height: 100vh;
-}
-
-.home3 {
-  background-image: url("../../dist/images/photos/portfolio/p1.jpg");
-  height: 100vh;
-}
-
-.home4 {
-  background-image: url("../../dist/images/photos/portfolio/p5.jpg");
-  height: 100vh;
-}
-
-.home5 {
-  background-image: url("../../dist/images/photos/portfolio/p12.jpg");
-  height: 100vh;
-}
-
-.home6 {
-  background-image: url("../../dist/images/ania.jpg");
-  height: 100vh;
-}
-
-.home7 {
-  background-image: url("../../dist/images/yellow.jpg");
-  height: 100vh;
-}
-
-.home8 {
-  background-image: url("../../dist/images/photos/miami/miami25.jpg");
-  height: 100vh;
-}
-
 .page {
   background-color: black;
   background-size: 100%;
@@ -714,30 +674,3 @@ processing {
   padding-left: 20%;
   margin-bottom: 40px;
 }
-
-/* styling for home page crossfading */
-.component-wrapper {
-  overflow: hidden;
-  width: 100%;
-  max-height: 100vh;
-  min-height: 100vh;
-}
-
-.before-enter {
-  opacity: 0;
-}
-
-.entering {
-  opacity: 1;
-  transition: opacity 2s;
-}
-
-.before-leave {
-  opacity: 1;
-}
-
-.leaving {
-  opacity: 0;
-  transition: opacity 2s;
-}
-/* crossfading styles end here */
