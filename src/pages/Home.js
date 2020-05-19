@@ -1,7 +1,19 @@
 import React, { Component } from 'react'
 import Navbar from '../layout/Navbar'
 import MediaQuery from 'react-responsive'
-import TinyCrossfade from "react-tiny-crossfade";
+import CrossfadeImage from 'react-crossfade-image';
+import room from "../../dist/images/room.jpg";
+import deyoung from "../../dist/images/deyoung-desktop.jpg";
+import gym from "../../dist/images/photos/portfolio/p1.jpg";
+import ania1 from "../../dist/images/photos/portfolio/p5.jpg";
+import house from "../../dist/images/photos/portfolio/p12.jpg";
+import ania2 from "../../dist/images/ania.jpg";
+import spark from "../../dist/images/yellow.jpg";
+import lamp from "../../dist/images/photos/miami/miami25.jpg";
+
+const images = [
+  room, deyoung, gym, ania1, house, ania2, spark, lamp
+]
 
 export class Home extends Component {
   constructor() {
@@ -18,30 +30,7 @@ export class Home extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.changeImage(), 7000); // 5000 is duration
-  }
-
-  renderSwitch(param) {
-    switch (param) {
-      case 0:
-        return <div className="home1 back-img" key="a" />;
-      case 1:
-        return <div className="home2 back-img" key="b" />;
-      case 2:
-        return <div className="home3 back-img" key="c" />;
-      case 3:
-        return <div className="home4 back-img" key="d" />;
-      case 4:
-        return <div className="home5 back-img" key="e" />;
-      case 5:
-        return <div className="home6 back-img" key="f" />;
-      case 6:
-        return <div className="home7 back-img" key="g" />;
-      case 7:
-        return <div className="home8 back-img" key="h" />;
-      default:
-        return <div className="home1 back-img" key="i" />;
-    }
+    this.interval = setInterval(() => this.changeImage(), 7000); // last parameter is duration
   }
 
   render() {
@@ -49,9 +38,12 @@ export class Home extends Component {
       <div className="appear">
         <MediaQuery minDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={false} /></MediaQuery>
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={true} /></MediaQuery>
-        <TinyCrossfade className="component-wrapper">
-          {this.renderSwitch(this.state.imageIndex)}
-        </TinyCrossfade>
+        <CrossfadeImage
+          src={images[this.state.imageIndex]}
+          duration={1000}
+          style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+          timingFunction={"ease-out"}
+        />
       </div>
     )
   }
