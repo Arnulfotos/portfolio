@@ -4,6 +4,8 @@ import MediaQuery from 'react-responsive';
 import 'react-image-lightbox/style.css';
 import Navbar from '../layout/Navbar'
 import Columned from "react-columned";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import resume from "../../dist/images/Resume.pdf";
 import './pages.css';
 
@@ -69,7 +71,7 @@ export class Software extends Component {
               </div>
 
               <div className="software1 back-img software-flex">
-                <img src={bandTogether} className="software-ft" />
+                <LazyLoadImage effect="opacity" src={bandTogether} className="software-ft" />
                 <div className="software-ft-title">BAND TOGETHER</div>
                 <div className="software-ft-subtitle">ui design + front end development</div>
                 <div className="software-ft-info">this is the description where i talk about how badass this is and maybe even the tech involved this is the description where i talk about how badass this is and maybe even the tech involved</div>
@@ -78,9 +80,9 @@ export class Software extends Component {
 
               <div className="software2 software-flex">
                 <div className="software2-flex">
-                  <img src={dot_terrain} className="software2-img" />
-                  <img src={sin} className="software2-img" />
-                  <img src={evolution} className="software2-img" />
+                  <LazyLoadImage effect="opacity" src={dot_terrain} className="software2-img" />
+                  <LazyLoadImage effect="opacity" src={sin} className="software2-img" />
+                  <LazyLoadImage effect="opacity" src={evolution} className="software2-img" />
                 </div>
                 <div className="software-ft-title">COMPUTER GRAPHICS</div>
                 <div className="software-ft-info">this is where i talk about all the badass animations and software ive made with processing this is where i talk about all the badass animations and software ive made with processing</div>
@@ -88,28 +90,28 @@ export class Software extends Component {
               </div>
 
               <div className="software3 back-img software-flex">
-                <img src={leaseEasy} className="software-ft" />
+                <LazyLoadImage effect="opacity" src={leaseEasy} className="software-ft" />
                 <div className="software-ft-title">LEASE EASY</div>
                 <div className="software-ft-subtitle">ui design</div>
                 <div className="software-ft-info">talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig</div>
               </div>
 
-              < img src={led_zoo} style={fullWidth} className="led" />
+              <LazyLoadImage effect="opacity" src={led_zoo} className="full-width"  className="led" />
               <div className="software-grid">
                 <div className="software-grid-text">
                   <div className="grid-text-title">LED STRIP PROGRAMMING</div>
                 first of all, yes i will record much higher quality gifs, these are placeholders. anyway, oh boy do i love led strips and so this is where i dish about my passion for them and have i mentioned i own 100s of feet and make the coolest things and i love led strips
                 </div>
                 <div className="grid-stairs">
-                  <img src={stairs} style={fullWidth} />
+                  <LazyLoadImage effect="opacity" src={stairs} className="full-width" />
                 </div>
 
                 <div className="grid-bag">
-                  <img src={bag} style={fullWidth} />
+                  <LazyLoadImage effect="opacity" src={bag} className="full-width"  />
                 </div>
 
                 <div className="grid-slb">
-                  <img src={slb} style={fullWidth} />
+                  <LazyLoadImage effect="opacity" src={slb} className="full-width"  />
                 </div>
 
                 <div className="grid-slb-text">
@@ -128,7 +130,7 @@ export class Software extends Component {
           <MediaQuery maxDeviceWidth={500}>
             <Columned columns={1}>
               {images.map((value, index) => {
-                return <img className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+                return <LazyLoadImage effect="opacity" className="img" key={index} src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
               })}
             </Columned>
           </MediaQuery>

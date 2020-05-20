@@ -4,7 +4,8 @@ import MediaQuery from 'react-responsive'
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
 import Columned from "react-columned";
-import LazyLoad from 'react-lazy-load';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import p1 from '../../../dist/images/photos/portfolio/p1.jpg';
 import p2 from '../../../dist/images/photos/portfolio/p2.jpg';
@@ -93,7 +94,7 @@ export class Portfolio extends Component {
             <MediaQuery minDeviceWidth={500}>
               <Columned columns={3} className="gallery">
                 {images.map((value, index) => {
-                  return <LazyLoad key={index}><img className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
+                  return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity"/>
                 })}
               </Columned>
             </MediaQuery>
@@ -101,7 +102,7 @@ export class Portfolio extends Component {
             <MediaQuery maxDeviceWidth={500}>
               <Columned columns={1}>
                 {images.map((value, index) => {
-                  return <LazyLoad key={index}><img className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} /></LazyLoad>
+                  return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity"/>
                 })}
               </Columned>
             </MediaQuery>

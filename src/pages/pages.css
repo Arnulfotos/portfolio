@@ -674,3 +674,7 @@ processing {
   padding-left: 20%;
   margin-bottom: 40px;
 }
+
+.full-width {
+  width: 100%;
+}

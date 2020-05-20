@@ -3,6 +3,9 @@ import Button from 'react-bootstrap/Button';
 import MediaQuery from 'react-responsive'
 import Navbar from '../layout/Navbar'
 
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
+
 import './pages.css';
 
 import drums from '../../dist/images/music/indulgent/drums.jpg';
@@ -37,7 +40,7 @@ export class Music extends Component {
                 <div className="indulgent-title">INDULGENT</div>
                 <div className="music-text">
                   I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
-              </div>
+                  </div>
               </div>
 
               <div className="indulgent-guitar1 back-img" />

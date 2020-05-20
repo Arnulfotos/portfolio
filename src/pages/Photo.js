@@ -7,6 +7,9 @@ import Portfolio from '../../dist/images/photos/portfolio/p2.jpg';
 import Miami from '../../dist/images/photos/miami/miami1.jpg';
 import User from '../../dist/images/photos/uservoid/uservoid1.jpg';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
+
 export class Photo extends Component {
 
   render() {
@@ -17,21 +20,21 @@ export class Photo extends Component {
         <div className="page appear photo-flex">
           <a href={"/portfolio"}>
             <div style={imageDiv}>
-              <img src={Portfolio} style={image} />
+              <LazyLoadImage effect="opacity" src={Portfolio} style={image} />
               <div style={text}>PORTFOLIO</div>
             </div>
           </a>
 
           <a href={"/miamivice"}>
             <div style={imageDiv}>
-              <img src={Miami} style={image} />
+              <LazyLoadImage effect="opacity" src={Miami} style={image} />
               <div style={text}>MIAMI VICE COCAINE DREAM</div>
             </div>
           </a>
 
           <a href={"/uservoid"}>
             <div style={imageDiv}>
-              <img src={User} style={image} />
+              <LazyLoadImage effect="opacity" src={User} style={image} />
               <div style={text}>USER VOID</div>
             </div>
           </a>
@@ -43,21 +46,21 @@ export class Photo extends Component {
           <div className="appear photo-flex">
             <a href={"/portfolio"}>
               <div style={mobileImageDiv}>
-                <img src={Portfolio} style={mobileImage} />
+                <LazyLoadImage effect="opacity" src={Portfolio} style={mobileImage} />
                 <div style={mobileText}>PORTFOLIO</div>
               </div>
             </a>
 
             <a href={"/miamivice"}>
               <div style={mobileImageDiv}>
-                <img src={Miami} style={mobileImage} />
+                <LazyLoadImage effect="opacity" src={Miami} style={mobileImage} />
                 <div style={mobileText}>MIAMI VICE COCAINE DREAM</div>
               </div>
             </a>
 
             <a href={"/uservoid"}>
               <div style={mobileImageDiv}>
-                <img src={User} style={mobileImage} />
+                <LazyLoadImage effect="opacity" src={User} style={mobileImage} />
                 <div style={mobileText}>USER VOID</div>
               </div>
             </a>
