@@ -23,10 +23,8 @@ export class Miami extends Component {
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"MIAMI"} mobile={true} /></MediaQuery>
         <div className="page">
           <div className="appear">
-
             <MediaQuery minDeviceWidth={500}>{mapImages(3, miamiImages)}</MediaQuery>
             <MediaQuery maxDeviceWidth={500}>{mapImages(1, miamiImages)}</MediaQuery>
-
             {isOpen && (
               <Lightbox
                 mainSrc={miamiImages[photoIndex]}

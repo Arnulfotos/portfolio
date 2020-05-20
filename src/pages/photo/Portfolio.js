@@ -23,10 +23,8 @@ export class Portfolio extends Component {
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"PORTFOLIO"} mobile={true} /></MediaQuery>
         <div className="page">
           <div className="appear">
-
             <MediaQuery minDeviceWidth={500}>{mapImages(3, portfolioImages)}</MediaQuery>
             <MediaQuery maxDeviceWidth={500}>{mapImages(1, portfolioImages)}</MediaQuery>
-
             {isOpen && (
               <Lightbox
                 mainSrc={portfolioImages[photoIndex]}

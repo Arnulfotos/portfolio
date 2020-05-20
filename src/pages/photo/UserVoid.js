@@ -23,10 +23,8 @@ export class UserVoid extends Component {
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"USERVOID"} mobile={true} /></MediaQuery>
         <div className="page">
           <div className="appear">
-
             <MediaQuery minDeviceWidth={500}>{mapImages(3, userVoidImages)}</MediaQuery>
             <MediaQuery maxDeviceWidth={500}>{mapImages(1, userVoidImages)}</MediaQuery>
-
             {isOpen && (
               <Lightbox
                 mainSrc={userVoidImages[photoIndex]}
