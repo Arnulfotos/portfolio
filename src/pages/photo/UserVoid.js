@@ -3,15 +3,12 @@ import Lightbox from 'react-image-lightbox';
 import MediaQuery from 'react-responsive';
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
-import Columned from "react-columned";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
-import { userVoidImages } from './images.js';
+import { userVoidImages, mapImages } from './images.js';
 
 export class UserVoid extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       photoIndex: 0,
       isOpen: false,
@@ -27,21 +24,8 @@ export class UserVoid extends Component {
         <div className="page">
           <div className="appear">
 
-            <MediaQuery minDeviceWidth={500}>
-              <Columned columns={3} className="gallery">
-                {userVoidImages.map((value, index) => {
-                  return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" />
-                })}
-              </Columned>
-            </MediaQuery>
-
-            <MediaQuery maxDeviceWidth={500}>
-              <Columned columns={1}>
-                {userVoidImages.map((value, index) => {
-                  return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" />
-                })}
-              </Columned>
-            </MediaQuery>
+            <MediaQuery minDeviceWidth={500}>{mapImages(3, userVoidImages)}</MediaQuery>
+            <MediaQuery maxDeviceWidth={500}>{mapImages(1, userVoidImages)}</MediaQuery>
 
             {isOpen && (
               <Lightbox

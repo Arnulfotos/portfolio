@@ -3,9 +3,7 @@ import Lightbox from 'react-image-lightbox';
 import MediaQuery from 'react-responsive'
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
-import Columned from "react-columned";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import {miamiImages} from './images.js';
+import { miamiImages, mapImages } from './images.js';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 export class Miami extends Component {
@@ -26,22 +24,8 @@ export class Miami extends Component {
         <div className="page">
           <div className="appear">
 
-            <MediaQuery minDeviceWidth={500}>
-              <Columned columns={3} className="gallery">
-                {miamiImages.map((value, index) => {
-                  return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" />
-
-               })}
-              </Columned>
-            </MediaQuery>
-
-            <MediaQuery maxDeviceWidth={500}>
-              <Columned columns={1}>
-                {miamiImages.map((value, index) => {
-                  return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" />
-                })}
-              </Columned>
-            </MediaQuery>
+            <MediaQuery minDeviceWidth={500}>{mapImages(3, miamiImages)}</MediaQuery>
+            <MediaQuery maxDeviceWidth={500}>{mapImages(1, miamiImages)}</MediaQuery>
 
             {isOpen && (
               <Lightbox

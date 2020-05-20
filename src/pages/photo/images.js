@@ -29,7 +29,6 @@ import miami28 from '../../../dist/images/photos/miami/miami28.jpg';
 import miami29 from '../../../dist/images/photos/miami/miami29.jpg';
 import miami30 from '../../../dist/images/photos/miami/miami30.jpg';
 
-
 import p1 from '../../../dist/images/photos/portfolio/p1.jpg';
 import p2 from '../../../dist/images/photos/portfolio/p2.jpg';
 import p3 from '../../../dist/images/photos/portfolio/p3.jpg';
@@ -82,6 +81,10 @@ import u18 from '../../../dist/images/photos/uservoid/uservoid18.jpg';
 import u19 from '../../../dist/images/photos/uservoid/uservoid19.jpg';
 import u20 from '../../../dist/images/photos/uservoid/uservoid20.jpg';
 import u21 from '../../../dist/images/photos/uservoid/uservoid21.jpg';
+
+import Columned from "react-columned";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 export const userVoidImages = [
   u1,
@@ -173,3 +176,10 @@ export const miamiImages = [
   miami30
 ];
 
+export function mapImages(cols, images) {
+  return <Columned columns={cols} className="gallery">
+    {images.map((value, index) => {
+      return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" />
+    })}
+  </Columned>
+}

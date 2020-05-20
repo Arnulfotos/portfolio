@@ -195,6 +195,11 @@ a:hover {
   .home {
     background-image: url("../../dist/images/mobile-room.jpg");
   }
+  .gallery {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 c {
