@@ -12,7 +12,7 @@ import spark from "../../dist/images/yellow.jpg";
 import lamp from "../../dist/images/photos/miami/miami25.jpg";
 
 const images = [
-  room, deyoung, gym, ania1, house, ania2, spark, lamp
+  gym, house, ania2, room, deyoung, ania1, spark, lamp
 ]
 
 export class Home extends Component {
@@ -30,7 +30,7 @@ export class Home extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.changeImage(), 7000); // last parameter is duration
+    this.interval = setInterval(() => this.changeImage(), 5000); // last parameter is duration
   }
 
   render() {

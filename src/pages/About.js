@@ -19,7 +19,7 @@ export class About extends Component {
             <div className="about-top">
               <img src={me1} className="about-top-img" />
               <div className="about-top-text">
-                Hi! I'm Abhi. I'm a software developer, musician, and film photographer based in Austin, TX. I study both Computer Science and Fine Arts at The University of Texas at Austin.
+                {/* Hi! I'm Abhi. I'm a software developer, musician, and film photographer based in Austin, TX. I study both Computer Science and Fine Arts at The University of Texas at Austin. */}
                 I AM A <c>SOFTWARE DEVELOPER</c>, <c>MUSICIAN</c>, AND <c>FILM PHOTOGRAPHER</c> BASED IN AUSTIN, TX. I RELEASED MY FIRST <c>SOLO MUSIC ALBUM</c> AT THE AGE OF 16 AND THE SECOND AT 18, MY FIRST <c>PHOTO COLLECTION</c> AT THE AGE OF 19, PLAYED MY FIRST <c>OFFICIAL SXSW SHOWCASE</c> AT THE AGE OF 20, BUILT MY FIRST <c>ART INSTALLATION FOR FORTRESS FESTIVAL</c> A MONTH LATER, AND HAD MY PHOTOGRAPHY FEATURED ON THE <c>COVER OF SPARK MAGAZINE</c>. I ALSO SERVE AS AN ADVISOR ON ALLEN ISD'S <c>CAREER AND TECHNICAL EDUCATION ADVISORY BOARD</c>.
               <br />
                 <br />
