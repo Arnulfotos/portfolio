@@ -14,9 +14,8 @@ export class Photo extends Component {
 
   render() {
     return <div>
-      <MediaQuery minDeviceWidth={500}><Navbar activeLink={"PHOTO"} mobile={false} /></MediaQuery>
-      <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"PHOTO"} mobile={true} /></MediaQuery>
       <MediaQuery minDeviceWidth={500}>
+      <Navbar activeLink={"PHOTO"} mobile={false} />
         <div className="page appear photo-flex">
           <a href={"/portfolio"}>
             <div style={imageDiv}>
@@ -42,6 +41,7 @@ export class Photo extends Component {
       </MediaQuery>
 
       <MediaQuery maxDeviceWidth={500}>
+      <Navbar activeLink={"PHOTO"} mobile={true} />
         <div style={mobilePage}>
           <div className="appear photo-flex">
             <a href={"/portfolio"}>
