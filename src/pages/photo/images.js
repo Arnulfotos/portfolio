@@ -179,7 +179,23 @@ export const miamiImages = [
 export function mapImages(cols, images) {
   return <Columned columns={cols} className="gallery">
     {images.map((value, index) => {
-      return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" />
+      return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" height={value.height} width={value.width} />
     })}
   </Columned>
+}
+
+function getWidth(image) {
+  var img = new Image();
+  img.onload = function () {
+    return this.width;
+  }
+  img.src = image;
+}
+
+function getHeight(image) {
+  var img = new Image();
+  img.onload = function () {
+    return this.height;
+  }
+  img.src = image;
 }
