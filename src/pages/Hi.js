@@ -3,6 +3,8 @@ import Navbar from '../layout/Navbar';
 const axios = require("axios").default;
 import gif from '../../dist/images/hi.gif';
 import MediaQuery from 'react-responsive';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 export class Hi extends Component {
   constructor(props) {
@@ -44,7 +46,7 @@ export class Hi extends Component {
         <div className="hi-button" onClick={this.onClick} style={this.state.on ? on : off}>hello</div>
         {this.state.sent && <div className="appear">message received</div>}
       </div>
-      <img src={gif} className="center"/>
+      <div className="flex"><LazyLoadImage effect="opacity" src={gif} className="hi-gif" /></div>
     </div>
     )
   }
