@@ -93,27 +93,25 @@ export class Software extends Component {
                 <LazyLoadImage effect="opacity" src={leaseEasy} className="software-ft" />
                 <div className="software-ft-title">LEASE EASY</div>
                 <div className="software-ft-subtitle">ui design</div>
-                <div className="software-ft-info">Lease Easy is a student run startup currently part of UT Austin's <a href="http://longhornstartup.com/portfolio-spring-2020/">Longhorn Startup Lab</a>. I designed an interface that makes it easy for users to intuitively search for apartments that meet their requirements and presents the most important information up front.</div>
+                <div className="software-ft-info">Lease Easy is a student run startup currently part of UT Austin's <a href="http://longhornstartup.com/portfolio-spring-2020/">Longhorn Startup Lab</a>. I designed an interface that makes it easy for users to intuitively search for apartments that meet their requirements and presents the most important information clearly up front.</div>
               </div>
 
-              <LazyLoadImage effect="opacity" src={led_zoo} 
-              width="100%"
-               className="led" />
+              <LazyLoadImage effect="opacity" src={led_zoo} width="100%" className="led" />
               <div className="software-grid">
                 <div className="software-grid-text">
                   <div className="grid-text-title">LED STRIP PROGRAMMING</div>
-                I love finding ways to intersect my passions for computer science with that of fine arts and coding LED strips with Arduinos has been a great way to do so. I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night.
+                I love finding ways to intersect my passions for computer science with that of fine arts and coding LED strips with Arduinos has been a great way to do so. I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night. I also created a <a href="/hi">button</a> that allows visitors to say hello to me in realtime by strobing LEDs at my desk.
                 </div>
                 <div className="grid-stairs">
-                  <LazyLoadImage effect="opacity" src={stairs} width="100%"/>
+                  <LazyLoadImage effect="opacity" src={stairs} width="100%" />
                 </div>
 
                 <div className="grid-bag">
-                  <LazyLoadImage effect="opacity" src={bag} width="100%"  />
+                  <LazyLoadImage effect="opacity" src={bag} width="100%" />
                 </div>
 
                 <div className="grid-slb">
-                  <LazyLoadImage effect="opacity" src={slb} width="100%"  />
+                  <LazyLoadImage effect="opacity" src={slb} width="100%" />
                 </div>
 
                 <div className="grid-slb-text">
@@ -123,10 +121,10 @@ export class Software extends Component {
 
               <div className="desk back-img flex">
                 <div className="freelance">I'm available for freelance web design + development!</div>
-                <div className="software-ft-button">Get in touch!</div>
+                <div className="software-ft-info">I create unique websites for desktop + mobile with the ability for you to edit your own content, along with hosting, and continuous support. If you have an idea, need a developer, or just want to say hi, shoot me a message!</div>
+                <a href="mailto:abhinav.velaga@utexas.edu"><div className="software-ft-button">Get in touch!</div></a>
               </div>
             </div>
-
           </MediaQuery>
 
           <MediaQuery maxDeviceWidth={500}>
