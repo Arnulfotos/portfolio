@@ -74,7 +74,7 @@ export class Software extends Component {
                 <LazyLoadImage effect="opacity" src={bandTogether} className="software-ft" />
                 <div className="software-ft-title">BAND TOGETHER</div>
                 <div className="software-ft-subtitle">ui design + front end development</div>
-                <div className="software-ft-info">this is the description where i talk about how badass this is and maybe even the tech involved this is the description where i talk about how badass this is and maybe even the tech involved</div>
+                <div className="software-ft-info">I designed and developed the front end for Band Together, a responsive web app that helps users easily find information about upcoming concerts.</div>
                 <a href="https://bandtogether.events" target='_blank'><div className="software-ft-button">VIEW</div></a>
               </div>
 
@@ -85,7 +85,7 @@ export class Software extends Component {
                   <LazyLoadImage effect="opacity" src={evolution} className="software2-img" />
                 </div>
                 <div className="software-ft-title">COMPUTER GRAPHICS</div>
-                <div className="software-ft-info">this is where i talk about all the badass animations and software ive made with processing this is where i talk about all the badass animations and software ive made with processing</div>
+                <div className="software-ft-info">I designed and programmed a Darwinism/evolution simulation, natural tree drawing algorithms, terrain generation, multiple games, and generative art algorithms with Processing.</div>
                 <div className="software-ft-button">SEE MORE</div>
               </div>
 
@@ -93,7 +93,7 @@ export class Software extends Component {
                 <LazyLoadImage effect="opacity" src={leaseEasy} className="software-ft" />
                 <div className="software-ft-title">LEASE EASY</div>
                 <div className="software-ft-subtitle">ui design</div>
-                <div className="software-ft-info">talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig</div>
+                <div className="software-ft-info">Lease Easy is a student run startup currently part of UT Austin's <a href="http://longhornstartup.com/portfolio-spring-2020/">Longhorn Startup Lab</a>. I designed an interface that makes it easy for users to intuitively search for apartments that meet their requirements and presents the most important information up front.</div>
               </div>
 
               <LazyLoadImage effect="opacity" src={led_zoo} 
@@ -102,7 +102,7 @@ export class Software extends Component {
               <div className="software-grid">
                 <div className="software-grid-text">
                   <div className="grid-text-title">LED STRIP PROGRAMMING</div>
-                first of all, yes i will record much higher quality gifs, these are placeholders. anyway, oh boy do i love led strips and so this is where i dish about my passion for them and have i mentioned i own 100s of feet and make the coolest things and i love led strips
+                I love finding ways to intersect my passions for computer science with that of fine arts and coding LED strips with Arduinos has been a great way to do so. I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night.
                 </div>
                 <div className="grid-stairs">
                   <LazyLoadImage effect="opacity" src={stairs} width="100%"/>
@@ -117,7 +117,7 @@ export class Software extends Component {
                 </div>
 
                 <div className="grid-slb-text">
-                  talk about how in fact i love leds so much i used them in my internship presentation! at a corporate company! because why not! also mention how they clicked through to highlight current slide
+                  I even integrated LEDs into my final presentation for my software engineer internship at Schlumberger. I used a button to control animations around different sections of the poster as I talked in order to draw focus to the corresponding content I was referring to.
                 </div>
               </div>
 
