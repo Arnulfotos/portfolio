@@ -26,25 +26,16 @@ import leaseEasy from '../../dist/images/software/leaseasy.png';
 import stairs from '../../dist/images/software/stairs.gif';
 import bag from '../../dist/images/software/bag.gif';
 
-const images = [
-  slb,
-  dot_terrain,
-  led_zoo,
-  sin,
-  color1,
-  evolution,
-  miami,
-  ball,
-  color_animated,
-  color2,
-  bandTogether,
-  bandTogether1,
-  color3,
-  color4,
-  color5,
-];
-
 export class Software extends Component {
+
+  getHeight(image) {
+    var img = new Image();
+    img.onload = function () {
+      return this.height;
+    }
+    img.src = image;
+  }
+
   render() {
     return <div>
       <MediaQuery minDeviceWidth={500}><Navbar activeLink={"SOFTWARE"} mobile={false} /></MediaQuery>
@@ -83,7 +74,7 @@ export class Software extends Component {
               <div className="software-ft-info">Lease Easy is a student run startup currently part of UT Austin's <a href="http://longhornstartup.com/portfolio-spring-2020/">Longhorn Startup Lab</a>. I designed an interface that makes it easy for users to intuitively search for apartments that meet their requirements and presents the most important information clearly up front.</div>
             </div>
 
-            <LazyLoadImage effect="opacity" src={led_zoo} width="100%" className="led" />
+            <LazyLoadImage effect="opacity" src={led_zoo} width="100%" className="led" height={this.getHeight(led_zoo)} />
 
             <div className="software-grid">
               <div className="software-grid-text">
@@ -91,15 +82,15 @@ export class Software extends Component {
                 I love finding ways to intersect my passions for computer science with that of fine arts and coding LED strips with Arduinos has been a great way to do so. I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night. I also created a <a href="/hi">button</a> that allows visitors to say hello to me in realtime by strobing LEDs at my desk.
                 </div>
               <div className="grid-stairs">
-                <LazyLoadImage effect="opacity" src={stairs} width="100%" />
+                <LazyLoadImage effect="opacity" src={stairs} width="100%" height={this.getHeight(stairs)}/>
               </div>
 
               <div className="grid-bag">
-                <LazyLoadImage effect="opacity" src={bag} width="100%" />
+                <LazyLoadImage effect="opacity" src={bag} width="100%" height={this.getHeight(bag)}/>
               </div>
 
               <div className="grid-slb">
-                <LazyLoadImage effect="opacity" src={slb} width="100%" />
+                <LazyLoadImage effect="opacity" src={slb} width="100%" height={this.getHeight(slb)}/>
               </div>
 
               <div className="grid-slb-text">
