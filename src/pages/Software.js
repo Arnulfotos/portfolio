@@ -96,22 +96,24 @@ export class Software extends Component {
                 <div className="software-ft-info">talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig talk about how i designed this ui for a ut longhorn startup lab startup thing ma jig</div>
               </div>
 
-              <LazyLoadImage effect="opacity" src={led_zoo} className="full-width"  className="led" />
+              <LazyLoadImage effect="opacity" src={led_zoo} 
+              width="100%"
+               className="led" />
               <div className="software-grid">
                 <div className="software-grid-text">
                   <div className="grid-text-title">LED STRIP PROGRAMMING</div>
                 first of all, yes i will record much higher quality gifs, these are placeholders. anyway, oh boy do i love led strips and so this is where i dish about my passion for them and have i mentioned i own 100s of feet and make the coolest things and i love led strips
                 </div>
                 <div className="grid-stairs">
-                  <LazyLoadImage effect="opacity" src={stairs} className="full-width" />
+                  <LazyLoadImage effect="opacity" src={stairs} width="100%"/>
                 </div>
 
                 <div className="grid-bag">
-                  <LazyLoadImage effect="opacity" src={bag} className="full-width"  />
+                  <LazyLoadImage effect="opacity" src={bag} width="100%"  />
                 </div>
 
                 <div className="grid-slb">
-                  <LazyLoadImage effect="opacity" src={slb} className="full-width"  />
+                  <LazyLoadImage effect="opacity" src={slb} width="100%"  />
                 </div>
 
                 <div className="grid-slb-text">

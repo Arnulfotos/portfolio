@@ -559,7 +559,7 @@ c {
 .software2-flex {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .software2-img {
