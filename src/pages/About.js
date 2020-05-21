@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+
+import MetaTags from 'react-meta-tags';
+import { Helmet } from "react-helmet";
+
 import Navbar from '../layout/Navbar'
 import MediaQuery from 'react-responsive'
 import me1 from "../../dist/images/room.jpg";
@@ -29,6 +33,11 @@ export class About extends Component {
 
   render() {
     return <div>
+      <Helmet>
+        <title>Abhi Velaga - About</title>
+        <meta property="og:title" content="Abhi Velaga - About" />
+        <meta property="og:image" content="images/mirror.jpg" />
+      </Helmet>
       <MediaQuery minDeviceWidth={500}><Navbar activeLink={"ABOUT"} mobile={false} /></MediaQuery>
       <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"ABOUT"} mobile={true} /></MediaQuery>
 

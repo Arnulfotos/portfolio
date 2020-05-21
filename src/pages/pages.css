@@ -162,46 +162,6 @@ a:hover {
   justify-content: left;
 }
 
-@media (max-width: 500px) {
-  .about-top-img {
-    width: 100vw;
-    margin-right: 0;
-  }
-  .about-top-text {
-    width: 98vw;
-    color: rgb(221, 221, 221);
-    font-size: 10px;
-    padding: 2px;
-  }
-  .about-bottom-img {
-    width: 100vw;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-  .about-bottom-text {
-    width: 98vw;
-    color: rgb(221, 221, 221);
-    font-size: 10px;
-    padding: 2px;
-  }
-  .about-bottom-left-text {
-    text-align: left;
-    width: 98vw;
-    color: rgb(221, 221, 221);
-    font-size: 10px;
-    padding: 2px;
-  }
-  .home {
-    background-image: url("../../dist/images/mobile-room.jpg");
-  }
-  .gallery {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
 c {
   color: rgb(0, 255, 255) !important;
 }
@@ -477,7 +437,6 @@ c {
 .hi-gif {
   display: block;
   padding: 20px;
-
   max-width: 90vw;
 }
 
@@ -512,6 +471,7 @@ c {
   color: white;
   text-align: center;
   font-size: 40px;
+  /* line-height: 40px; */
 }
 
 .software-ft-subtitle {
@@ -646,7 +606,6 @@ c {
   width: 100%;
   height: 100vh;
   color: white;
-
   text-align: center;
   align-content: center;
 }
@@ -675,7 +634,114 @@ processing {
   width: 100%;
   padding-right: 20%;
   padding-left: 20%;
-  /* margin-bottom: 40px; */
   font-size: 50px;
   line-height: 50px;
+}
+
+@media (max-width: 500px) {
+  .about-top-img {
+    width: 100vw;
+    margin-right: 0;
+  }
+  .about-top-text {
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  .about-bottom-img {
+    width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .about-bottom-text {
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  .about-bottom-left-text {
+    text-align: left;
+    width: 98vw;
+    color: rgb(221, 221, 221);
+    font-size: 10px;
+    padding: 2px;
+  }
+  .home {
+    background-image: url("../../dist/images/mobile-room.jpg");
+  }
+  .gallery {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .software-intro {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .software-ft-button {
+    margin-bottom: 30px;
+  }
+  .software-ft {
+    margin-top: 10px;
+  }
+  .software-ft-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .software-ft-info {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .software1 {
+    min-height: 0;
+  }
+  .software2 {
+    min-height: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .software3 {
+    min-height: 0;
+  }
+  .led {
+    height: auto;
+  }
+  .software-grid {
+    display: block;
+  }
+  .software-grid-text {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .grid-text-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .grid-stairs {
+    margin: 40px;
+  }
+  .grid-slb-text {
+    margin: 20px;
+    text-align: center;
+    padding-right: 0px;
+  }
+  .freelance {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
