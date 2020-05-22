@@ -129,20 +129,20 @@ export class Music extends Component {
           {/* mobile  */}
           <MediaQuery maxDeviceWidth={500}>
             <div className="flex music-mobile">
-            <div className="mjf-description">
+              <div className="mjf-description">
                 I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
             </div>
-            <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
+              <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
               <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" height={this.getHeight(indulgentCover)} />
               <div className="cover-title" >Pulls You Under</div>
-                <div className="cover-artist" >Merry Jane & The Fondas</div>
-                <div className="cover-buttons flex">
-                  <Button variant="outline-dark"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
-                  <Button variant="outline-dark"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
-                  <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Merry_Jane_the_Fondas_Pulls_You_Under?id=Bbp7z4p3isxbxsqv4oymqx7ndt4" target="_blank">GOOGLE PLAY</a></Button>
-                </div>
+              <div className="cover-artist" >Merry Jane & The Fondas</div>
+              <div className="cover-buttons flex">
+                <Button variant="outline-dark"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
+                <Button variant="outline-dark"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
+                <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Merry_Jane_the_Fondas_Pulls_You_Under?id=Bbp7z4p3isxbxsqv4oymqx7ndt4" target="_blank">GOOGLE PLAY</a></Button>
+              </div>
               <div className="cover-extra">
-              <div>Guitar/Vocals - Allyb</div>
+                <div>Guitar/Vocals - Allyb</div>
                 <div>Lead Guitar/Backing Vocals - Serenity Autumn</div>
                 <div>Bass - Johnny Young</div>
                 <div>Drums - Abhi Velaga</div>
@@ -158,23 +158,45 @@ export class Music extends Component {
           <div className="cg back-img" />
           <div className="mjf-title">CREAM GENIE</div>
 
-          <div className="flex mjf-info">
-            <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
-            <div className="cg-description">
-              I DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME WE RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
+          {/* desktop  */}
+          <MediaQuery minDeviceWidth={500}>
+            <div className="flex mjf-info">
+              <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
+              <div className="cg-description">
+                I DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME WE RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
             </div>
-          </div>
+            </div>
+            <div className="flex cover-container">
+              <div className="indulgent-cover-info" >
+                <div className="cover-title" >Cream Genie 2016 Demos</div>
+                <div className="cover-artist" >Cream Genie</div>
+                <div className="cover-buttons"><Button variant="outline-dark"><a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos" target="_blank">SOUNDCLOUD</a></Button></div>
+                <div>Guitar - Jason Swan</div>
+                <div>Drums - Abhi Velaga</div>
+              </div>
+              <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
+            </div>
+          </MediaQuery>
 
-          <div className="flex cover-container">
-            <div className="indulgent-cover-info" >
+          {/* mobile  */}
+          <MediaQuery maxDeviceWidth={500}>
+            <div className="flex mjf-info">
+              <div className="cg-description">
+                I DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME WE RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
+            </div>
+              <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
+              <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
               <div className="cover-title" >Cream Genie 2016 Demos</div>
               <div className="cover-artist" >Cream Genie</div>
-              <div className="cover-buttons"><Button variant="outline-dark"><a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos" target="_blank">SOUNDCLOUD</a></Button></div>
-              <div>Guitar - Jason Swan</div>
-              <div>Drums - Abhi Velaga</div>
+              <div className="cover-buttons flex">
+                <Button variant="outline-dark"><a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos" target="_blank">SOUNDCLOUD</a></Button>
+              </div>
+              <div className="cover-extra">
+                <div>Guitar - Jason Swan</div>
+                <div>Drums - Abhi Velaga</div>
+              </div>
             </div>
-            <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
-          </div>
+          </MediaQuery>
           <YouTube videoId="19hlSPVXDjo" className="youtube" />
         </div>
       </div>
