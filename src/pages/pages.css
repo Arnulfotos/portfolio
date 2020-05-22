@@ -287,6 +287,7 @@ c {
 }
 
 .cover-title {
+  color: white;
   font-size: 40px;
   line-height: 40px;
   font-style: italic;
@@ -316,6 +317,10 @@ button {
   margin: 4px;
 }
 
+.music-mobile{
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   .indulgent-title {
     padding-top: 70px;
@@ -333,6 +338,27 @@ button {
   }
   .music-text {
     text-align: center;
+  }
+
+  .music-cover {
+    height: auto;
+    width: 80vw;
+  }
+  .cover-title {
+    width: 90vw;
+    text-align: center;
+  }
+  .cover-artist {
+    margin-bottom: 20px;
+  }
+  .cover-buttons {
+    margin-bottom: 20px;
+  }
+  .cover-extra {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(105, 105, 105);
+    margin-bottom: 40px;
   }
 }
 

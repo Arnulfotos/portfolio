@@ -58,19 +58,43 @@ export class Music extends Component {
             </div>
           </div>
 
-          <div className="flex cover-container">
-            <div className="indulgent-cover-info flex" >
+          {/* desktop  */}
+          <MediaQuery minDeviceWidth={500}>
+            <div className="flex cover-container">
+              <div className="indulgent-cover-info flex" >
+                <div className="cover-title" >No Drive Will Take Me Home</div>
+                <div className="cover-artist" >Indulgent</div>
+                <div className="indulgent-buttons cover-buttons flex">
+                  <Button variant="outline-dark"><a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=wxw93aEFTfGDUXMgTjEzsg" target="_blank">SPOTIFY</a></Button>
+                  <Button variant="outline-dark"><a href="https://music.apple.com/us/album/no-drive-will-take-me-home/1429049796" target="_blank">APPLE MUSIC</a></Button>
+                  <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Indulgent_No_Drive_Will_Take_Me_Home?id=Bcwfm3gxejnt5fvkv2hlhxgxdei" target="_blank">GOOGLE PLAY</a></Button></div>
+                <div>Guitar/Drums/Vocals/Bass performed by Abhi Velaga</div>
+                <div>Released 2018</div>
+              </div>
+              <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)} />
+            </div>
+          </MediaQuery>
+
+          {/* mobile  */}
+          <MediaQuery maxDeviceWidth={500}>
+            <div className="flex music-mobile">
+              <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)} />
+
               <div className="cover-title" >No Drive Will Take Me Home</div>
               <div className="cover-artist" >Indulgent</div>
-              <div className="indulgent-buttons cover-buttons flex">
+              <div className="cover-buttons flex">
                 <Button variant="outline-dark"><a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=wxw93aEFTfGDUXMgTjEzsg" target="_blank">SPOTIFY</a></Button>
                 <Button variant="outline-dark"><a href="https://music.apple.com/us/album/no-drive-will-take-me-home/1429049796" target="_blank">APPLE MUSIC</a></Button>
-                <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Indulgent_No_Drive_Will_Take_Me_Home?id=Bcwfm3gxejnt5fvkv2hlhxgxdei" target="_blank">GOOGLE PLAY</a></Button></div>
-              <div>Guitar/Drums/Vocals/Bass performed by Abhi Velaga</div>
-              <div>Released 2018</div>
+                <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Indulgent_No_Drive_Will_Take_Me_Home?id=Bcwfm3gxejnt5fvkv2hlhxgxdei" target="_blank">GOOGLE PLAY</a>
+                </Button>
+              </div>
+              <div className="cover-extra">
+                <div>Guitar/Drums/Vocals/Bass performed by Abhi Velaga</div>
+                <div>Released 2018</div>
+              </div>
+
             </div>
-            <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)} />
-          </div>
+          </MediaQuery>
 
           {/* mjf  */}
           <div className="mjf back-img" />
