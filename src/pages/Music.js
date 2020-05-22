@@ -19,7 +19,7 @@ import mjfCover from '../../dist/images/music/mjf/cover.jpg';
 
 import cg from '../../dist/images/music/cg/cg.jpg';
 import cgCover from '../../dist/images/music/cg/cover.jpg';
-import cg1 from '../../dist/images/music/cg/1.jpg';
+import jason from '../../dist/images/music/cg/6.jpg';
 
 const mjfFlex = {
   justifyContent: 'center',
@@ -34,8 +34,67 @@ export class Music extends Component {
       <div className="page">
         <div className="appear">
           {/* desktop  */}
-          < MediaQuery minDeviceWidth={500} >
-            <div className="grid">
+          {/* < MediaQuery minDeviceWidth={500} > */}
+
+          <div className="software-intro">
+            im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught
+          </div>
+          <div className="indulgent back-img">
+            <div className="indulgent-title">INDULGENT</div>
+          </div>
+
+          <div className="indulgent-grid" >
+            <img src={guitar1} className="indulgent-grid-img" />
+            <img src={guitar2} className="indulgent-grid-img" />
+            <div className="flex"><div className="music-text">
+              I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
+            </div>
+            </div>
+          </div>
+
+          <div className="flex">
+            <div className="indulgent-cover-info" >
+              i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
+          </div>
+            <img src={indulgentCover} className="music-cover" />
+          </div>
+
+          <div className="mjf back-img" />
+          <div className="mjf-title">MERRY JANE & THE FONDAS</div>
+
+          <div className="flex">
+            <div className="mjf-description">
+              i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban
+            </div>
+            <img src={mjfStudio} className="mjf-studio" />
+          </div>
+
+          <div className="flex">
+            <img src={mjfCover} className="music-cover" />
+            <div className="mjf-cover-info" >
+              i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
+            </div>
+          </div>
+
+          <div className="cg back-img" />
+          <div className="mjf-title">CREAM GENIE</div>
+
+          <div className="flex">
+            
+            <img src={jason} className="mjf-studio" />
+            <div className="cg-description">
+              i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban
+            </div>
+          </div>
+
+          <div className="flex">
+            <div className="indulgent-cover-info" >
+              i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
+          </div>
+            <img src={cgCover} className="music-cover" />
+          </div>
+
+          {/* <div className="grid">
               <div className="music-banner indulgent back-img">
                 <div className="indulgent-title">INDULGENT</div>
                 <div className="music-text">
@@ -80,12 +139,12 @@ export class Music extends Component {
                   <Button variant="secondary"><a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos" target="_blank">SOUNDCLOUD</a></Button>
                 </div>
               </div>
-            </div>
-          </ MediaQuery>
+            </div> */}
+          {/* </ MediaQuery> */}
 
 
           {/* mobile  */}
-          < MediaQuery maxDeviceWidth={500} >
+          {/* < MediaQuery maxDeviceWidth={500} >
             <img src={drums} style={mobileImg} />
             <div style={mobileTitle}>INDULGENT</div>
             <div style={mobileText}> I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
@@ -108,7 +167,7 @@ export class Music extends Component {
             </div>
             <img src={cgCover} style={mobileImg} />
             <img src={cg1} style={mobileImg} />
-          </ MediaQuery>
+          </ MediaQuery> */}
         </div>
       </div>
     </div>;

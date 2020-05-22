@@ -166,15 +166,7 @@ c {
   color: rgb(0, 255, 255) !important;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(10, 10%);
-  grid-template-rows: 100vh 40vw 100vh 40vw 100vh 40vw;
-}
-
 .music-banner {
-  grid-column-start: 1;
-  grid-column-end: 11;
   overflow: hidden;
   position: relative;
 }
@@ -187,8 +179,8 @@ c {
 
 .indulgent {
   background-image: url("../../dist/images/music/indulgent/drums.jpg");
-  grid-row-start: 1;
-  grid-row-end: 2;
+  height: 100vh;
+  margin-bottom: 20px;
 }
 
 .indulgent-title {
@@ -197,190 +189,82 @@ c {
   text-align: center;
 }
 
-.music-text {
-  width: 700px;
-  color: white;
-  text-align: right;
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
+.indulgent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: auto;
+  overflow: hidden;
 }
 
-.mjf-text {
-  width: 500px;
+.indulgent-grid-img {
+  width: 100%;
+  padding: 20px;
+}
+
+.music-text {
   color: white;
   text-align: left;
-  position: absolute;
-  bottom: 100px;
-  left: 100px;
+  padding: 20px
 }
 
-.indulgent-cover {
-  background-image: url("../../dist/images/music/indulgent/cover.jpg");
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.indulgent-guitar1 {
-  background-image: url("../../dist/images/music/indulgent/guitar1.jpg");
-  grid-column-start: 5;
-  grid-column-end: 8;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.indulgent-guitar2 {
-  background-image: url("../../dist/images/music/indulgent/guitar2.jpg");
-  grid-column-start: 8;
-  grid-column-end: 11;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.indulgent-cover-overlay {
-  animation-name: disappear;
-  animation-duration: .7s;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 255, 255, .3);
-  opacity: 0;
-  font-size: 100px;
+.indulgent-cover-info {
   color: white;
+  text-align: right;
+  padding: 20px;
+  width: 50%;
+  margin-right: 0;
 }
 
-.indulgent-cover-overlay:hover {
-  opacity: 1.0;
-  animation-name: appear;
-  animation-duration: .7s;
-}
-
-.indulgent-guitar1:hover~.indulgent-cover>.indulgent-cover-overlay {
-  opacity: 1.0;
-  animation-name: appear;
-  animation-duration: .7s;
-}
-
-.indulgent-guitar2:hover~.indulgent-cover>.indulgent-cover-overlay {
-  opacity: 1.0;
-  animation-name: appear;
-  animation-duration: .7s;
+.music-cover {
+  padding: 20px;
+  width: 50%;
 }
 
 .mjf {
   background-image: url("../../dist/images/music/mjf/mjf.jpg");
-  grid-row-start: 3;
-  grid-row-end: 4;
+  height: 100vh;
+  margin-bottom: 20px;
 }
 
 .mjf-title {
-  color: black;
+  color: white;
   font-size: 70px;
+  line-height: 70px;
   text-align: center;
-  line-height: 100px;
 }
 
-.mjf-cover {
-  background-image: url("../../dist/images/music/mjf/cover.jpg");
-  grid-column-start: 7;
-  grid-column-end: 11;
-  grid-row-start: 4;
-  grid-row-end: 5;
+.mjf-description {
+  color: white;
+  text-align: right;
+  padding: 20px;
+  width: 40%;
 }
 
 .mjf-studio {
-  background-image: url("../../dist/images/music/mjf/studio.jpg");
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  width: 60%;
+  padding: 20px;
 }
 
-.mjf-studio:hover+.mjf-cover>.mjf-cover-overlay {
-  opacity: 1.0;
-  animation-name: appear;
-  animation-duration: .7s;
-}
-
-.mjf-cover-overlay {
-  animation-name: disappear;
-  animation-duration: .7s;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 255, 255, .3);
-  opacity: 0;
-  font-size: 100px;
+.mjf-cover-info {
   color: white;
-}
-
-.mjf-cover-overlay:hover {
-  opacity: 1.0;
-  animation-name: appear;
-  animation-duration: .7s;
+  text-align: left;
+  padding: 20px;
+  width: 50%;
 }
 
 .cg {
   background-image: url("../../dist/images/music/cg/cg.jpg");
-  grid-row-start: 5;
-  grid-row-end: 6;
+  height: 100vh;
+  margin-bottom: 20px;
 }
 
-.cg-title {
+.cg-description {
   color: white;
-  font-size: 130px;
-  text-align: right;
-  line-height: 130px;
+  text-align: left;
+  padding: 20px;
+  width: 40%;
 }
 
-.cg-cover {
-  background-image: url("../../dist/images/music/cg/cover.jpg");
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 7;
-}
-
-.cg-guitar {
-  background-image: url("../../dist/images/music/cg/1.jpg");
-  grid-column-start: 5;
-  grid-column-end: 11;
-  grid-row-start: 6;
-  grid-row-end: 7;
-}
-
-.cg-cover-overlay {
-  animation-name: disappear;
-  animation-duration: .7s;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 255, 255, .3);
-  opacity: 0;
-  font-size: 100px;
-  color: white;
-}
-
-.cg-cover-overlay:hover {
-  opacity: 1.0;
-  animation-name: appear;
-  animation-duration: .7s;
-}
-
-.cg-guitar:hover+.cg-cover>.cg-cover-overlay {
-  opacity: 1.0;
-  animation-name: appear;
-  animation-duration: .7s;
-}
-
-.cover-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cover-flex a {
-  color: inherit;
-}
 
 .hi {
   color: white;
