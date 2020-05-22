@@ -59,9 +59,16 @@ export class Music extends Component {
           </div>
 
           <div className="flex cover-container">
-            <div className="indulgent-cover-info" >
-              i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
-          </div>
+            <div className="indulgent-cover-info flex" >
+              <div className="cover-title" >No Drive Will Take Me Home</div>
+              <div className="cover-artist" >Indulgent</div>
+              <div className="indulgent-buttons cover-buttons flex">
+                <Button variant="outline-dark"><a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=wxw93aEFTfGDUXMgTjEzsg" target="_blank">SPOTIFY</a></Button>
+                <Button variant="outline-dark"><a href="https://music.apple.com/us/album/no-drive-will-take-me-home/1429049796" target="_blank">APPLE MUSIC</a></Button>
+                <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Indulgent_No_Drive_Will_Take_Me_Home?id=Bcwfm3gxejnt5fvkv2hlhxgxdei" target="_blank">GOOGLE PLAY</a></Button></div>
+              <div>Guitar/Drums/Vocals/Bass performed by Abhi Velaga</div>
+              <div>Released 2018</div>
+            </div>
             <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)} />
           </div>
 
@@ -79,7 +86,19 @@ export class Music extends Component {
           <div className="flex cover-container">
             <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" />
             <div className="mjf-cover-info" >
-              i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
+              <div className="cover-title" >Pulls You Under</div>
+              <div className="cover-artist" >Merry Jane & The Fondas</div>
+              <div className="mjf-buttons cover-buttons flex">
+                <Button variant="outline-dark"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
+                <Button variant="outline-dark"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
+                <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Merry_Jane_the_Fondas_Pulls_You_Under?id=Bbp7z4p3isxbxsqv4oymqx7ndt4" target="_blank">GOOGLE PLAY</a></Button>
+              </div>
+              <div>Guitar/Vocals - Allyb</div>
+              <div>Lead Guitar/Backing Vocals - Serenity Autumn</div>
+              <div>Bass - Johnny Young</div>
+              <div>Drums - Abhi Velaga</div>
+              <div>Produced by Jackie Venson</div>
+              <div>Released 2019</div>
             </div>
           </div>
 
@@ -98,11 +117,14 @@ export class Music extends Component {
 
           <div className="flex cover-container">
             <div className="indulgent-cover-info" >
-              i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
+              <div className="cover-title" >Cream Genie 2016 Demos</div>
+              <div className="cover-artist" >Cream Genie</div>
+              <div className="cover-buttons"><Button variant="outline-dark"><a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos" target="_blank">SOUNDCLOUD</a></Button></div>
+              <div>Guitar - Jason Swan</div>
+              <div>Drums - Abhi Velaga</div>
             </div>
             <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
           </div>
-
           <YouTube videoId="19hlSPVXDjo" className="youtube" />
         </div>
       </div>
