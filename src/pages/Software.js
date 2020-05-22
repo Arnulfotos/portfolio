@@ -93,8 +93,7 @@ export class Software extends Component {
             </div>
 
             <div className="slb flex">
-              <LazyLoadImage effect="opacity" src={slb} height={this.getHeight(slb)} className="slb-img"/>
-              {/* <img src={slb} className="slb-img" /> */}
+              <LazyLoadImage effect="opacity" src={slb} height={this.getHeight(slb)} className="slb-img" />
               <div className="slb-text">
                 I even integrated LEDs into my final presentation for my software engineer internship at Schlumberger. I used a button to control animations around different sections of the poster as I talked in order to draw focus to the corresponding content I was referring to.
                 </div>
@@ -113,11 +112,3 @@ export class Software extends Component {
 }
 
 export default Software;
-
-const fullWidth = {
-  width: '100%'
-}
-
-const fullHeight = {
-  height: '100%'
-}

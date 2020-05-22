@@ -597,6 +597,7 @@ c {
 .slb-img {
   padding: 40px;
   padding-top: 0;
+  padding-bottom: 0;
   width: 40vw;
 }
 
@@ -731,11 +732,6 @@ processing {
   .grid-stairs {
     margin: 40px;
   }
-  .grid-slb-text {
-    margin: 20px;
-    text-align: center;
-    padding-right: 0px;
-  }
   .freelance {
     width: 100%;
     padding-right: 20px;
@@ -755,17 +751,15 @@ processing {
     padding-right: 20px;
     padding-left: 20px;
   }
-
   .slb {
     justify-content: center;
   }
-  
   .slb-text {
     text-align: center;
     width: 90vw;
   }
-  
   .slb-img {
     width: 100vw;
+    padding-bottom: 40px;
   }
 }
