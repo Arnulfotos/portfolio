@@ -51,8 +51,9 @@ export class Music extends Component {
           <div className="indulgent-grid" >
             <LazyLoadImage effect="opacity" src={guitar1} className="indulgent-grid-img" width="100%" />
             <LazyLoadImage effect="opacity" src={guitar2} className="indulgent-grid-img" width="100%" />
-            <div className="flex"><div className="music-text">
-              I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
+            <div className="flex indulgent-grid-text">
+              <div className="music-text">
+                I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
             </div>
             </div>
           </div>

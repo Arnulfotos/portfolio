@@ -184,6 +184,7 @@ c {
   color: white;
   font-size: 135px;
   text-align: center;
+  width: 100%;
 }
 
 .indulgent-grid {
@@ -282,6 +283,26 @@ c {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+}
+
+@media (max-width: 500px) {
+  .indulgent-title {
+    padding-top: 70px;
+    font-size: 50px;
+  }
+  .indulgent-grid {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto auto;
+  }
+  .indulgent-grid-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .music-text {
+    text-align: center;
+  }
 }
 
 /* end music */
