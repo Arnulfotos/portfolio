@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import MediaQuery from 'react-responsive'
 import Navbar from '../layout/Navbar'
 
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import './pages.css';
@@ -22,6 +22,15 @@ import cgCover from '../../dist/images/music/cg/cover.jpg';
 import jason from '../../dist/images/music/cg/6.jpg';
 
 export class Music extends Component {
+
+  getHeight(image) {
+    var img = new Image();
+    img.onload = function () {
+      return this.height;
+    }
+    img.src = image;
+  }
+
   render() {
     return <div>
       <MediaQuery minDeviceWidth={500}><Navbar activeLink={"MUSIC"} mobile={false} /></MediaQuery>
@@ -30,7 +39,7 @@ export class Music extends Component {
         <div className="appear">
 
           <div className="software-intro">
-            im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught im very self taught
+            Music was my very first passion. I started learning guitar when I was 9 and started teaching myself bass when I was 13, audio production and drums at 14, and vocals at 15. I wrote, performed, recorded, produced, and released my first album independently, all at the age of 16. I spent the end of high school recording my second album in a studio and released that at the age of 18.
           </div>
 
           {/* indulgent  */}
@@ -39,8 +48,8 @@ export class Music extends Component {
           </div>
 
           <div className="indulgent-grid" >
-            <img src={guitar1} className="indulgent-grid-img" />
-            <img src={guitar2} className="indulgent-grid-img" />
+            <LazyLoadImage effect="opacity"  src={guitar1} className="indulgent-grid-img" width="100%" />
+            <LazyLoadImage effect="opacity" src={guitar2} className="indulgent-grid-img" width="100%" />
             <div className="flex"><div className="music-text">
               I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
             </div>
@@ -51,7 +60,7 @@ export class Music extends Component {
             <div className="indulgent-cover-info" >
               i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
           </div>
-            <img src={indulgentCover} className="music-cover" />
+            <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)}/>
           </div>
 
           {/* mjf  */}
@@ -62,11 +71,11 @@ export class Music extends Component {
             <div className="mjf-description">
               I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
             </div>
-            <img src={mjfStudio} className="mjf-studio" />
+            <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
           </div>
 
           <div className="flex cover-container">
-            <img src={mjfCover} className="music-cover" />
+            <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" />
             <div className="mjf-cover-info" >
               i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
             </div>
@@ -77,7 +86,7 @@ export class Music extends Component {
           <div className="mjf-title">CREAM GENIE</div>
 
           <div className="flex mjf-info">
-            <img src={jason} className="mjf-studio" />
+            <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
             <div className="cg-description">
               I DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME WE RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
             </div>
@@ -87,7 +96,7 @@ export class Music extends Component {
             <div className="indulgent-cover-info" >
               i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
             </div>
-            <img src={cgCover} className="music-cover" />
+            <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
           </div>
 
         </div>

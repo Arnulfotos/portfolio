@@ -222,7 +222,7 @@ c {
 .music-cover {
   padding: 20px;
   padding-top: 0;
-  width: 35%;
+  height: 35vw;
 }
 
 .mjf {
@@ -251,7 +251,7 @@ c {
 }
 
 .mjf-studio {
-  width: 60%;
+  width: 57vw;
   padding: 20px;
 }
 
