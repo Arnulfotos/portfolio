@@ -77,23 +77,25 @@ export class Software extends Component {
             <LazyLoadImage effect="opacity" src={led_zoo} width="100%" className="led" height={this.getHeight(led_zoo)} />
 
             <div className="software-grid">
-              <div className="software-grid-text">
+              <div className="software-grid-text flex">
                 <div className="grid-text-title">LED STRIP PROGRAMMING</div>
-                I love finding ways to intersect my passions for computer science with that of fine arts and coding LED strips with Arduinos has been a great way to do so. I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night. I also created a <a href="/hi">button</a> that allows visitors to say hello to me in realtime by strobing LEDs at my desk.
+                <div>
+                  I love finding ways to intersect my passions for computer science with that of fine arts and coding LED strips with Arduinos has been a great way to do so. I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night. I also created a <a href="/hi">button</a> that allows visitors to say hello to me in realtime by strobing LEDs at my desk.
                 </div>
+              </div>
               <div className="grid-stairs">
-                <LazyLoadImage effect="opacity" src={stairs} width="100%" height={this.getHeight(stairs)}/>
+                <LazyLoadImage effect="opacity" src={stairs} width="100%" height={this.getHeight(stairs)} />
               </div>
 
               <div className="grid-bag">
-                <LazyLoadImage effect="opacity" src={bag} width="100%" height={this.getHeight(bag)}/>
+                <LazyLoadImage effect="opacity" src={bag} width="100%" height={this.getHeight(bag)} />
               </div>
+            </div>
 
-              <div className="grid-slb">
-                <LazyLoadImage effect="opacity" src={slb} width="100%" height={this.getHeight(slb)}/>
-              </div>
-
-              <div className="grid-slb-text">
+            <div className="slb flex">
+              <LazyLoadImage effect="opacity" src={slb} height={this.getHeight(slb)} className="slb-img"/>
+              {/* <img src={slb} className="slb-img" /> */}
+              <div className="slb-text">
                 I even integrated LEDs into my final presentation for my software engineer internship at Schlumberger. I used a button to control animations around different sections of the poster as I talked in order to draw focus to the corresponding content I was referring to.
                 </div>
             </div>
