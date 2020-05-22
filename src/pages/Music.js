@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Button from 'react-bootstrap/Button';
 import MediaQuery from 'react-responsive'
 import Navbar from '../layout/Navbar'
+import YouTube from 'react-youtube';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
@@ -48,7 +49,7 @@ export class Music extends Component {
           </div>
 
           <div className="indulgent-grid" >
-            <LazyLoadImage effect="opacity"  src={guitar1} className="indulgent-grid-img" width="100%" />
+            <LazyLoadImage effect="opacity" src={guitar1} className="indulgent-grid-img" width="100%" />
             <LazyLoadImage effect="opacity" src={guitar2} className="indulgent-grid-img" width="100%" />
             <div className="flex"><div className="music-text">
               I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
@@ -60,7 +61,7 @@ export class Music extends Component {
             <div className="indulgent-cover-info" >
               i made this here are some links i made this here are some links i made this here are some links i made this here are some links i made this here are some links
           </div>
-            <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)}/>
+            <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)} />
           </div>
 
           {/* mjf  */}
@@ -81,6 +82,8 @@ export class Music extends Component {
             </div>
           </div>
 
+          <YouTube videoId="XXMGt_N6Mc0" className="youtube" />
+
           {/* cg  */}
           <div className="cg back-img" />
           <div className="mjf-title">CREAM GENIE</div>
@@ -99,6 +102,7 @@ export class Music extends Component {
             <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
           </div>
 
+          <YouTube videoId="19hlSPVXDjo" className="youtube" />
         </div>
       </div>
     </div>;

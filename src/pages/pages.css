@@ -275,6 +275,15 @@ c {
   width: 40%;
 }
 
+.youtube {
+  display: block;
+  width: 80vw;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
 /* end music */
 
 .hi {
