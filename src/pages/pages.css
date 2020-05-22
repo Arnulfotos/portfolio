@@ -360,6 +360,20 @@ button {
     color: rgb(105, 105, 105);
     margin-bottom: 40px;
   }
+  .mjf-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .mjf-studio {
+    width: 90vw;
+  }
+  .mjf-description {
+    text-align: center;
+    width: 90%;
+  }
+  .youtube {
+    height: 200px;
+  }
 }
 
 /* end music */

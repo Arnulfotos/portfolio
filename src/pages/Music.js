@@ -79,7 +79,6 @@ export class Music extends Component {
           <MediaQuery maxDeviceWidth={500}>
             <div className="flex music-mobile">
               <LazyLoadImage effect="opacity" src={indulgentCover} className="music-cover" height={this.getHeight(indulgentCover)} />
-
               <div className="cover-title" >No Drive Will Take Me Home</div>
               <div className="cover-artist" >Indulgent</div>
               <div className="cover-buttons flex">
@@ -92,7 +91,6 @@ export class Music extends Component {
                 <div>Guitar/Drums/Vocals/Bass performed by Abhi Velaga</div>
                 <div>Released 2018</div>
               </div>
-
             </div>
           </MediaQuery>
 
@@ -100,31 +98,59 @@ export class Music extends Component {
           <div className="mjf back-img" />
           <div className="mjf-title">MERRY JANE & THE FONDAS</div>
 
-          <div className="flex mjf-info">
+          {/* desktop  */}
+          <MediaQuery minDeviceWidth={500}>
+            <div className="flex mjf-info">
+              <div className="mjf-description">
+                I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
+            </div>
+              <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
+            </div>
+            <div className="flex cover-container">
+              <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" />
+              <div className="mjf-cover-info" >
+                <div className="cover-title" >Pulls You Under</div>
+                <div className="cover-artist" >Merry Jane & The Fondas</div>
+                <div className="mjf-buttons cover-buttons flex">
+                  <Button variant="outline-dark"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
+                  <Button variant="outline-dark"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
+                  <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Merry_Jane_the_Fondas_Pulls_You_Under?id=Bbp7z4p3isxbxsqv4oymqx7ndt4" target="_blank">GOOGLE PLAY</a></Button>
+                </div>
+                <div>Guitar/Vocals - Allyb</div>
+                <div>Lead Guitar/Backing Vocals - Serenity Autumn</div>
+                <div>Bass - Johnny Young</div>
+                <div>Drums - Abhi Velaga</div>
+                <div>Produced by Jackie Venson</div>
+                <div>Released 2019</div>
+              </div>
+            </div>
+          </MediaQuery>
+
+          {/* mobile  */}
+          <MediaQuery maxDeviceWidth={500}>
+            <div className="flex music-mobile">
             <div className="mjf-description">
-              I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
+                I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
             </div>
             <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
-          </div>
-
-          <div className="flex cover-container">
-            <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" />
-            <div className="mjf-cover-info" >
+              <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" height={this.getHeight(indulgentCover)} />
               <div className="cover-title" >Pulls You Under</div>
-              <div className="cover-artist" >Merry Jane & The Fondas</div>
-              <div className="mjf-buttons cover-buttons flex">
-                <Button variant="outline-dark"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
-                <Button variant="outline-dark"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
-                <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Merry_Jane_the_Fondas_Pulls_You_Under?id=Bbp7z4p3isxbxsqv4oymqx7ndt4" target="_blank">GOOGLE PLAY</a></Button>
-              </div>
+                <div className="cover-artist" >Merry Jane & The Fondas</div>
+                <div className="cover-buttons flex">
+                  <Button variant="outline-dark"><a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw" target="_blank">SPOTIFY</a></Button>
+                  <Button variant="outline-dark"><a href="https://music.apple.com/us/album/pulls-you-under-ep/1454982478" target="_blank">APPLE MUSIC</a></Button>
+                  <Button variant="outline-dark"><a href="https://play.google.com/store/music/album/Merry_Jane_the_Fondas_Pulls_You_Under?id=Bbp7z4p3isxbxsqv4oymqx7ndt4" target="_blank">GOOGLE PLAY</a></Button>
+                </div>
+              <div className="cover-extra">
               <div>Guitar/Vocals - Allyb</div>
-              <div>Lead Guitar/Backing Vocals - Serenity Autumn</div>
-              <div>Bass - Johnny Young</div>
-              <div>Drums - Abhi Velaga</div>
-              <div>Produced by Jackie Venson</div>
-              <div>Released 2019</div>
+                <div>Lead Guitar/Backing Vocals - Serenity Autumn</div>
+                <div>Bass - Johnny Young</div>
+                <div>Drums - Abhi Velaga</div>
+                <div>Produced by Jackie Venson</div>
+                <div>Released 2019</div>
+              </div>
             </div>
-          </div>
+          </MediaQuery>
 
           <YouTube videoId="XXMGt_N6Mc0" className="youtube" />
 
