@@ -166,16 +166,13 @@ c {
   color: rgb(0, 255, 255) !important;
 }
 
-.music-banner {
-  overflow: hidden;
-  position: relative;
-}
-
 .back-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* music */
 
 .indulgent {
   background-image: url("../../dist/images/music/indulgent/drums.jpg");
@@ -194,6 +191,8 @@ c {
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: auto;
   overflow: hidden;
+  margin: 20px;
+  margin-top: 0;
 }
 
 .indulgent-grid-img {
@@ -207,17 +206,23 @@ c {
   padding: 20px
 }
 
+.cover-container {
+  margin: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .indulgent-cover-info {
   color: white;
   text-align: right;
   padding: 20px;
-  width: 50%;
-  margin-right: 0;
+  width: 35%;
 }
 
 .music-cover {
   padding: 20px;
-  width: 50%;
+  padding-top: 0;
+  width: 35%;
 }
 
 .mjf {
@@ -231,6 +236,11 @@ c {
   font-size: 70px;
   line-height: 70px;
   text-align: center;
+}
+
+.mjf-info {
+  margin: 20px;
+  margin-top: 0;
 }
 
 .mjf-description {
@@ -249,7 +259,7 @@ c {
   color: white;
   text-align: left;
   padding: 20px;
-  width: 50%;
+  width: 35%;
 }
 
 .cg {
@@ -265,6 +275,7 @@ c {
   width: 40%;
 }
 
+/* end music */
 
 .hi {
   color: white;
@@ -355,7 +366,6 @@ c {
   color: white;
   text-align: center;
   font-size: 40px;
-  /* line-height: 40px; */
 }
 
 .software-ft-subtitle {
@@ -551,9 +561,6 @@ processing {
     color: rgb(221, 221, 221);
     font-size: 10px;
     padding: 2px;
-  }
-  .home {
-    background-image: url("../../dist/images/mobile-room.jpg");
   }
   .gallery {
     width: 100%;
