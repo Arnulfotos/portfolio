@@ -44,9 +44,19 @@ export class Music extends Component {
           </div>
 
           {/* indulgent  */}
-          <div className="indulgent back-img">
+          {/* desktop  */}
+          <MediaQuery minDeviceWidth={500}>
+            <div className="indulgent back-img">
+              <div className="indulgent-title">INDULGENT</div>
+            </div>
+          </MediaQuery>
+
+          {/* mobile  */}
+          <MediaQuery maxDeviceWidth={500}>
+            <LazyLoadImage effect="opacity" src={drums} width="100%" height={this.getHeight(drums)} className="mobile-banner" />
             <div className="indulgent-title">INDULGENT</div>
-          </div>
+          </MediaQuery>
+
 
           <div className="indulgent-grid" >
             <LazyLoadImage effect="opacity" src={guitar1} className="indulgent-grid-img" width="100%" />
@@ -96,6 +106,7 @@ export class Music extends Component {
 
           {/* mjf  */}
           <div className="mjf back-img" />
+          <LazyLoadImage effect="opacity" src={mjf} width="100%" height={this.getHeight(mjf)} className="mobile-banner" />
           <div className="mjf-title">MERRY JANE & THE FONDAS</div>
 
           {/* desktop  */}
@@ -156,6 +167,7 @@ export class Music extends Component {
 
           {/* cg  */}
           <div className="cg back-img" />
+          <LazyLoadImage effect="opacity" src={cg} width="100%" height={this.getHeight(cg)} className="mobile-banner" />
           <div className="mjf-title">CREAM GENIE</div>
 
           {/* desktop  */}
