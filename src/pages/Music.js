@@ -60,7 +60,7 @@ export class Music extends Component {
 
           <div className="flex mjf-info">
             <div className="mjf-description">
-              i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban
+              I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
             </div>
             <img src={mjfStudio} className="mjf-studio" />
           </div>
@@ -79,7 +79,7 @@ export class Music extends Component {
           <div className="flex mjf-info">
             <img src={jason} className="mjf-studio" />
             <div className="cg-description">
-              i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban i drummd in this ban
+              I DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME WE RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export class Music extends Component {
             </div>
             <img src={cgCover} className="music-cover" />
           </div>
-          
+
         </div>
       </div>
     </div>;
