@@ -383,7 +383,7 @@ button {
   }
   .mjf-description {
     text-align: center;
-    width: 90%;
+    width: 100%;
   }
   .youtube {
     height: 200px;
@@ -393,7 +393,7 @@ button {
   }
   .cg-description {
     text-align: center;
-    width: 90%;
+    width: 100%;
   }  
 }
 
