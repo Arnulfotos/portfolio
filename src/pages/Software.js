@@ -25,6 +25,7 @@ import bandTogether1 from '../../dist/images/software/bandtogether1.png';
 import leaseEasy from '../../dist/images/software/leaseasy.png';
 import stairs from '../../dist/images/software/stairs.gif';
 import bag from '../../dist/images/software/bag.gif';
+import drums from '../../dist/images/software/drum-led.gif';
 
 export class Software extends Component {
 
@@ -74,7 +75,7 @@ export class Software extends Component {
               <div className="software-ft-info">Lease Easy is a student run startup currently part of UT Austin's <a href="http://longhornstartup.com/portfolio-spring-2020/">Longhorn Startup Lab</a>. I designed an interface that makes it easy for users to intuitively search for apartments that meet their requirements and presents the most important information clearly up front.</div>
             </div>
 
-            <LazyLoadImage effect="opacity" src={led_zoo} width="100%" className="led" height={this.getHeight(led_zoo)} />
+            <LazyLoadImage effect="opacity" src={drums} width="100%" height={this.getHeight(drums)} />
 
             <div className="software-grid">
               <div className="software-grid-text flex">
