@@ -45,7 +45,7 @@ export class Navbar extends Component {
     }
 
     return (
-      <div>
+      <div className={!this.state.collapsed && this.props.activeLink != "HOME" ? "nav-back" : ""} >
         <div className="navbar">
           <div className="logo-container">
 

@@ -92,6 +92,10 @@
   animation-fill-mode: forwards;
 }
 
+.nav-back {
+  background-color: none;
+}
+
 @media (max-width: 500px) {
   .nav-title {
     font-size: 45px;
@@ -119,6 +123,37 @@
   .subtitle {
     height: 18px;
     font-size: 13px;
+  }
+  .nav-back {
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation-name: hideBack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes hideBack {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 }
 
