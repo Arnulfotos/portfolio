@@ -30,7 +30,7 @@ export class Home extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.changeImage(), 5000); // last parameter is duration
+    this.interval = setInterval(() => this.changeImage(), 6000); // last parameter is duration
   }
 
   render() {
@@ -40,7 +40,7 @@ export class Home extends Component {
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={true} /></MediaQuery>
           <CrossfadeImage
             src={images[this.state.imageIndex]}
-            duration={3000}
+            duration={2000}
             style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             timingFunction={"ease"}
           />
