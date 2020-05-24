@@ -27,6 +27,11 @@ import bag from '../../dist/images/software/bag.gif';
 import drums from '../../dist/images/software/drum-led.gif';
 import composite from '../../dist/images/software/composite.jpg';
 
+import drumsVid from '../../dist/images/software/drums.mp4';
+import stairsVid from '../../dist/images/software/stairs.mp4';
+import doorVid from '../../dist/images/software/door.mp4';
+import bagVid from '../../dist/images/software/bag.mp4';
+
 export class Software extends Component {
 
   getHeight(image) {
@@ -84,7 +89,11 @@ export class Software extends Component {
               <div className="software-ft-info">Lease Easy is a student run startup currently part of UT Austin's <a href="http://longhornstartup.com/portfolio-spring-2020/">Longhorn Startup Lab</a>. I designed an interface that makes it easy for users to intuitively search for apartments that meet their requirements and presents the most important information clearly up front.</div>
             </div>
 
-            <LazyLoadImage effect="opacity" src={drums} width="100%" height={this.getHeight(drums)} />
+
+            <video playsinline autoPlay muted loop width="100%">
+              <source src={drumsVid} type="video/mp4" />
+              <LazyLoadImage effect="opacity" src={drums} width="100%" height={this.getHeight(drums)} />
+            </video>
 
             <div className="software-grid">
               <div className="software-grid-text flex">
@@ -94,11 +103,19 @@ export class Software extends Component {
                 </div>
               </div>
               <div className="grid-stairs">
-                <LazyLoadImage effect="opacity" src={stairs} width="100%" height={this.getHeight(stairs)} />
+                <video autoPlay loop muted width="100%">
+                  <source src={doorVid} type="video/mp4" />
+                  {/* <LazyLoadImage effect="opacity" src={stairs} width="100%" height={this.getHeight(stairs)} /> */}
+                </video>
+
               </div>
 
               <div className="grid-bag">
-                <LazyLoadImage effect="opacity" src={bag} width="100%" height={this.getHeight(bag)} />
+              <video autoPlay loop muted width="100%">
+                  <source src={bagVid} type="video/mp4" />
+                  <LazyLoadImage effect="opacity" src={bag} width="100%" height={this.getHeight(bag)} />
+                </video>
+
               </div>
             </div>
 

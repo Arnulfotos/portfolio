@@ -3,16 +3,19 @@ module.exports = {
   entry: './src/index.js',
   module: {
     rules: [
-    {
-      test: /.jsx?$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/
-    }, {
-      test: /\.css$/,
-      loader: "style-loader!css-loader"
-    }, {
-      test: /\.(jpe?g|png|pdf|gif|woff|woff2|eot|ttf|otf|svg)(\?[a-z0-9=.]+)?$/,
-      loader: 'url-loader?limit=100000' }]
+      {
+        test: /.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      }, {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      }, {
+        test: /\.(jpe?g|png|pdf|gif|woff|woff2|eot|ttf|otf|svg)(\?[a-z0-9=.]+)?$/,
+        loader: 'url-loader?limit=100000'
+      },
+      { test: /\.html$/, loader: 'html-loader?attrs[]=video:src' },
+      { test: /\.(mov|mp4)$/, loader: 'url-loader' },]
   },
   resolve: {
     extensions: ['*', '.js', '.jsx']
