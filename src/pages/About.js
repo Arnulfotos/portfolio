@@ -48,24 +48,23 @@ export class About extends Component {
             <div className="about-top">
               <LazyLoadImage src={me1} className="about-top-img" effect="opacity" height={this.getHeight(me1)} width={this.getWidth(me1)} />
               <div className="about-top-text">
-                {/* Hi! I'm Abhi. I'm a software developer, musician, and film photographer based in Austin, TX. I study both Computer Science and Fine Arts at The University of Texas at Austin. */}
-                I AM A <c>SOFTWARE DEVELOPER</c>, <c>MUSICIAN</c>, AND <c>FILM PHOTOGRAPHER</c> BASED IN AUSTIN, TX. I RELEASED MY FIRST <c>SOLO MUSIC ALBUM</c> AT THE AGE OF 16 AND THE SECOND AT 18, MY FIRST <c>PHOTO COLLECTION</c> AT THE AGE OF 19, PLAYED MY FIRST <c>OFFICIAL SXSW SHOWCASE</c> AT THE AGE OF 20, BUILT MY FIRST <c>ART INSTALLATION FOR FORTRESS FESTIVAL</c> A MONTH LATER, AND HAD MY PHOTOGRAPHY FEATURED ON THE <c>COVER OF SPARK MAGAZINE</c>. I ALSO SERVE AS AN ADVISOR ON ALLEN ISD'S <c>CAREER AND TECHNICAL EDUCATION ADVISORY BOARD</c>.
-              <br />
-                <br />
-              I CURRENTLY STUDY <c>COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT AUSTIN</c> AND AM INTERNING AS A <c>SOFTWARE ENGINEER AT VISA</c>.
+                I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at The University of Texas at Austin as well as intern as a software engineer at Visa. 
+                <br/>
+                <br/>
+                I released my first solo music album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installtion for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine. I also serve as an advisor on Allen ISD's Career and Technical Education Advisory Board.
             </div>
             </div>
             <div className="about-bottom">
               <div className="about-bottom-left-text">
-                WEB DESIGN AND DEVELOPMENT BY ABHI VELAGA
+                Web design and development by Abhi Velaga
             </div>
               <LazyLoadImage src={me2} className="about-bottom-img" effect="opacity" height={this.getHeight(me2)} width={this.getWidth(me2)} />
               <div className="about-bottom-text">
-                ABHINAV.VELAGA@UTEXAS.EDU
+                abhinav.velaga@utexas.edu
               <br />
-              @ABHI.VELAGA
+              @abhi.velaga
               <br />
-              @ABHI.FILM
+              @abhi.film
               <br />
                 <a href={resume} target='_blank'>[ RESUME ]</a>
               </div>
@@ -80,25 +79,25 @@ export class About extends Component {
           <div className="appear">
             <LazyLoadImage effect="opacity" src={me1} className="about-top-img" height={this.getHeight(me1)} width={this.getWidth(me1)} />
             <div className="about-top-text">
-              I AM A <c>SOFTWARE DEVELOPER</c>, <c>MUSICIAN</c>, AND <c>FILM PHOTOGRAPHER</c> BASED IN AUSTIN, TX. I RELEASED MY FIRST <c>SOLO MUSIC ALBUM</c> AT THE AGE OF 16 AND THE SECOND AT 18, MY FIRST <c>PHOTO COLLECTION</c> AT THE AGE OF 19, PLAYED MY FIRST <c>OFFICIAL SXSW SHOWCASE</c> AT THE AGE OF 20, BUILT MY FIRST <c>ART INSTALLATION FOR FORTRESS FESTIVAL</c> A MONTH LATER, AND HAD MY PHOTOGRAPHY FEATURED ON THE <c>COVER OF SPARK MAGAZINE</c>. I ALSO SERVE AS AN ADVISOR ON ALLEN ISD'S <c>CAREER AND TECHNICAL EDUCATION ADVISORY BOARD</c>.
-              <br />
-              <br />
-              I CURRENTLY STUDY <c>COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT AUSTIN</c> AND AM INTERNING AS A <c>SOFTWARE ENGINEER AT VISA</c>.
+            I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at The University of Texas at Austin as well as intern as a software engineer at Visa. 
+                <br/>
+                <br/>
+                I released my first solo music album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installtion for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine. I also serve as an advisor on Allen ISD's Career and Technical Education Advisory Board.
             </div>
             <LazyLoadImage effect="opacity" src={me2} className="about-bottom-img" height={this.getHeight(me2)} width={this.getWidth(me2)} />
 
             <div className="about-bottom-text">
-              ABHINAV.VELAGA@UTEXAS.EDU
+            abhinav.velaga@utexas.edu
               <br />
-              @ABHI.VELAGA
+              @abhi.velaga
               <br />
-              @ABHI.FILM
+              @abhi.film
               <br />
               <a href={resume} target='_blank'>[ RESUME ]</a>
             </div>
 
             <div className="about-bottom-left-text">
-              WEB DESIGN AND DEVELOPMENT BY ABHI VELAGA
+            Web design and development by Abhi Velaga
             </div>
 
           </div>

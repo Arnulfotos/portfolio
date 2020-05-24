@@ -125,7 +125,7 @@ a:hover {
   width: 20vw;
   color: rgb(221, 221, 221);
   font-size: 12px;
-  font-family: 'Berthold-Akzidenz-Grotesk-Light';
+  /* font-family: 'Berthold-Akzidenz-Grotesk-Light'; */
 }
 
 .about-bottom {
@@ -146,7 +146,7 @@ a:hover {
   width: 28vw;
   color: rgb(221, 221, 221);
   font-size: 12px;
-  font-family: 'Berthold-Akzidenz-Grotesk-Light';
+  /* font-family: 'Berthold-Akzidenz-Grotesk-Light'; */
 }
 
 .about-bottom-left-text {
@@ -154,7 +154,7 @@ a:hover {
   text-align: right;
   color: rgb(221, 221, 221);
   font-size: 12px;
-  font-family: 'Berthold-Akzidenz-Grotesk-Light';
+  /* font-family: 'Berthold-Akzidenz-Grotesk-Light'; */
 }
 
 .photo-flex {
@@ -656,10 +656,12 @@ processing {
     margin-right: 0;
   }
   .about-top-text {
-    width: 98vw;
+    width: 100vw;
     color: rgb(221, 221, 221);
-    font-size: 10px;
-    padding: 2px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
   }
   .about-bottom-img {
     width: 100vw;
@@ -668,17 +670,21 @@ processing {
     margin-bottom: 0;
   }
   .about-bottom-text {
-    width: 98vw;
+    width: 100vw;
     color: rgb(221, 221, 221);
-    font-size: 10px;
-    padding: 2px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
   }
   .about-bottom-left-text {
     text-align: left;
-    width: 98vw;
+    width: 100vw;
     color: rgb(221, 221, 221);
-    font-size: 10px;
-    padding: 2px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
   }
   .gallery {
     width: 100%;

@@ -40,7 +40,7 @@ export class Music extends Component {
         <div className="appear">
 
           <div className="software-intro">
-            Music was my very first passion. I started learning guitar when I was 9 and started teaching myself bass when I was 13, audio production and drums at 14, and vocals at 15. I wrote, performed, recorded, produced, and released my first album independently, all at the age of 16. I spent the end of high school recording my second album in a studio and released that at the age of 18.
+            Music is my very first passion. I started learning guitar when I was 9 and started teaching myself bass when I was 13, audio production and drums at 14, and vocals at 15. I wrote, performed, recorded, produced, and released my first album independently, all at the age of 16. I spent the end of high school recording my second album in a studio and released that at the age of 18.
           </div>
 
           {/* indulgent  */}
@@ -63,7 +63,7 @@ export class Music extends Component {
             <LazyLoadImage effect="opacity" src={guitar2} className="indulgent-grid-img" width="100%" />
             <div className="flex indulgent-grid-text">
               <div className="music-text">
-                I RELEASE MY SOLO MUSIC UNDER THE MONIKER, INDULGENT. I PERFORM ALL THE INSTRUMENTS (GUITAR, DRUMS, BASS) AND VOCALS ON THE RECORDINGS. I RECORDED MY FIRST ALBUM, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">TOXIC</a>, BY MYSELF IN MY BEDROOM AND RELEASED IT AT THE AGE OF 16. MY FOLLOW UP, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">NO DRIVE WILL TAKE ME HOME</a>, WAS RECORDED IN A STUDIO AND RELEASED IN 2018. I'M CURRENTLY WRITING MY THIRD ALBUM WITH A HOPEFUL RELEASE IN 2020.
+                I release my solo music under the moniker, Indulgent. I perform all the instruments (guitar, drums, bass) and vocals on the recordings. I recorded my first album, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">Toxic</a>, by myself in my bedroom and released it at the age of 16. My follow up, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">No Drive Will Take Me Home</a>, was recorded in a studio and released in 2018. I'm currently writing my third album with a hopeful release in 2020.
             </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export class Music extends Component {
           <MediaQuery minDeviceWidth={500}>
             <div className="flex mjf-info">
               <div className="mjf-description">
-                I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
+                I drummed in the band Merry Jane & The Fondas from 2018 through 2019. While part of the group, we recorded a <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">studio EP</a> with renowned guitarist and songwriter, <a href="https://en.wikipedia.org/wiki/Jackie_Venson">Jackie Venson</a>, and also played an <a href="https://schedule.sxsw.com/2019/artists/2008465">official SXSW showcase</a>.
             </div>
               <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
             </div>
@@ -141,7 +141,7 @@ export class Music extends Component {
           <MediaQuery maxDeviceWidth={500}>
             <div className="flex music-mobile">
               <div className="mjf-description">
-                I DRUMMED IN THE BAND, MERRY JANE & THE FONDAS, FROM 2018 THROUGH 2019. WHILE PART OF THE GROUP, WE RECORDED A <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">STUDIO EP</a> WITH RENOWNED GUITARIST AND SONGWRITER,<a href="https://en.wikipedia.org/wiki/Jackie_Venson"> JACKIE VENSON</a>, AND ALSO PLAYED AN <a href="https://schedule.sxsw.com/2019/artists/2008465">OFFICIAL SXSW SHOWCASE</a>.
+                I drummed in the band Merry Jane & The Fondas from 2018 through 2019. While part of the group, we recorded a <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">studio EP</a> with renowned guitarist and songwriter, <a href="https://en.wikipedia.org/wiki/Jackie_Venson">Jackie Venson</a>, and also played an <a href="https://schedule.sxsw.com/2019/artists/2008465">official SXSW showcase</a>.
             </div>
               <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
               <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" height={this.getHeight(indulgentCover)} />
@@ -175,7 +175,7 @@ export class Music extends Component {
             <div className="flex mjf-info">
               <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
               <div className="cg-description">
-                I DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME WE RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
+                I drummed in the jam rock band, Cream Genie, from 2016 through 2017. Durign that time we released a <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">demo</a> and played multiple shows across the DFW metroplex.
             </div>
             </div>
             <div className="flex cover-container">
@@ -194,7 +194,7 @@ export class Music extends Component {
           <MediaQuery maxDeviceWidth={500}>
             <div className="flex mjf-info">
               <div className="cg-description">
-                I DRUMMED IN THE JAM ROCK DUO, CREAM GENIE, FROM 2016 THROUGH 2017. DURING THAT TIME WE RELEASED A <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">DEMO</a> AND PLAYED MULTIPLE SHOWS ACROSS THE DFW METROPLEX.
+                I drummed in the jam rock band, Cream Genie, from 2016 through 2017. Durign that time we released a <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">demo</a> and played multiple shows across the DFW metroplex.
             </div>
               <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
               <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
