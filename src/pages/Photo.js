@@ -107,7 +107,7 @@ const text = {
 
 const mobileText = {
   color: 'white',
-  fontSize: '25px',
+  fontSize: '18px',
   marginLeft: '1px'
 }
 
