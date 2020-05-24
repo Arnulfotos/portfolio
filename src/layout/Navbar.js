@@ -46,6 +46,7 @@ export class Navbar extends Component {
 
     return (
       <div className={!this.state.collapsed && this.props.activeLink != "HOME" ? "nav-back" : ""} >
+        <div className={this.state.collapsed && (this.props.activeLink != "PHOTO" && this.props.activeLink != "MIAMI" && this.props.activeLink != "PORTFOLIO" && this.props.activeLink != "USERVOID" && this.props.activeLink != "HOME") ? "header-back" : {}} >
         <div className="navbar">
           <div className="logo-container">
 
@@ -138,6 +139,7 @@ export class Navbar extends Component {
 
         </div>
       </div >
+      </div>
     )
   }
 }

@@ -141,6 +141,18 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
+
+  .header-back {
+    width: 100vw;
+    height: 118px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
 }
 
 @keyframes hideBack {

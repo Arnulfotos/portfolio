@@ -121,11 +121,17 @@ a:hover {
   margin-right: 30px;
 }
 
-.about-top-text {
+.about-first-text {
   width: 20vw;
   color: rgb(221, 221, 221);
   font-size: 12px;
   /* font-family: 'Berthold-Akzidenz-Grotesk-Light'; */
+}
+
+.about-second-text {
+  width: 20vw;
+  color: rgb(221, 221, 221);
+  font-size: 12px;
 }
 
 .about-bottom {
@@ -657,7 +663,17 @@ processing {
     width: 100vw;
     margin-right: 0;
   }
-  .about-top-text {
+  .about-first-text {
+    width: 100vw;
+    color: rgb(221, 221, 221);
+    font-size: 15px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+
+    margin-top: 100px;
+  }
+  .about-second-text {
     width: 100vw;
     color: rgb(221, 221, 221);
     font-size: 15px;
