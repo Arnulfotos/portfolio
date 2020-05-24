@@ -59,8 +59,8 @@ export class Music extends Component {
 
 
           <div className="indulgent-grid" >
-            <LazyLoadImage effect="opacity" src={guitar1} className="indulgent-grid-img" width="100%" />
-            <LazyLoadImage effect="opacity" src={guitar2} className="indulgent-grid-img" width="100%" />
+            <LazyLoadImage effect="opacity" src={guitar1} className="indulgent-grid-img" width="100%" height={this.getHeight(drums)}/>
+            <LazyLoadImage effect="opacity" src={guitar2} className="indulgent-grid-img" width="100%" height={this.getHeight(drums)}/>
             <div className="flex indulgent-grid-text">
               <div className="music-text">
                 I release my solo music under the moniker, Indulgent. I perform all the instruments (guitar, drums, bass) and vocals on the recordings. I recorded my first album, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">Toxic</a>, by myself in my bedroom and released it at the age of 16. My follow up, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">No Drive Will Take Me Home</a>, was recorded in a studio and released in 2018. I'm currently writing my third album with a hopeful release in 2020.
@@ -115,10 +115,10 @@ export class Music extends Component {
               <div className="mjf-description">
                 I drummed in the band Merry Jane & The Fondas from 2018 through 2019. While part of the group, we recorded a <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">studio EP</a> with renowned guitarist and songwriter, <a href="https://en.wikipedia.org/wiki/Jackie_Venson">Jackie Venson</a>, and also played an <a href="https://schedule.sxsw.com/2019/artists/2008465">official SXSW showcase</a>.
             </div>
-              <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
+              <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" height={this.getHeight(mjfStudio)}/>
             </div>
             <div className="flex cover-container">
-              <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" />
+              <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" height={this.getHeight(mjfCover)}/>
               <div className="mjf-cover-info" >
                 <div className="cover-title" >Pulls You Under</div>
                 <div className="cover-artist" >Merry Jane & The Fondas</div>
@@ -143,8 +143,8 @@ export class Music extends Component {
               <div className="mjf-description">
                 I drummed in the band Merry Jane & The Fondas from 2018 through 2019. While part of the group, we recorded a <a href="https://open.spotify.com/album/097Hlqmh6mqEv6GJbxf61L?si=NO5UrK5mTlymBRe4vKErNw">studio EP</a> with renowned guitarist and songwriter, <a href="https://en.wikipedia.org/wiki/Jackie_Venson">Jackie Venson</a>, and also played an <a href="https://schedule.sxsw.com/2019/artists/2008465">official SXSW showcase</a>.
             </div>
-              <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" />
-              <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" height={this.getHeight(indulgentCover)} />
+              <LazyLoadImage effect="opacity" src={mjfStudio} className="mjf-studio" height={this.getHeight(mjfStudio)}/>
+              <LazyLoadImage effect="opacity" src={mjfCover} className="music-cover" height={this.getHeight(mjfCover)} />
               <div className="cover-title" >Pulls You Under</div>
               <div className="cover-artist" >Merry Jane & The Fondas</div>
               <div className="cover-buttons flex">
@@ -173,7 +173,7 @@ export class Music extends Component {
           {/* desktop  */}
           <MediaQuery minDeviceWidth={500}>
             <div className="flex mjf-info">
-              <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
+              <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" height={this.getHeight(jason)}/>
               <div className="cg-description">
                 I drummed in the jam rock band, Cream Genie, from 2016 through 2017. Durign that time we released a <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">demo</a> and played multiple shows across the DFW metroplex.
             </div>
@@ -186,7 +186,7 @@ export class Music extends Component {
                 <div>Guitar - Jason Swan</div>
                 <div>Drums - Abhi Velaga</div>
               </div>
-              <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
+              <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" height={this.getHeight(cgCover)}/>
             </div>
           </MediaQuery>
 
@@ -196,8 +196,8 @@ export class Music extends Component {
               <div className="cg-description">
                 I drummed in the jam rock band, Cream Genie, from 2016 through 2017. Durign that time we released a <a href="https://soundcloud.com/sunburstbox/sets/cream-genie-demos">demo</a> and played multiple shows across the DFW metroplex.
             </div>
-              <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" />
-              <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" />
+              <LazyLoadImage effect="opacity" src={jason} className="mjf-studio" height={this.getHeight(jason)}/>
+              <LazyLoadImage effect="opacity" src={cgCover} className="music-cover" height={this.getHeight(cgCover)}/>
               <div className="cover-title" >Cream Genie 2016 Demos</div>
               <div className="cover-artist" >Cream Genie</div>
               <div className="cover-buttons flex">

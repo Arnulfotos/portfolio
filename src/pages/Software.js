@@ -56,7 +56,7 @@ export class Software extends Component {
               </div>
 
             <div className="software1 back-img software-flex">
-              <LazyLoadImage effect="opacity" src={bandTogether} className="software-ft" />
+              <LazyLoadImage effect="opacity" src={bandTogether} className="software-ft" height={this.getHeight(bandTogether)} />
               <div className="software-ft-title">BAND TOGETHER</div>
               <div className="software-ft-subtitle">ui design + front end development</div>
               <div className="software-ft-info">I designed and developed the front end for Band Together, a responsive web app that helps users easily find information about upcoming concerts.</div>
@@ -65,20 +65,20 @@ export class Software extends Component {
 
             <div className="software2 software-flex">
               <div className="software2-flex">
-                <LazyLoadImage effect="opacity" src={dot_terrain} className="software2-img" />
-                <LazyLoadImage effect="opacity" src={sin} className="software2-img" />
-                <LazyLoadImage effect="opacity" src={evolution} className="software2-img" />
-                <LazyLoadImage effect="opacity" src={ball} className="software2-img" />
-                <LazyLoadImage effect="opacity" src={color_animated} className="software2-img" />
-                <LazyLoadImage effect="opacity" src={composite} className="software2-img" />
-                <LazyLoadImage effect="opacity" src={miami} className="software2-img" />
+                <LazyLoadImage effect="opacity" src={dot_terrain} className="software2-img" height={this.getHeight(dot_terrain)} />
+                <LazyLoadImage effect="opacity" src={sin} className="software2-img" height={this.getHeight(sin)} />
+                <LazyLoadImage effect="opacity" src={evolution} className="software2-img" height={this.getHeight(evolution)} />
+                <LazyLoadImage effect="opacity" src={ball} className="software2-img" height={this.getHeight(ball)} />
+                <LazyLoadImage effect="opacity" src={color_animated} className="software2-img" height={this.getHeight(color_animated)} />
+                <LazyLoadImage effect="opacity" src={composite} className="software2-img" height={this.getHeight(composite)} />
+                <LazyLoadImage effect="opacity" src={miami} className="software2-img" height={this.getHeight(miami)} />
               </div>
               <div className="software-ft-title">COMPUTER GRAPHICS</div>
               <div className="software-ft-info">I designed and programmed a Darwinism/evolution simulation, natural tree drawing algorithms, terrain generation, multiple games, and generative art algorithms with Processing.</div>
             </div>
 
             <div className="software3 back-img software-flex">
-              <LazyLoadImage effect="opacity" src={leaseEasy} className="software-ft" />
+              <LazyLoadImage effect="opacity" src={leaseEasy} className="software-ft" height={this.getHeight(leaseEasy)} />
               <div className="software-ft-title">LEASE EASY</div>
               <div className="software-ft-subtitle">ui design</div>
               <div className="software-ft-info">Lease Easy is a student run startup currently part of UT Austin's <a href="http://longhornstartup.com/portfolio-spring-2020/">Longhorn Startup Lab</a>. I designed an interface that makes it easy for users to intuitively search for apartments that meet their requirements and presents the most important information clearly up front.</div>
@@ -114,6 +114,9 @@ export class Software extends Component {
               <div className="software-ft-info">I create unique websites for desktop + mobile with the ability for you to edit your own content, along with hosting, and continuous support. If you have an idea, need a developer, or just want to say hi, shoot me a message!</div>
               <a href="mailto:abhinav.velaga@utexas.edu"><div className="software-ft-button">Get in touch!</div></a>
             </div>
+
+            {/* <a href="https://github.com/avelaga" target='_blank' className="github"><div className="software-ft-button">GITHUB</div></a> */}
+
           </div>
         </div>
       </div>
