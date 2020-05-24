@@ -48,9 +48,9 @@ export class About extends Component {
             <div className="about-top">
               <LazyLoadImage src={me1} className="about-top-img" effect="opacity" height={this.getHeight(me1)} width={this.getWidth(me1)} />
               <div className="about-top-text">
-                I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at The University of Texas at Austin as well as intern as a software engineer at Visa. 
-                <br/>
-                <br/>
+                I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at The University of Texas at Austin as well as intern as a software engineer at Visa.
+                <br />
+                <br />
                 I released my first solo music album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installtion for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine. I also serve as an advisor on Allen ISD's Career and Technical Education Advisory Board.
             </div>
             </div>
@@ -60,13 +60,13 @@ export class About extends Component {
             </div>
               <LazyLoadImage src={me2} className="about-bottom-img" effect="opacity" height={this.getHeight(me2)} width={this.getWidth(me2)} />
               <div className="about-bottom-text">
-                abhinav.velaga@utexas.edu
-              <br />
-              @abhi.velaga
-              <br />
-              @abhi.film
-              <br />
-                <a href={resume} target='_blank'>[ RESUME ]</a>
+                <a href="mailto:abhinav.velaga@utexas.edu">abhinav.velaga@utexas.edu</a>
+                <br />
+                <a href="https://www.instagram.com/abhi.velaga/" target='_blank'>@abhi.velaga</a>
+                <br />
+                <a href="https://www.instagram.com/abhi.film/" target='_blank'>@abhi.film</a>
+                <br />
+                <a href={resume} target='_blank'>[ resume ]</a>
               </div>
             </div>
           </div>
@@ -79,25 +79,25 @@ export class About extends Component {
           <div className="appear">
             <LazyLoadImage effect="opacity" src={me1} className="about-top-img" height={this.getHeight(me1)} width={this.getWidth(me1)} />
             <div className="about-top-text">
-            I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at The University of Texas at Austin as well as intern as a software engineer at Visa. 
-                <br/>
-                <br/>
+              I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at The University of Texas at Austin as well as intern as a software engineer at Visa.
+                <br />
+              <br />
                 I released my first solo music album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installtion for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine. I also serve as an advisor on Allen ISD's Career and Technical Education Advisory Board.
             </div>
             <LazyLoadImage effect="opacity" src={me2} className="about-bottom-img" height={this.getHeight(me2)} width={this.getWidth(me2)} />
 
             <div className="about-bottom-text">
-            abhinav.velaga@utexas.edu
+              <a href="mailto:abhinav.velaga@utexas.edu">abhinav.velaga@utexas.edu</a>
               <br />
-              @abhi.velaga
+              <a href="https://www.instagram.com/abhi.velaga/" target='_blank'>@abhi.velaga</a>
               <br />
-              @abhi.film
+              <a href="https://www.instagram.com/abhi.film/" target='_blank'>@abhi.film</a>
               <br />
-              <a href={resume} target='_blank'>[ RESUME ]</a>
+              <a href={resume} target='_blank'>[ resume ]</a>
             </div>
 
             <div className="about-bottom-left-text">
-            Web design and development by Abhi Velaga
+              Web design and development by Abhi Velaga
             </div>
 
           </div>
