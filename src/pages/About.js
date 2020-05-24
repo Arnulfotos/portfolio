@@ -48,7 +48,7 @@ export class About extends Component {
             <div className="about-top">
               <LazyLoadImage src={me1} className="about-top-img" effect="opacity" height={this.getHeight(me1)} width={this.getWidth(me1)} />
               <div className="about-top-text">
-                I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at The University of Texas at Austin as well as intern as a software engineer at Visa.
+                I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at <ut>The University of Texas at Austin</ut> as well as intern as a software engineer at <processing>Visa</processing>.
                 <br />
                 <br />
                 I released my first solo music album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installtion for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine. I also serve as an advisor on Allen ISD's Career and Technical Education Advisory Board.

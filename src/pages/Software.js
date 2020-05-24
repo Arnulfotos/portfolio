@@ -21,11 +21,11 @@ import miami from '../../dist/images/software/miami.gif';
 import sin from '../../dist/images/software/sin.gif';
 import slb from '../../dist/images/software/slb.jpg';
 import bandTogether from '../../dist/images/software/bandtogether.png';
-import bandTogether1 from '../../dist/images/software/bandtogether1.png';
 import leaseEasy from '../../dist/images/software/leaseasy.png';
 import stairs from '../../dist/images/software/stairs.gif';
 import bag from '../../dist/images/software/bag.gif';
 import drums from '../../dist/images/software/drum-led.gif';
+import composite from '../../dist/images/software/composite.jpg';
 
 export class Software extends Component {
 
@@ -37,6 +37,12 @@ export class Software extends Component {
     img.src = image;
   }
 
+  openGraphics = () => {
+    this.setState({
+      openGraphics: true
+    })
+  }
+
   render() {
     return <div>
       <MediaQuery minDeviceWidth={500}><Navbar activeLink={"SOFTWARE"} mobile={false} /></MediaQuery>
@@ -46,7 +52,7 @@ export class Software extends Component {
 
           <div className="software">
             <div className="software-intro">
-              Hi! I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development and UI/UX design and am working towards becoming a full time front-end developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with creative tools such as <pi>Raspberry PI</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. If you're looking for more details about my technical skills, you can find it on my <a href={resume} target='_blank'>resume</a> and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
+              I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development and UI/UX design and am working towards becoming a full time front-end developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with creative tools such as <pi>Raspberry PI</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. If you're looking for more details about my technical skills, you can find it on my <a href={resume} target='_blank'>resume</a> and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
               </div>
 
             <div className="software1 back-img software-flex">
@@ -62,10 +68,13 @@ export class Software extends Component {
                 <LazyLoadImage effect="opacity" src={dot_terrain} className="software2-img" />
                 <LazyLoadImage effect="opacity" src={sin} className="software2-img" />
                 <LazyLoadImage effect="opacity" src={evolution} className="software2-img" />
+                <LazyLoadImage effect="opacity" src={ball} className="software2-img" />
+                <LazyLoadImage effect="opacity" src={color_animated} className="software2-img" />
+                <LazyLoadImage effect="opacity" src={composite} className="software2-img" />
+                <LazyLoadImage effect="opacity" src={miami} className="software2-img" />
               </div>
               <div className="software-ft-title">COMPUTER GRAPHICS</div>
               <div className="software-ft-info">I designed and programmed a Darwinism/evolution simulation, natural tree drawing algorithms, terrain generation, multiple games, and generative art algorithms with Processing.</div>
-              <div className="software-ft-button">SEE MORE</div>
             </div>
 
             <div className="software3 back-img software-flex">
@@ -97,7 +106,7 @@ export class Software extends Component {
               <LazyLoadImage effect="opacity" src={slb} height={this.getHeight(slb)} className="slb-img" />
               <div className="slb-text">
                 I even integrated LEDs into my final presentation for my software engineer internship at Schlumberger. I used a button to control animations around different sections of the poster as I talked in order to draw focus to the corresponding content I was referring to.
-                </div>
+              </div>
             </div>
 
             <div className="desk back-img flex">
