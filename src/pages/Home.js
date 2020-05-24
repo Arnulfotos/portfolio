@@ -38,12 +38,19 @@ export class Home extends Component {
       <div className="appear">
         <MediaQuery minDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={false} /></MediaQuery>
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={true} /></MediaQuery>
-          <CrossfadeImage
+        {/* <CrossfadeImage
             src={images[this.state.imageIndex]}
             duration={2000}
             style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             timingFunction={"ease"}
-          />
+            className="fade"
+          /> */}
+        <div className="fadein">
+          <img src={images[0]} className="f1" />
+          <img src={images[1]} className="f2" />
+          <img src={images[2]}  className="f3" />
+          {/* <img src={images[3]} style={{ width: '100%', height: '100vh', objectFit: 'cover' }} className="fade4 all"/> */}
+        </div>
       </div>
     )
   }
