@@ -100,13 +100,13 @@ export class Software extends Component {
             <div className="slb flex">
               <LazyLoadImage effect="opacity" src={slb} height={this.getHeight(slb)} className="slb-img" />
               <div className="slb-text">
-                I even integrated LEDs into my final presentation for my software engineer internship at Schlumberger. I used a button to control animations around different sections of the poster as I talked in order to draw focus to the corresponding content I was referring to.
+                I also integrated LEDs into my final presentation for my software engineer internship at Schlumberger. Animations around different sections of the poster were triggerred by a button as I talked in order to draw focus to corresponding content.
               </div>
             </div>
 
             <div className="desk back-img flex">
               <div className="freelance">I'm available for freelance web design + development!</div>
-              <div className="software-ft-info">I create unique websites for desktop + mobile with the ability for you to edit your own content, along with hosting, and continuous support. If you have an idea, need a developer, or just want to say hi, shoot me a message!</div>
+              <div className="software-ft-info">I create unique websites for desktop + mobile with the ability for you to edit your own content, along with hosting and continuous support. If you have an idea, need a developer, or just want to say hi, shoot me a message!</div>
               <a href="mailto:abhinav.velaga@utexas.edu"><div className="software-ft-button">Get in touch!</div></a>
             </div>
 
