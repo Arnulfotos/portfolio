@@ -82,6 +82,34 @@ import u19 from '../../../dist/images/photos/uservoid/uservoid19.jpg';
 import u20 from '../../../dist/images/photos/uservoid/uservoid20.jpg';
 import u21 from '../../../dist/images/photos/uservoid/uservoid21.jpg';
 
+import pub1 from '../../../dist/images/photos/published/1.jpg';
+import pub2 from '../../../dist/images/photos/published/2.jpg';
+import pub3 from '../../../dist/images/photos/published/3.jpg';
+import pub4 from '../../../dist/images/photos/published/4.jpg';
+import pub5 from '../../../dist/images/photos/published/5.jpg';
+
+import pub6 from '../../../dist/images/photos/published/6.jpg';
+import pub7 from '../../../dist/images/photos/published/6.jpg';
+import pub8 from '../../../dist/images/photos/published/8.jpg';
+import pub9 from '../../../dist/images/photos/published/9.jpg';
+import pub10 from '../../../dist/images/photos/published/10.jpg';
+
+import pub11 from '../../../dist/images/photos/published/11.jpg';
+import pub12 from '../../../dist/images/photos/published/12.jpg';
+import pub13 from '../../../dist/images/photos/published/13.jpg';
+import pub14 from '../../../dist/images/photos/published/14.jpg';
+import pub15 from '../../../dist/images/photos/published/15.jpg';
+
+import pub16 from '../../../dist/images/photos/published/16.jpg';
+import pub17 from '../../../dist/images/photos/published/17.jpg';
+import pub18 from '../../../dist/images/photos/published/18.jpg';
+import pub19 from '../../../dist/images/photos/published/19.jpg';
+import pub20 from '../../../dist/images/photos/published/20.jpg';
+
+import pub21 from '../../../dist/images/photos/published/21.jpg';
+import pub22 from '../../../dist/images/photos/published/22.jpg';
+import pub23 from '../../../dist/images/photos/published/21.jpg';
+
 export const userVoidImages = [
   u1,
   u2,
@@ -170,6 +198,32 @@ export const miamiImages = [
   miami28,
   miami29,
   miami30
+];
+
+export const publishedImages = [
+  pub1,
+  pub2,
+  pub3,
+  pub4,
+  pub5,
+  pub6,
+  pub7,
+  pub8,
+  pub9,
+  pub10,
+  pub11,
+  pub12, 
+  pub13, 
+  pub14, 
+  pub15, 
+  pub16, 
+  pub17, 
+  pub18, 
+  pub19, 
+  pub20, 
+  pub21, 
+  pub22, 
+  pub23 
 ];
 
 export function getWidth(image) {
