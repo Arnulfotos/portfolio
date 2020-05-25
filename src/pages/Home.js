@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../layout/Navbar'
 import MediaQuery from 'react-responsive'
-import CrossfadeImage from 'react-crossfade-image';
 import room from "../../dist/images/room.jpg";
 import deyoung from "../../dist/images/deyoung-desktop.jpg";
 import gym from "../../dist/images/photos/portfolio/p1.jpg";

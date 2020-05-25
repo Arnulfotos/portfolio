@@ -7,11 +7,6 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 import resume from "../../dist/images/Resume.pdf";
 import './pages.css';
 
-import color1 from '../../dist/images/software/color1.png';
-import color2 from '../../dist/images/software/color2.png';
-import color3 from '../../dist/images/software/color3.png';
-import color4 from '../../dist/images/software/color4.png';
-import color5 from '../../dist/images/software/color5.png';
 import ball from '../../dist/images/software/ball.gif';
 import color_animated from '../../dist/images/software/color_animated.gif';
 import dot_terrain from '../../dist/images/software/dot_terrain.gif';
