@@ -42,7 +42,7 @@ export class Hi extends Component {
       <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"HI"} mobile={true} /></MediaQuery>
       <div className="hi">
         <div className="title">say hi to me in realtime</div>
-        hi, welcome to my site. clicking this button runs an animation on a led strip that's physically at my desk.
+        hi, welcome to my site. clicking this button runs an animation on the led strip at my desk.
         <div className="hi-button" onClick={this.onClick} style={this.state.on ? on : off}>hello</div>
         {this.state.sent && <div className="appear">message received</div>}
       </div>

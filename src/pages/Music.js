@@ -40,7 +40,7 @@ export class Music extends Component {
         <div className="appear">
 
           <div className="software-intro">
-            Music is my very first passion. I started learning guitar when I was 9 and started teaching myself bass when I was 13, audio production and drums at 14, and vocals at 15. I wrote, performed, recorded, produced, and released my first album independently, all at the age of 16. I spent the end of high school recording my second album in a studio and released that at the age of 18.
+            Music is my first passion. I started learning guitar when I was 9. I then began to teach myself, starting with bass at 13, audio production and drums at 14, and vocals at 15. I wrote, recorded, produced, and released <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl">my first album</a> independently, all at the age of 16. Before graduating high school, I recorded <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=lYoQ-F2RQtict5KQQDMN4g">my second album</a> in a studio and released that at the age of 18.
           </div>
 
           {/* indulgent  */}
