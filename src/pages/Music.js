@@ -63,7 +63,7 @@ export class Music extends Component {
             <LazyLoadImage effect="opacity" src={guitar2} className="indulgent-grid-img" width="100%" height={this.getHeight(drums)}/>
             <div className="flex indulgent-grid-text">
               <div className="music-text">
-                I release my solo music under the moniker, Indulgent. I perform all the instruments (guitar, drums, bass) and vocals on the recordings. I recorded my first album, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">Toxic</a>, by myself in my bedroom and released it at the age of 16. My follow up, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">No Drive Will Take Me Home</a>, was recorded in a studio and released in 2018. I'm currently writing my third album with a hopeful release in 2020.
+                I release my solo music under the moniker Indulgent. I perform all the instruments (guitar, drums, bass) and vocals on the recordings. I recorded my first album, <a href="https://open.spotify.com/album/67RH1N86fW4hIA10m3DhFl?si=Hl4dag6_QhSyX3f4Zv0mhg">Toxic</a>, by myself in my bedroom and released it at the age of 16. My follow up, <a href="https://open.spotify.com/album/2d7c0N7uNdi3jfdsTWeZNV?si=K98wvkQmQd6uMvHFrQt2ng">No Drive Will Take Me Home</a>, was recorded in a studio and released in 2018. I'm currently writing my third album with a hopeful release in 2020.
             </div>
             </div>
           </div>
