@@ -89,7 +89,7 @@ import pub4 from '../../../dist/images/photos/published/4.jpg';
 import pub5 from '../../../dist/images/photos/published/5.jpg';
 
 import pub6 from '../../../dist/images/photos/published/6.jpg';
-import pub7 from '../../../dist/images/photos/published/6.jpg';
+import pub7 from '../../../dist/images/photos/published/7.jpg';
 import pub8 from '../../../dist/images/photos/published/8.jpg';
 import pub9 from '../../../dist/images/photos/published/9.jpg';
 import pub10 from '../../../dist/images/photos/published/10.jpg';
@@ -108,7 +108,7 @@ import pub20 from '../../../dist/images/photos/published/20.jpg';
 
 import pub21 from '../../../dist/images/photos/published/21.jpg';
 import pub22 from '../../../dist/images/photos/published/22.jpg';
-import pub23 from '../../../dist/images/photos/published/21.jpg';
+import pub23 from '../../../dist/images/photos/published/23.jpg';
 
 export const userVoidImages = [
   u1,
