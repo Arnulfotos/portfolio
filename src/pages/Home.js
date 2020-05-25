@@ -16,35 +16,11 @@ const images = [
 ]
 
 export class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      imageIndex: 0
-    };
-  }
-
-  changeImage() {
-    this.setState({
-      imageIndex: (this.state.imageIndex + 1) % 8
-    });
-  }
-
-  componentDidMount() {
-    this.interval = setInterval(() => this.changeImage(), 6000); // last parameter is duration
-  }
-
   render() {
     return (
       <div className="appear">
         <MediaQuery minDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={false} /></MediaQuery>
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={true} /></MediaQuery>
-        {/* <CrossfadeImage
-            src={images[this.state.imageIndex]}
-            duration={2000}
-            style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
-            timingFunction={"ease"}
-            className="fade"
-          /> */}
         <div className="fadein">
           <img src={images[0]} className="f1" />
           <img src={images[1]} className="f2" />
@@ -54,7 +30,6 @@ export class Home extends Component {
           <img src={images[5]}  className="f6" />
           <img src={images[6]}  className="f7" />
           <img src={images[7]}  className="f8" />
-          {/* <img src={images[3]} style={{ width: '100%', height: '100vh', objectFit: 'cover' }} className="fade4 all"/> */}
         </div>
       </div>
     )
