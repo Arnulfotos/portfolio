@@ -12,7 +12,7 @@ import spark from "../../dist/images/yellow.jpg";
 import lamp from "../../dist/images/photos/miami/miami25.jpg";
 
 const images = [
-  gym, house, ania2, room, deyoung, ania1, spark, lamp
+  gym, house, ania2, room, ania1, spark, lamp, deyoung
 ]
 
 export class Home extends Component {
@@ -49,6 +49,11 @@ export class Home extends Component {
           <img src={images[0]} className="f1" />
           <img src={images[1]} className="f2" />
           <img src={images[2]}  className="f3" />
+          <img src={images[3]}  className="f4" />
+          <img src={images[4]}  className="f5" />
+          <img src={images[5]}  className="f6" />
+          <img src={images[6]}  className="f7" />
+          <img src={images[7]}  className="f8" />
           {/* <img src={images[3]} style={{ width: '100%', height: '100vh', objectFit: 'cover' }} className="fade4 all"/> */}
         </div>
       </div>
