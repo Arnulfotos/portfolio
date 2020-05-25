@@ -47,7 +47,7 @@ export class Software extends Component {
 
           <div className="software">
             <div className="software-intro">
-              I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development and UI/UX design and am working towards becoming a full time front-end developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with creative tools such as <pi>Raspberry PI</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. If you're looking for more details about my technical skills, you can find it on my <a href={resume} target='_blank'>resume</a> and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
+              I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development and UI/UX design and am working towards becoming a full time front end developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with creative tools such as <pi>Raspberry PI</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. For more details about my technical skills, check out my <a href={resume} target='_blank'>resume</a> and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
               </div>
 
             <div className="software1 back-img software-flex">
@@ -85,7 +85,7 @@ export class Software extends Component {
               <div className="software-grid-text flex">
                 <div className="grid-text-title">LED STRIP PROGRAMMING</div>
                 <div>
-                  I love finding ways to intersect my passions for computer science with that of fine arts and coding LED strips with Arduinos has been a great way to do so. I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night. I also created a <a href="/hi">button</a> that allows visitors to say hello to me in realtime by strobing LEDs at my desk.
+                  I love finding ways to intersect my passions for computer science with that of fine arts. Coding LED strips with Arduinos has been a great way to do so - I've built and programmed commissioned interactive installations for music shows, such as Fortress Festival in Ft. Worth, TX in April 2019, an interactive "zoo" with "animals" that require daily human interaction in order to stay alive and breed, motion responsive staircase and doorways, and even stitched custom coded strips to my backpack for maximum visibility when riding my electric skateboard at night. I also created a <a href="/hi">button</a> on my site that allows visitors to say hello to me in realtime by strobing LEDs at my desk.
                 </div>
               </div>
               <div className="grid-stairs">
