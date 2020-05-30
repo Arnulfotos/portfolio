@@ -19,7 +19,7 @@ export class Hi extends Component {
     this.setState({
       on: true
     })
-    let url = "http://72.182.112.17:8000/led/";
+    let url = "https://abhivelaga.com:8000/led/";
     axios
       .get(
         url
