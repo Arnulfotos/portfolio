@@ -6,7 +6,7 @@ import './pages.css';
 import Portfolio from '../../dist/images/photos/portfolio/p2.jpg';
 import Miami from '../../dist/images/photos/miami/miami1.jpg';
 import User from '../../dist/images/photos/uservoid/uservoid1.jpg';
-import Published from '../../dist/images/photos/published/1.jpg';
+import Published from '../../dist/images/photos/published/2.jpg';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
