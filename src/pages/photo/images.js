@@ -82,10 +82,6 @@ import u19 from '../../../dist/images/photos/uservoid/uservoid19.jpg';
 import u20 from '../../../dist/images/photos/uservoid/uservoid20.jpg';
 import u21 from '../../../dist/images/photos/uservoid/uservoid21.jpg';
 
-// import Columned from "react-columned";
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
-// import 'react-lazy-load-image-component/src/effects/opacity.css';
-
 export const userVoidImages = [
   u1,
   u2,
@@ -175,14 +171,6 @@ export const miamiImages = [
   miami29,
   miami30
 ];
-
-// export function mapImages(cols, images) {
-//   return <Columned columns={cols} className="gallery">
-//     {images.map((value, index) => {
-//       return <LazyLoadImage key={index} className="img" src={value} onClick={() => setState({ isOpen: true, photoIndex: index })} effect="opacity" height={getHeight(value)} width={getWidth(value)} />
-//     })}
-//   </Columned>
-// }
 
 export function getWidth(image) {
   var img = new Image();

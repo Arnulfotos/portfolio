@@ -1,4 +1,4 @@
-.logo-container {
+.appear {
   animation-name: appear;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
@@ -31,6 +31,11 @@
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
+
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  
 }
 
 .link {
@@ -140,6 +145,18 @@
     animation-name: hideBack;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+  }
+
+  .header-back {
+    width: 100vw;
+    height: 118px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
 }
 

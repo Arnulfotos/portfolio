@@ -46,8 +46,9 @@ export class Navbar extends Component {
 
     return (
       <div className={!this.state.collapsed && this.props.activeLink != "HOME" ? "nav-back" : ""} >
+        <div className={this.state.collapsed && (this.props.activeLink != "PHOTO" && this.props.activeLink != "MIAMI" && this.props.activeLink != "PORTFOLIO" && this.props.activeLink != "USERVOID" && this.props.activeLink != "HOME") ? "header-back" : {}} >
         <div className="navbar">
-          <div className="logo-container">
+          <div>
 
             {/* desktop  */}
             < MediaQuery minDeviceWidth={500} >
@@ -70,7 +71,7 @@ export class Navbar extends Component {
           <div className="subtitle">austin, tx.</div>
 
           {!this.state.collapsed &&
-            <div>
+            <div className="appear">
               <a href="/about">
                 <div className="link">
                   <div className="link-color" style={this.props.activeLink === "ABOUT" ? activeStyle : {}}></div>
@@ -133,11 +134,14 @@ export class Navbar extends Component {
               <a href="https://www.instagram.com/abhi.film/" target="_blank">
                 <div className="external-link">FILM INSTAGRAM</div>
               </a>
+
+              <a href="mailto:abhinav.velaga@utexas.edu"><div className="external-link">CONTACT</div></a>
             </div>
           }
 
         </div>
       </div >
+      </div>
     )
   }
 }
