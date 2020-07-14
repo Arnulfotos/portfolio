@@ -26,6 +26,11 @@ import drumsVid from '../../dist/images/software/drums.mp4';
 import stairsVid from '../../dist/images/software/stairs.mp4';
 import doorVid from '../../dist/images/software/door.mp4';
 import bagVid from '../../dist/images/software/bag.mp4';
+import dotVid from '../../dist/images/software/dotvid.mp4';
+import evolutionVid from '../../dist/images/software/evolution.mp4';
+
+import connectingVid from '../../dist/images/software/connectingvid.mp4';
+import ballVid from '../../dist/images/software/ball.mp4';
 
 export class Software extends Component {
 
@@ -64,15 +69,26 @@ export class Software extends Component {
             </div>
 
             <div className="software2 software-flex">
-              <div className="software2-flex">
-                <LazyLoadImage effect="opacity" src={dot_terrain} className="software2-img" height={this.getHeight(dot_terrain)} />
+                <video playsInline autoPlay muted loop className="software2-img" >
+                  <source src={dotVid} type="video/mp4" />
+                  <LazyLoadImage effect="opacity" src={dot_terrain} className="software2-img" height={this.getHeight(dot_terrain)} />
+                </video>
+
                 <LazyLoadImage effect="opacity" src={sin} className="software2-img" height={this.getHeight(sin)} />
-                <LazyLoadImage effect="opacity" src={evolution} className="software2-img" height={this.getHeight(evolution)} />
-                <LazyLoadImage effect="opacity" src={ball} className="software2-img" height={this.getHeight(ball)} />
-                <LazyLoadImage effect="opacity" src={color_animated} className="software2-img" height={this.getHeight(color_animated)} />
-                <LazyLoadImage effect="opacity" src={composite} className="software2-img" height={this.getHeight(composite)} />
-                <LazyLoadImage effect="opacity" src={miami} className="software2-img" height={this.getHeight(miami)} />
-              </div>
+                <video playsInline autoPlay muted loop className="software2-img" >
+                  <source src={evolutionVid} type="video/mp4" />
+                  <LazyLoadImage effect="opacity" src={evolution} className="software2-img" height={this.getHeight(evolution)} />
+                </video>
+
+                <video playsInline autoPlay muted loop className="software2-img" >
+                  <source src={connectingVid} type="video/mp4" />
+                  <LazyLoadImage effect="opacity" src={color_animated} className="software2-img" height={this.getHeight(color_animated)} />
+                </video>
+
+                <video playsInline autoPlay muted loop className="software2-img" >
+                  <source src={ballVid} type="video/mp4" />
+                  <LazyLoadImage effect="opacity" src={ball} className="software2-img" height={this.getHeight(ball)} />
+                </video>
               <div className="software-ft-title">COMPUTER GRAPHICS</div>
               <div className="software-ft-info">I designed and programmed a Darwinism/evolution simulation, natural tree drawing algorithms, terrain generation, multiple games, and generative art algorithms with Processing.</div>
             </div>
@@ -85,7 +101,7 @@ export class Software extends Component {
             </div>
 
 
-            <video playsinline autoPlay muted loop width="100%">
+            <video playsInline autoPlay muted loop className="drum-vid" >
               <source src={drumsVid} type="video/mp4" />
               <LazyLoadImage effect="opacity" src={drums} width="100%" height={this.getHeight(drums)} />
             </video>
@@ -98,15 +114,15 @@ export class Software extends Component {
                 </div>
               </div>
               <div className="grid-stairs">
-                <video autoPlay loop muted width="100%">
+                <video playsInline autoPlay muted loop width="100%">
                   <source src={doorVid} type="video/mp4" />
-                  {/* <LazyLoadImage effect="opacity" src={stairs} width="100%" height={this.getHeight(stairs)} /> */}
+                  <LazyLoadImage effect="opacity" src={stairs} width="100%" height={this.getHeight(stairs)} />
                 </video>
 
               </div>
 
               <div className="grid-bag">
-              <video autoPlay loop muted width="100%">
+                <video playsInline autoPlay muted loop width="100%">
                   <source src={bagVid} type="video/mp4" />
                   <LazyLoadImage effect="opacity" src={bag} width="100%" height={this.getHeight(bag)} />
                 </video>
@@ -126,9 +142,6 @@ export class Software extends Component {
               <div className="software-ft-info">I create unique websites for desktop + mobile with the ability for you to edit your own content, along with hosting and continuous support. If you have an idea, need a developer, or just want to say hi, shoot me a message!</div>
               <a href="mailto:abhinav.velaga@utexas.edu"><div className="software-ft-button">Get in touch!</div></a>
             </div>
-
-            {/* <a href="https://github.com/avelaga" target='_blank' className="github"><div className="software-ft-button">GITHUB</div></a> */}
-
           </div>
         </div>
       </div>

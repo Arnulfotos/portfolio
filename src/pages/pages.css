@@ -58,43 +58,7 @@ a:hover {
   margin-left: 24%;
 }
 
-.mobile-img {
-  display: 'block';
-  width: 100%;
-  padding-bottom: 20px;
-}
-
-.appear-first {
-  animation-name: appear;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-.appear-second {
-  animation-name: appear;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-.appear-third {
-  animation-name: appear;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-.appear-fourth {
-  animation-name: appear;
-  animation-duration: 3.5s;
-  animation-fill-mode: forwards;
-}
-
-.appear-fifth {
-  animation-name: appear;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-}
-
-/* all of these in use to modify lightbox library */
+/* all of these are in use to modify lightbox library */
 
 .ril__caption, .ril__toolbar {
   background-color: rgb(0, 0, 0, 0) !important;
@@ -125,7 +89,6 @@ a:hover {
   width: 20vw;
   color: rgb(221, 221, 221);
   font-size: 12px;
-  /* font-family: 'Berthold-Akzidenz-Grotesk-Light'; */
 }
 
 .about-second-text {
@@ -152,7 +115,6 @@ a:hover {
   width: 28vw;
   color: rgb(221, 221, 221);
   font-size: 12px;
-  /* font-family: 'Berthold-Akzidenz-Grotesk-Light'; */
 }
 
 .about-bottom-left-text {
@@ -160,7 +122,6 @@ a:hover {
   text-align: right;
   color: rgb(221, 221, 221);
   font-size: 12px;
-  /* font-family: 'Berthold-Akzidenz-Grotesk-Light'; */
 }
 
 .photo-flex {
@@ -436,25 +397,11 @@ button {
   align-content: center;
 }
 
-.software-text {
-  color: white;
-  font-size: 20px;
-  line-height: 30px;
-  width: 100%;
-  text-align: right;
-  padding-left: 20%;
-}
-
 .software {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-}
-
-.software-title {
-  width: 100%;
-  text-align: right;
 }
 
 .hi-gif {
@@ -534,30 +481,17 @@ button {
 .software2 {
   padding-top: 50px;
   padding-bottom: 50px;
-  min-height: 100vh;
-}
-
-.software2-flex {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
 }
 
 .software2-img {
   width: 25vw;
-  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 30px;
 }
 
 .software3 {
   background-image: url("../../dist/images/software/color5.png");
-  width: 100%;
-  min-height: 100vh;
-}
-
-.software4 {
-  background-image: url("../../dist/images/software/color3.png");
   width: 100%;
   min-height: 100vh;
 }
@@ -742,9 +676,6 @@ processing {
   .software3 {
     min-height: 0;
   }
-  .led {
-    height: auto;
-  }
   .software-grid {
     display: block;
   }
@@ -774,11 +705,6 @@ processing {
   .software2-img {
     width: 40vw;
   }
-  .software2-flex {
-    padding-left: 20px;
-    padding-right: 20px;
-    flex-wrap: wrap;
-  }
   .software-ft {
     padding-right: 20px;
     padding-left: 20px;
@@ -794,12 +720,6 @@ processing {
     width: 100vw;
     padding-bottom: 40px;
   }
-}
-
-.github {
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .fadein {
@@ -912,4 +832,10 @@ processing {
 .f8 {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+}
+
+/* solve inconsistencies between browsers by hardcoding image ratio  */
+.drum-vid {
+  width: 100vw;
+  height: calc( 100vw * 0.56); 
 }
