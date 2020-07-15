@@ -9,15 +9,18 @@ import UserVoid from './pages/photo/UserVoid.js';
 import Software from './pages/Software.js';
 import Music from './pages/Music.js';
 import Hi from './pages/Hi.js';
+import Navbar from './layout/Navbar'
+import MediaQuery from 'react-responsive'
 import './App.css';
 
 const ErrorPage = () => {
   return (
-    <div className="body">
-      <div className="error-text" >
-        <h1> 404: Page Not Found :(</h1>
+    <div>
+      <MediaQuery minDeviceWidth={500}><Navbar activeLink={"ERROR"} mobile={false} /></MediaQuery>
+      <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"ERROR"} mobile={true} /></MediaQuery>
+      <div className="error" >
+        <div className="error-text">It looks like you're lost :(</div>
       </div>
-      {/* <img src={ErrorGif} className="error-gif" /> */}
     </div>
   );
 };
@@ -40,4 +43,3 @@ function App() {
 }
 
 export default App;
- 
