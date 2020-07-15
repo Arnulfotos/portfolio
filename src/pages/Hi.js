@@ -19,7 +19,7 @@ export class Hi extends Component {
     this.setState({
       on: true
     })
-    let url = "https://abhivelaga.com:8000/led/";
+    let url = "https://abhivelaga.com/led";
     axios
       .get(
         url
@@ -29,10 +29,9 @@ export class Hi extends Component {
           sent: true,
           on: false
         });
-        console.log(res.data);
       })
       .catch(err => {
-        console.log(err);
+        // console.log(err);
       });
   }
 

@@ -7,7 +7,7 @@ import Portfolio from '../../dist/images/photos/portfolio/p2.jpg';
 import Miami from '../../dist/images/photos/miami/miami1.jpg';
 import User from '../../dist/images/photos/uservoid/uservoid1.jpg';
 import Published from '../../dist/images/photos/published/2.jpg';
-
+import { portfolioImages, miamiImages, userVoidImages, publishedImages } from './photo/images.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
@@ -16,38 +16,78 @@ export class Photo extends Component {
   render() {
     return <div>
       <MediaQuery minDeviceWidth={500}>
-
         <Navbar activeLink={"PHOTO"} mobile={false} />
+
         <div className="page appear photo-flex" >
+
           <a href={"/portfolio"}>
             <div style={imageDiv}>
-              <LazyLoadImage effect="opacity" src={Portfolio} style={image} />
-              <div style={text}>PORTFOLIO</div>
-              
+              <div className="menu-fadein ">
+                <img src={portfolioImages[0]} className="f1" />
+                <img src={portfolioImages[1]} className="f2" />
+                <img src={portfolioImages[2]} className="f3" />
+                <img src={portfolioImages[3]} className="f4" />
+                <img src={portfolioImages[4]} className="f5" />
+                <img src={portfolioImages[5]} className="f6" />
+                <img src={portfolioImages[6]} className="f7" />
+                <img src={portfolioImages[7]} className="f8" />
+              </div>
+              {/* <LazyLoadImage effect="opacity" src={Portfolio} className="center-img" /> */}
             </div>
+            <div style={text}>PORTFOLIO</div>
           </a>
 
           <a href={"/miamivice"}>
             <div style={imageDiv}>
-              <LazyLoadImage effect="opacity" src={Miami} style={image} />
-              <div style={text}>MIAMI VICE COCAINE DREAM</div>
-              <div style={subText}>2018 - 2019</div>
+            <div className="menu-fadein ">
+                <img src={miamiImages[0]} className="f1" />
+                <img src={miamiImages[1]} className="f2" />
+                <img src={miamiImages[2]} className="f3" />
+                <img src={miamiImages[3]} className="f4" />
+                <img src={miamiImages[4]} className="f5" />
+                <img src={miamiImages[5]} className="f6" />
+                <img src={miamiImages[6]} className="f7" />
+                <img src={miamiImages[7]} className="f8" />
+              </div>
+              {/* <LazyLoadImage effect="opacity" src={Miami} className="center-img" /> */}
             </div>
+            <div style={text}>MIAMI VICE COCAINE DREAM</div>
+            <div style={subText}>2018 - 2019</div>
           </a>
 
           <a href={"/uservoid"}>
             <div style={imageDiv}>
-              <LazyLoadImage effect="opacity" src={User} style={image} />
-              <div style={text}>USER VOID</div>
-              <div style={subText}>2019 - PRESENT</div>
+            <div className="menu-fadein ">
+                <img src={userVoidImages[0]} className="f1" />
+                <img src={userVoidImages[1]} className="f2" />
+                <img src={userVoidImages[2]} className="f3" />
+                <img src={userVoidImages[3]} className="f4" />
+                <img src={userVoidImages[4]} className="f5" />
+                <img src={userVoidImages[5]} className="f6" />
+                <img src={userVoidImages[6]} className="f7" />
+                <img src={userVoidImages[7]} className="f8" />
+              </div>
+              {/* <LazyLoadImage effect="opacity" src={User} className="center-img" /> */}
             </div>
+            <div style={text}>USER VOID</div>
+            <div style={subText}>2019 - PRESENT</div>
           </a>
 
           <a href={"/published"}>
             <div style={imageDiv}>
-              <LazyLoadImage effect="opacity" src={Published} style={image} />
-              <div style={text}>PUBLISHED WORK</div>
+            <div className="menu-fadein ">
+                <img src={publishedImages[0]} className="f1" />
+                <img src={publishedImages[1]} className="f2" />
+                <img src={publishedImages[2]} className="f3" />
+                <img src={publishedImages[3]} className="f4" />
+                <img src={publishedImages[4]} className="f5" />
+                <img src={publishedImages[5]} className="f6" />
+                <img src={publishedImages[6]} className="f7" />
+                <img src={publishedImages[7]} className="f8" />
+              </div>
+              {/* <LazyLoadImage effect="opacity" src={Published} className="center-img" /> */}
             </div>
+            <div style={text}>PUBLISHED WORK</div>
           </a>
         </div>
       </MediaQuery>
@@ -80,11 +120,11 @@ export class Photo extends Component {
             </a>
 
             <a href={"/published"}>
-            <div style={mobileImageDiv}>
-              <LazyLoadImage effect="opacity" src={Published} style={mobileImage} />
-              <div style={mobileText}>PUBLISHED WORK</div>
-            </div>
-          </a>
+              <div style={mobileImageDiv}>
+                <LazyLoadImage effect="opacity" src={Published} style={mobileImage} />
+                <div style={mobileText}>PUBLISHED WORK</div>
+              </div>
+            </a>
           </div>
         </div>
       </MediaQuery>
@@ -107,9 +147,10 @@ const image = {
 
 const imageDiv = {
   width: '23vw',
-  height: '95vh',
+  height: '88vh',
   overflow: 'hidden',
-  marginRight: '20px'
+  marginRight: '20px',
+  position: 'relative'
 }
 
 const mobileImage = {
