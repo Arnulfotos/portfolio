@@ -15,7 +15,6 @@ module.exports = {
         loader: 'url-loader?limit=100000'
       },
       { test: /\.html$/, loader: 'html-loader?attrs[]=video:src' },
-      // { test: /\.(mov|mp4)$/, loader: 'url-loader' },
       {
         test: /\.mp4$/,
         use: 'file-loader?name=videos/[name].[ext]',
