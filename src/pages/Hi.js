@@ -29,10 +29,9 @@ export class Hi extends Component {
           sent: true,
           on: false
         });
-        console.log(res.data);
       })
       .catch(err => {
-        console.log(err);
+        // console.log(err);
       });
   }
 

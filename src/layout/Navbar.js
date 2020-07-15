@@ -20,8 +20,7 @@ export class Navbar extends Component {
   onClick = (event) => {
     this.setState({
       collapsed: !this.state.collapsed
-    },
-      console.log(this.state.collapsed));
+    });
   }
 
   render() {
