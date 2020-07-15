@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 import Navbar from '../layout/Navbar'
 import MediaQuery from 'react-responsive'
-import me1 from "../../dist/images/room.jpg";
-import me2 from "../../dist/images/mirror.jpg";
+import me1 from "../../dist/images/home/room.jpg";
+import me2 from "../../dist/images/home/mirror.jpg";
 import resume from "../../dist/images/Resume.pdf";
 import './pages.css';
 
