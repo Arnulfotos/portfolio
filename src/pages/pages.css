@@ -765,6 +765,8 @@ processing {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  transition: width 1s;
+  transition: height 1s;
 }
 
 @-webkit-keyframes fade {
@@ -882,6 +884,15 @@ processing {
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+.photo-menu-img img {
+  transition: height 1s;
+  height: 100%;
+}
+
+.photo-menu-img:hover img {
+  height: 110%;
 }
 
 @media (max-width: 500px) {
