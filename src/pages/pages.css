@@ -263,6 +263,7 @@ c {
   line-height: 40px;
   font-style: italic;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .cover-artist {
@@ -270,6 +271,7 @@ c {
   line-height: 30px;
   color: rgb(109, 109, 109);
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .cover-buttons {
