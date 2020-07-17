@@ -65,6 +65,7 @@ export class Software extends Component {
             </div>
 
             <div className="software2 software-flex">
+        
               <video playsInline autoPlay muted loop className="software2-img" >
                 <source src={dotVid} type="video/mp4" />
                 <LazyLoadImage effect="opacity" src={dot_terrain} className="software2-img" height={this.getHeight(dot_terrain)} />

@@ -860,16 +860,6 @@ processing {
   height: calc( 100vw * 0.56); 
 }
 
-.center-img {
-  position: absolute;
-  top: -9999px;
-  bottom: -9999px;
-  left: -9999px;
-  right: -9999px;
-  margin: auto;
-  height: 88vh;
-}
-
 .center-title {
   color: white;
   font-size: 20px;
@@ -885,4 +875,28 @@ processing {
 .photo-subtitle {
   color: rgb(0, 255, 255);
   font-size: 15px;
+}
+
+.photo-menu-img {
+  width: 24vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .photo-menu-img {
+    width: 100vw;
+    height: 100vw;
+    margin-bottom: 1vw;
+  }
+
+  .menu-fadein {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .photo-flex {
+    flex-direction: column;
+  }
 }
