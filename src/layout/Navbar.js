@@ -51,13 +51,13 @@ export class Navbar extends Component {
 
             {/* desktop  */}
             < MediaQuery minDeviceWidth={500} >
-              <a href="/"><div className="nav-title" style={this.props.activeLink === "PHOTO" ? black : {}}>ABHI VELAGA</div></a>
+              <a href="/"><div className="nav-title" >ABHI VELAGA</div></a>
             </MediaQuery>
 
             {/* mobile  */}
             < MediaQuery maxDeviceWidth={500} >
               <div className="nav-header">
-                <a href="/"><div className="nav-title" style={this.props.activeLink === "PHOTO" ? black : {}}>ABHI VELAGA</div></a>
+                <a href="/"><div className="nav-title" >ABHI VELAGA</div></a>
 
                 {this.state.collapsed && <div className="menu-button" onClick={this.onClick}>+ MENU</div>}
 

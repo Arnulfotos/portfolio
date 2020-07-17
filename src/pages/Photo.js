@@ -22,6 +22,7 @@ export class Photo extends Component {
 
           <a href={"/portfolio"}>
             <div style={imageDiv}>
+            <div className="center-title">PORTFOLIO</div>
               <div className="menu-fadein ">
                 <img src={portfolioImages[0]} className="f1" />
                 <img src={portfolioImages[1]} className="f2" />
@@ -34,11 +35,16 @@ export class Photo extends Component {
               </div>
               {/* <LazyLoadImage effect="opacity" src={Portfolio} className="center-img" /> */}
             </div>
-            <div style={text}>PORTFOLIO</div>
+            {/* <div style={text}>PORTFOLIO</div> */}
+            
           </a>
 
           <a href={"/miamivice"}>
             <div style={imageDiv}>
+            <div className="center-title">
+              <div>MIAMI VICE COCAINE DREAM</div>
+              <div className="photo-subtitle">2018 - 2019</div>
+            </div>
             <div className="menu-fadein ">
                 <img src={miamiImages[0]} className="f1" />
                 <img src={miamiImages[1]} className="f2" />
@@ -51,12 +57,16 @@ export class Photo extends Component {
               </div>
               {/* <LazyLoadImage effect="opacity" src={Miami} className="center-img" /> */}
             </div>
-            <div style={text}>MIAMI VICE COCAINE DREAM</div>
-            <div style={subText}>2018 - 2019</div>
+            {/* <div style={text}>MIAMI VICE COCAINE DREAM</div>
+            <div style={subText}>2018 - 2019</div> */}
           </a>
 
           <a href={"/uservoid"}>
             <div style={imageDiv}>
+            <div className="center-title">
+              <div>USER VOID</div>
+              <div className="photo-subtitle">2019 - PRESENT</div>
+              </div>
             <div className="menu-fadein ">
                 <img src={userVoidImages[0]} className="f1" />
                 <img src={userVoidImages[1]} className="f2" />
@@ -69,12 +79,13 @@ export class Photo extends Component {
               </div>
               {/* <LazyLoadImage effect="opacity" src={User} className="center-img" /> */}
             </div>
-            <div style={text}>USER VOID</div>
-            <div style={subText}>2019 - PRESENT</div>
+            {/* <div style={text}>USER VOID</div>
+            <div style={subText}>2019 - PRESENT</div> */}
           </a>
 
           <a href={"/published"}>
             <div style={imageDiv}>
+            <div className="center-title">PUBLISHED WORK</div>
             <div className="menu-fadein ">
                 <img src={publishedImages[0]} className="f1" />
                 <img src={publishedImages[1]} className="f2" />
@@ -87,7 +98,7 @@ export class Photo extends Component {
               </div>
               {/* <LazyLoadImage effect="opacity" src={Published} className="center-img" /> */}
             </div>
-            <div style={text}>PUBLISHED WORK</div>
+            {/* <div style={text}>PUBLISHED WORK</div> */}
           </a>
         </div>
       </MediaQuery>
@@ -135,6 +146,7 @@ export class Photo extends Component {
 const subText = {
   fontSize: '10px'
 }
+
 const mobilePage = {
   width: '290vw',
   backgroundColor: 'black',
@@ -146,10 +158,9 @@ const image = {
 }
 
 const imageDiv = {
-  width: '23vw',
-  height: '88vh',
+  width: '24vw',
+  height: '100vh',
   overflow: 'hidden',
-  marginRight: '20px',
   position: 'relative'
 }
 
