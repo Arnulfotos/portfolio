@@ -774,59 +774,81 @@ processing {
 @-webkit-keyframes fade {
   0% {
     opacity: 1;
+    filter:opacity(100%);
   }
   12.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
   25% {
     opacity: 0;
+    filter:opacity(0%);
   }
   37.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
   50% {
     opacity: 0;
+    filter:opacity(0%);
   }
   62.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
   75% {
     opacity: 0;
+    filter:opacity(0%);
   }
   87.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
 }
 
 @keyframes fade {
   0% {
     opacity: 1;
+    filter:opacity(100%);
   }
   12.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
   25% {
     opacity: 0;
+    filter:opacity(0%);
   }
   37.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
   50% {
     opacity: 0;
+    filter:opacity(0%);
   }
   62.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
   75% {
     opacity: 0;
+    filter:opacity(0%);
   }
   87.5% {
     opacity: 0;
+    filter:opacity(0%);
   }
 }
 .f1 {
   -webkit-animation-delay: -35s;
   animation-delay: -35s;
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 40s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
 }
 
 .f2 {

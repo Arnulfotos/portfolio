@@ -8,10 +8,11 @@ import ania1 from "../../dist/images/photos/portfolio/p5.jpg";
 import house from "../../dist/images/photos/portfolio/p12.jpg";
 import ania2 from "../../dist/images/home/ania.jpg";
 import spark from "../../dist/images/home/yellow.jpg";
-import lamp from "../../dist/images/photos/miami/miami25.jpg";
+import drumming from "../../dist/images/music/mjf/drumming.mp4";
+import drummingMobile from "../../dist/images/music/mjf/drummingmobile.mp4";
 
 const images = [
-  gym, house, ania2, room, ania1, spark, lamp, deyoung
+  gym, deyoung, ania2, room, spark, house, ania1
 ]
 
 export class Home extends Component {
@@ -21,14 +22,17 @@ export class Home extends Component {
         <MediaQuery minDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={false} /></MediaQuery>
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"HOME"} mobile={true} /></MediaQuery>
         <div className="fadein">
-          <img src={images[0]} className="f1" />
-          <img src={images[1]} className="f2" />
-          <img src={images[2]}  className="f3" />
-          <img src={images[3]}  className="f4" />
-          <img src={images[4]}  className="f5" />
-          <img src={images[5]}  className="f6" />
-          <img src={images[6]}  className="f7" />
-          <img src={images[7]}  className="f8" />
+          <video playsInline autoPlay muted loop className="f1" height="100%">
+            <MediaQuery minDeviceWidth={500}><source src={drumming} type="video/mp4" /></MediaQuery>
+            <MediaQuery maxDeviceWidth={500}><source src={drummingMobile} type="video/mp4" /></MediaQuery>
+          </video>
+          <img src={images[0]} className="f2" />
+          <img src={images[1]} className="f3" />
+          <img src={images[2]} className="f4" />
+          <img src={images[3]} className="f5" />
+          <img src={images[4]} className="f6" />
+          <img src={images[5]} className="f7" />
+          <img src={images[6]} className="f8" />
         </div>
       </div>
     )
