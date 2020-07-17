@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../layout/Navbar';
 const axios = require("axios").default;
 import gif from '../../dist/images/hi.gif';
+import hi from '../../dist/images/hi.mp4';
 import MediaQuery from 'react-responsive';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
@@ -45,7 +46,11 @@ export class Hi extends Component {
         <div className="hi-button" onClick={this.onClick} style={this.state.on ? on : off}>hello</div>
         {this.state.sent && <div className="appear">message received</div>}
       </div>
-      <div className="flex"><LazyLoadImage effect="opacity" src={gif} className="hi-gif" /></div>
+      <div className="flex">
+        <video playsInline autoPlay muted loop className="hi-gif">
+          <source src={hi} type="video/mp4" />
+        </video>
+      </div>
     </div>
     )
   }

@@ -375,7 +375,7 @@ button {
 .hi {
   color: white;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 .hi-button {
@@ -412,8 +412,8 @@ button {
 
 .hi-gif {
   display: block;
-  padding: 20px;
-  max-width: 90vw;
+  padding-top: 20px;
+  max-height: 70vh;
 }
 
 .software-intro {
@@ -599,6 +599,12 @@ processing {
 }
 
 @media (max-width: 500px) {
+  .hi {
+    padding-top: 150px;
+  }
+  .hi-gif { 
+    width: 100%;
+  }
   .about-top-img {
     width: 100vw;
     margin-right: 0;
