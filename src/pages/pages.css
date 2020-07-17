@@ -849,6 +849,9 @@ processing {
   animation-name: fade;
   animation-iteration-count: infinite;
   animation-duration: 40s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .f2 {
