@@ -3,7 +3,7 @@ import Lightbox from 'react-image-lightbox';
 import MediaQuery from 'react-responsive'
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
-import { publishedImages, getHeight, getWidth } from './images.js';
+import { publishedImages, sparkPublications, miamiPublications, allPublications, getHeight, getWidth } from './images.js';
 
 import Columned from "react-columned";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -19,10 +19,25 @@ export class Published extends Component {
     };
   }
 
-  mapImages(cols, images) {
+  mapImages(cols, images, id) {
+    let precedingNum;
+    switch (id){
+      case 1:
+        precedingNum = 0;
+        break;
+      case 2:
+        precedingNum = publishedImages.length;
+        break;
+      case 3:
+        precedingNum = publishedImages.length + sparkPublications.length;
+        break;
+      default:
+        console.log("gallery id out of range.")
+    }
+
     return <Columned columns={cols} className="gallery">
       {images.map((value, index) => {
-        return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index })} effect="opacity" height={getHeight(value)} width={getWidth(value)} />
+        return <LazyLoadImage key={index} className="img" src={value} onClick={() => this.setState({ isOpen: true, photoIndex: index + precedingNum})} effect="opacity" height={getHeight(value)} width={getWidth(value)} />
       })}
     </Columned>
   }
@@ -35,22 +50,32 @@ export class Published extends Component {
         <MediaQuery maxDeviceWidth={500}><Navbar activeLink={"PUBLISHED"} mobile={true} /></MediaQuery>
         <div className="page">
           <div className="appear">
-            <MediaQuery minDeviceWidth={500}>{this.mapImages(3, publishedImages)}</MediaQuery>
-            <MediaQuery maxDeviceWidth={500}>{this.mapImages(1, publishedImages)}</MediaQuery>
+            <MediaQuery minDeviceWidth={500}>
+              {this.mapImages(3, publishedImages, 1)}
+              {this.mapImages(3, sparkPublications, 2)}
+              {this.mapImages(3, miamiPublications, 3)}
+            </MediaQuery>
+
+            <MediaQuery maxDeviceWidth={500}>
+              {this.mapImages(1, publishedImages, 1)}
+              {this.mapImages(1, sparkPublications, 2)}
+              {this.mapImages(1, miamiPublications, 3)}
+            </MediaQuery>
+
             {isOpen && (
               <Lightbox
-                mainSrc={publishedImages[photoIndex]}
-                nextSrc={publishedImages[(photoIndex + 1) % publishedImages.length]}
-                prevSrc={publishedImages[(photoIndex + publishedImages.length - 1) % publishedImages.length]}
+                mainSrc={allPublications[photoIndex]}
+                nextSrc={allPublications[(photoIndex + 1) % allPublications.length]}
+                prevSrc={allPublications[(photoIndex + allPublications.length - 1) % allPublications.length]}
                 onCloseRequest={() => this.setState({ isOpen: false })}
                 onMovePrevRequest={() =>
                   this.setState({
-                    photoIndex: (photoIndex + publishedImages.length - 1) % publishedImages.length,
+                    photoIndex: (photoIndex + allPublications.length - 1) % allPublications.length,
                   })
                 }
                 onMoveNextRequest={() =>
                   this.setState({
-                    photoIndex: (photoIndex + 1) % publishedImages.length,
+                    photoIndex: (photoIndex + 1) % allPublications.length,
                   })
                 }
               />

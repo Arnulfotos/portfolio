@@ -110,6 +110,25 @@ import pub21 from '../../../dist/images/photos/published/21.jpg';
 import pub22 from '../../../dist/images/photos/published/22.jpg';
 import pub23 from '../../../dist/images/photos/published/23.jpg';
 
+import book1 from '../../../dist/images/photos/published/book1.jpg';
+import book2 from '../../../dist/images/photos/published/book2.jpg';
+import book3 from '../../../dist/images/photos/published/book3.jpg';
+import book4 from '../../../dist/images/photos/published/book4.jpg';
+import crowd from '../../../dist/images/photos/published/crowd.jpg';
+import one1 from '../../../dist/images/photos/published/spark/11.jpg';
+import one2 from '../../../dist/images/photos/published/spark/12.jpg';
+import one3 from '../../../dist/images/photos/published/spark/13.jpg';
+import one4 from '../../../dist/images/photos/published/spark/14.jpg';
+import two1 from '../../../dist/images/photos/published/spark/21.jpg';
+import two2 from '../../../dist/images/photos/published/spark/22.jpg';
+import two3 from '../../../dist/images/photos/published/spark/23.jpg';
+import two4 from '../../../dist/images/photos/published/spark/24.jpg';
+import three1 from '../../../dist/images/photos/published/spark/31.jpg';
+import three2 from '../../../dist/images/photos/published/spark/32.jpg';
+import three3 from '../../../dist/images/photos/published/spark/33.jpg';
+import cover from '../../../dist/images/photos/published/spark/cover.jpg';
+
+
 export const userVoidImages = [
   u1,
   u2,
@@ -224,6 +243,69 @@ export const publishedImages = [
   pub21, 
   pub22, 
   pub23 
+];
+
+export const miamiPublications = [
+  book1,
+  book2,
+  book3,
+  book4,
+];
+
+export const sparkPublications = [
+  // crowd,
+  cover,
+  one1,
+  // one2,
+  one3,
+  one4,
+  two1,
+  // two2,
+  two3,
+  two4,
+  three1,
+  three2,
+  // three3,
+  
+];
+
+export const allPublications = [
+  pub1,
+  pub2,
+  pub3,
+  pub4,
+  pub5,
+  pub6,
+  pub7,
+  pub8,
+  pub9,
+  pub10,
+  pub11,
+  pub12, 
+  pub13, 
+  pub14, 
+  pub15, 
+  pub16, 
+  pub17, 
+  pub18, 
+  pub19, 
+  pub20, 
+  pub21, 
+  pub22, 
+  pub23,
+  cover,
+  one1,
+  one3,
+  one4,
+  two1,
+  two3,
+  two4,
+  three1,
+  three2,
+  book1,
+  book2,
+  book3,
+  book4
 ];
 
 export function getWidth(image) {
