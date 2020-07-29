@@ -51,9 +51,11 @@ export class Published extends Component {
         <div className="page">
           <div className="appear">
             <MediaQuery minDeviceWidth={500}>
+            {this.mapImages(3, sparkPublications, 2)}
+              {this.mapImages(2, miamiPublications, 3)}
               {this.mapImages(3, publishedImages, 1)}
-              {this.mapImages(3, sparkPublications, 2)}
-              {this.mapImages(3, miamiPublications, 3)}
+              {/* {this.mapImages(3, sparkPublications, 2)}
+              {this.mapImages(2, miamiPublications, 3)} */}
             </MediaQuery>
 
             <MediaQuery maxDeviceWidth={500}>
