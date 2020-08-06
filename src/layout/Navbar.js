@@ -51,13 +51,13 @@ export class Navbar extends Component {
 
             {/* desktop  */}
             < MediaQuery minDeviceWidth={500} >
-              <a href="/"><div className="nav-title" >ABHI VELAGA</div></a>
+              <a href="/~avelaga/"><div className="nav-title" >ABHI VELAGA</div></a>
             </MediaQuery>
 
             {/* mobile  */}
             < MediaQuery maxDeviceWidth={500} >
               <div className="nav-header">
-                <a href="/"><div className="nav-title" >ABHI VELAGA</div></a>
+                <a href="/~avelaga/"><div className="nav-title" >ABHI VELAGA</div></a>
 
                 {this.state.collapsed && <div className="menu-button" onClick={this.onClick}>+ MENU</div>}
 
@@ -71,7 +71,7 @@ export class Navbar extends Component {
 
           {!this.state.collapsed &&
             <div className="appear">
-              <a href="/about">
+              <a href="/~avelaga/about">
                 <div className="link">
                   <div className="link-color" style={this.props.activeLink === "ABOUT" ? activeStyle : {}}></div>
                   <div className="link-text" style={this.props.activeLink === "ABOUT" ? activeTextStyle : {}}>
@@ -80,7 +80,7 @@ export class Navbar extends Component {
                 </div>
               </a>
 
-              <a href="/photo">
+              <a href="/~avelaga/photo">
                 <div className="link">
                   <div className="link-color" style={this.props.activeLink === "PHOTO" ? activeStyle : {}}></div>
                   <div className="link-text" style={this.props.activeLink === "PHOTO" ? activeTextStyle : {}}>
@@ -89,7 +89,7 @@ export class Navbar extends Component {
                 </div>
               </a>
 
-              <a href="/music">
+              <a href="/~avelaga/music">
                 <div className="link">
                   <div className="link-color" style={this.props.activeLink === "MUSIC" ? activeStyle : {}}></div>
                   <div className="link-text" style={this.props.activeLink === "MUSIC" ? activeTextStyle : {}}>
@@ -98,7 +98,7 @@ export class Navbar extends Component {
                 </div>
               </a>
 
-              <a href="/software">
+              <a href="/~avelaga/software">
                 <div className="link">
                   < MediaQuery minDeviceWidth={500} >
                     <div className="link-color" style={this.props.activeLink === "SOFTWARE" ? activeStyle : {}}></div>
@@ -112,7 +112,7 @@ export class Navbar extends Component {
                 </div>
               </a>
 
-              <a href="/hi">
+              <a href="/~avelaga/hi">
                 <div className="link">
                   <div className="link-color" style={this.props.activeLink === "HI" ? activeStyle : {}}></div>
                   <div className="link-text" style={this.props.activeLink === "HI" ? activeTextStyle : {}}>

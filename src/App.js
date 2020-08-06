@@ -29,16 +29,16 @@ const ErrorPage = () => {
 function App() {
   return (
     <Switch>
-      <Route exact path='/' exact component={Home} />
-      <Route exact path='/about' exact component={About} />
-      <Route exact path='/photo' exact component={Photo} />
-      <Route exact path='/portfolio' exact component={Portfolio} />
-      <Route exact path='/miamivice' exact component={Miami} />
-      <Route exact path='/uservoid' exact component={UserVoid} />
-      <Route exact path='/published' exact component={Published} />
-      <Route exact path='/software' exact component={Software} />
-      <Route exact path='/music' exact component={Music} />
-      <Route exact path='/hi' exact component={Hi} />
+      <Route exact path='/~avelaga/' exact component={Home} />
+      <Route exact path='/~avelaga/about' exact component={About} />
+      <Route exact path='/~avelaga/photo' exact component={Photo} />
+      <Route exact path='/~avelaga/portfolio' exact component={Portfolio} />
+      <Route exact path='/~avelaga/miamivice' exact component={Miami} />
+      <Route exact path='/~avelaga/uservoid' exact component={UserVoid} />
+      <Route exact path='/~avelaga/published' exact component={Published} />
+      <Route exact path='/~avelaga/software' exact component={Software} />
+      <Route exact path='/~avelaga/music' exact component={Music} />
+      <Route exact path='/~avelaga/hi' exact component={Hi} />
       <Route component={ErrorPage} />
     </Switch>
   );
