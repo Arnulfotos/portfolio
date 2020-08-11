@@ -112,6 +112,15 @@ export class Navbar extends Component {
                 </div>
               </a>
 
+              <a href="/blog">
+                <div className="link">
+                  <div className="link-color" style={this.props.activeLink === "BLOG" ? activeStyle : {}}></div>
+                  <div className="link-text" style={this.props.activeLink === "BLOG" ? activeTextStyle : {}}>
+                    <div>BLOG</div>
+                  </div>
+                </div>
+              </a>
+
               <a href="/hi">
                 <div className="link">
                   <div className="link-color" style={this.props.activeLink === "HI" ? activeStyle : {}}></div>
@@ -137,7 +146,6 @@ export class Navbar extends Component {
               <a href="mailto:abhinav.velaga@utexas.edu"><div className="external-link">CONTACT</div></a>
             </div>
           }
-
         </div>
       </div >
       </div>

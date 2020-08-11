@@ -944,3 +944,13 @@ processing {
     flex-direction: column;
   }
 }
+
+.blog-menu {
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.medium-feed-snippet, .excerpt, h1 {
+  color: white;
+}

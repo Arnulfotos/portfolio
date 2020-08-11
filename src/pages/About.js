@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Navbar from '../layout/Navbar'
 import MediaQuery from 'react-responsive'
 import me1 from "../../dist/images/home/room.jpg";

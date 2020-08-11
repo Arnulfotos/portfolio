@@ -10,8 +10,9 @@ import Published from './pages/photo/Published.js';
 import Software from './pages/Software.js';
 import Music from './pages/Music.js';
 import Hi from './pages/Hi.js';
-import Navbar from './layout/Navbar'
-import MediaQuery from 'react-responsive'
+import Blog from './pages/Blog.js';
+import Navbar from './layout/Navbar';
+import MediaQuery from 'react-responsive';
 import './App.css';
 
 const ErrorPage = () => {
@@ -38,6 +39,7 @@ function App() {
       <Route exact path='/published' exact component={Published} />
       <Route exact path='/software' exact component={Software} />
       <Route exact path='/music' exact component={Music} />
+      <Route exact path='/blog' exact component={Blog} />
       <Route exact path='/hi' exact component={Hi} />
       <Route component={ErrorPage} />
     </Switch>
