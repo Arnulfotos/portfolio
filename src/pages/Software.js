@@ -54,8 +54,8 @@ export class Software extends Component {
 
           <div className="software">
             <div className="software-intro">
-              I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development and design and am working towards becoming a full time front end developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with creative tools such as <pi>Raspberry PI</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. For more details about my technical skills, check out my <a href="https://github.com/avelaga" target='_blank'>GitHub</a>, <a href={resume} target='_blank'>resume</a>, and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
-              </div>
+              I'm a Computer Science undergraduate at <ut>The University of Texas at Austin</ut>. I love software development, design, and electronics, and am working towards becoming a full time application developer. I also study fine arts as a minor and enjoy finding ways to intersect the two passions with tools such as <pi>Raspberry Pi</pi>, <arduino>Arduino</arduino>, and <processing>Processing</processing>. This is a selected collection of my programming and web related projects. For more details about my technical skills, check out my <a href="https://github.com/avelaga" target='_blank'>GitHub</a>, <a href={resume} target='_blank'>resume</a>, and <a href="https://www.linkedin.com/in/abhivelaga/" target='_blank'>linkedin</a>.
+            </div>
 
             <div className="software3 back-img software-flex">
               <LazyLoadImage effect="opacity" src={insideSkoop} className="software-ft" height={this.getHeight(insideSkoop)} />
