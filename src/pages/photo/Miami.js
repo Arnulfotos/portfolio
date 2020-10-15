@@ -4,10 +4,10 @@ import MediaQuery from 'react-responsive'
 import 'react-image-lightbox/style.css';
 import Navbar from '../../layout/Navbar'
 import { miamiImages, getHeight, getWidth } from './images.js';
-
 import Columned from "react-columned";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
+import '../pages.css';
 
 export class Miami extends Component {
   constructor(props) {

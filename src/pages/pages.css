@@ -944,3 +944,8 @@ processing {
     flex-direction: column;
   }
 }
+
+/* override lazyload animation to be longer */
+.lazy-load-image-background.opacity.lazy-load-image-loaded {
+  transition: opacity 1s !important;
+}
