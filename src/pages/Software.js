@@ -133,11 +133,11 @@ export class Software extends Component {
               </div>
             </div>
 
-            <div className="desk back-img flex">
+            {/* <div className="desk back-img flex">
               <div className="freelance">I'm available for freelance web design + development!</div>
               <div className="software-ft-info">I create unique websites for desktop + mobile with the ability for you to edit your own content, along with hosting and continuous support. If you have an idea, need a developer, or just want to say hi, shoot me a message!</div>
               <a href="mailto:abhinav.velaga@utexas.edu"><div className="software-ft-button">Get in touch!</div></a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
