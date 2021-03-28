@@ -5,6 +5,7 @@ import Navbar from '../layout/Navbar'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import resume from "../../dist/images/Resume.pdf";
+import YouTube from 'react-youtube';
 import './pages.css';
 
 import ball from '../../dist/images/software/ball.gif';
@@ -63,6 +64,11 @@ export class Software extends Component {
               <div className="software-ft-subtitle">ui design + front end development</div>
               <div className="software-ft-info">Inside Skoop is a web and iOS app that I'm currently developing which allows UT students to find courses that fit their searching criteria and get advice from those who have taken them.</div>
             </div>
+
+            {/* <div className="flex"> */}
+
+            <YouTube videoId="CcSitqAJFZk" className="software-youtube" />
+            {/* </div> */}
 
             <div className="software2 software-flex">
         
@@ -146,3 +152,5 @@ export class Software extends Component {
 }
 
 export default Software;
+
+// https://youtu.be/CcSitqAJFZk
