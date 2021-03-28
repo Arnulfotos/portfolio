@@ -40,10 +40,10 @@ export class About extends Component {
             <div className="about-top">
               <LazyLoadImage src={me1} className="about-top-img" effect="opacity" height={this.getHeight(me1)} width={this.getWidth(me1)} />
               <div className="about-second-text">
-                I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at <ut>The University of Texas at Austin</ut> as well as intern as a software engineer at <processing>Visa</processing>.
+                I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Studio Art at <ut>The University of Texas at Austin</ut> as well as work as a software engineer at <processing>Visa</processing>.
                 <br />
                 <br />
-                I released my first solo album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installation for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine. I also serve as an advisor on Allen ISD's Career and Technical Education Advisory Board.
+                I released my first solo album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installation for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine.
             </div>
             </div>
             <div className="about-bottom">
@@ -71,11 +71,11 @@ export class About extends Component {
           <div className="appear">
 
             <div className="about-first-text">
-              I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Fine Arts at <ut>The University of Texas at Austin</ut> as well as intern as a software engineer at <processing>Visa</processing>.
+            I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Studio Art at <ut>The University of Texas at Austin</ut> as well as work as a software engineer at <processing>Visa</processing>.
             </div>
             <LazyLoadImage effect="opacity" src={me1} className="about-top-img" height={this.getHeight(me1)} width={this.getWidth(me1)} />
             <div className="about-second-text">
-              I released my first solo album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installation for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine. I also serve as an advisor on Allen ISD's Career and Technical Education Advisory Board.
+            I released my first solo album at the age of 16 and a second at 18, my first photo collection at the age of 19, played my first official SXSW showcase at the age of 20, built my first interactive art installation for Fortress Festival a month later, and had my photography featured on the cover of Spark Magazine.
             </div>
             <LazyLoadImage effect="opacity" src={me2} className="about-bottom-img" height={this.getHeight(me2)} width={this.getWidth(me2)} />
 
