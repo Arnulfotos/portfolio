@@ -10,7 +10,8 @@ import Published from './pages/photo/Published.js';
 import Software from './pages/Software.js';
 import Music from './pages/Music.js';
 import Hi from './pages/Hi.js';
-import Navbar from './layout/Navbar'
+import Navbar from './layout/Navbar';
+import ConnectedWorld from './pages/ConnectedWorld.js';
 import MediaQuery from 'react-responsive'
 import './App.css';
 
@@ -39,6 +40,7 @@ function App() {
       <Route exact path='/software' exact component={Software} />
       <Route exact path='/music' exact component={Music} />
       <Route exact path='/hi' exact component={Hi} />
+      <Route exact path='/connected-world' exact component={ConnectedWorld} />
       <Route component={ErrorPage} />
     </Switch>
   );
