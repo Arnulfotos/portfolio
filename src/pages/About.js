@@ -71,7 +71,7 @@ export class About extends Component {
           <div className="appear">
 
             <div className="about-first-text">
-            I'm a software developer, musician, and fine art photographer based in Austin, TX where I study both Computer Science and Studio Art at <ut>The University of Texas at Austin</ut> as well as work as a software engineer at <processing>Visa</processing>.
+            I'm a software developer, musician, and artist based in Austin, TX where I study both Computer Science and Studio Art at <ut>The University of Texas at Austin</ut> as well as work as a software engineer at <processing>Visa</processing>.
             </div>
             <LazyLoadImage effect="opacity" src={me1} className="about-top-img" height={this.getHeight(me1)} width={this.getWidth(me1)} />
             <div className="about-second-text">
