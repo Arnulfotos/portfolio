@@ -12,7 +12,8 @@ export class Hi extends Component {
     super(props);
     this.state = {
       sent: false,
-      on: false
+      on: false,
+      error: false
     };
   }
 
@@ -32,7 +33,10 @@ export class Hi extends Component {
         });
       })
       .catch(err => {
-        // console.log(err);
+        console.log("god dang it who broke it now")
+        this.setState({
+          error: true
+        });
       });
   }
 
@@ -43,8 +47,9 @@ export class Hi extends Component {
       <div className="hi">
         <div className="title">say hi to me in realtime</div>
         hi, welcome to my site. clicking this button runs an animation on the led strip at my desk.
-        <div className="hi-button" onClick={this.onClick} style={this.state.on ? on : off}>hello</div>
+        <div className="hi-button" onClick={this.onClick} style={this.state.error ? error : this.state.on ? on : off}>hello</div>
         {this.state.sent && <div className="appear">message received</div>}
+        {this.state.error && <div className="appear">i got an error, it looks like someone broke it :( maybe try again tomorrow</div>}
       </div>
       <div className="flex">
         <video playsInline autoPlay muted loop className="hi-gif">
@@ -64,4 +69,8 @@ const on = {
 
 const off = {
   backgroundColor: 'purple'
+}
+
+const error = {
+  backgroundColor: 'red'
 }
