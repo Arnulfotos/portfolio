@@ -95,7 +95,7 @@ export class Software extends Component {
               <div className="software-ft-title">BAND TOGETHER</div>
               <div className="software-ft-subtitle">ui design + front end development</div>
               <div className="software-ft-info">I designed and developed the front end for Band Together, a responsive web app that helps users easily find information about upcoming concerts.</div>
-              <a href="https://bandtogether.events" target='_blank'><div className="software-ft-button">VIEW</div></a>
+              {/* <a href="https://bandtogether.events" target='_blank'><div className="software-ft-button">VIEW</div></a> */}
             </div>
 
             <video playsInline autoPlay muted loop className="drum-vid" >
